@@ -1,0 +1,6162 @@
+{
+  "meta": {
+    "description": "PathPilot college list with strong Gujarat coverage and an Other option.",
+    "totalColleges": 1534,
+    "totalCategories": 11
+  },
+  "categories": [
+    "IITs",
+    "NITs",
+    "IIITs",
+    "IIMs",
+    "Gujarat Universities & Institutes",
+    "Central Universities",
+    "Deemed & Top Private Universities",
+    "Major State & Technical Universities",
+    "Medical, Law & Specialized Institutes",
+    "All India (Community List)",
+    "Other"
+  ],
+  "colleges": [
+    {
+      "name": "IIT Bombay",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Delhi",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Madras",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Kanpur",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Kharagpur",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Roorkee",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Guwahati",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Hyderabad",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Indore",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT (BHU) Varanasi",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Gandhinagar",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Ropar",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Patna",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Bhubaneswar",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Mandi",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Jodhpur",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Palakkad",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Tirupati",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT (ISM) Dhanbad",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Bhilai",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Goa",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Jammu",
+      "category": "IITs"
+    },
+    {
+      "name": "IIT Dharwad",
+      "category": "IITs"
+    },
+    {
+      "name": "NIT Tiruchirappalli (NIT Trichy)",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Warangal",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Karnataka, Surathkal",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Rourkela",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Calicut",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Durgapur",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Kurukshetra",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Silchar",
+      "category": "NITs"
+    },
+    {
+      "name": "Malaviya NIT Jaipur",
+      "category": "NITs"
+    },
+    {
+      "name": "Motilal Nehru NIT Allahabad",
+      "category": "NITs"
+    },
+    {
+      "name": "Maulana Azad NIT Bhopal",
+      "category": "NITs"
+    },
+    {
+      "name": "Visvesvaraya NIT Nagpur",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Jamshedpur",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Patna",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Raipur",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Hamirpur",
+      "category": "NITs"
+    },
+    {
+      "name": "Dr B R Ambedkar NIT Jalandhar",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Srinagar",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Agartala",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Arunachal Pradesh",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Delhi",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Goa",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Manipur",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Meghalaya",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Mizoram",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Nagaland",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Puducherry",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Sikkim",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Uttarakhand",
+      "category": "NITs"
+    },
+    {
+      "name": "NIT Andhra Pradesh",
+      "category": "NITs"
+    },
+    {
+      "name": "Sardar Vallabhbhai NIT Surat",
+      "category": "NITs"
+    },
+    {
+      "name": "IIIT Hyderabad",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Bangalore",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Delhi",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Allahabad",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIITDM Jabalpur",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIITDM Kancheepuram",
+      "category": "IIITs"
+    },
+    {
+      "name": "ABV-IIITM Gwalior",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Kota",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Vadodara",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Pune",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Nagpur",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Ranchi",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Sri City",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Bhubaneswar",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Bhagalpur",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Dharwad",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Guwahati",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Kalyani",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Kottayam",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Lucknow",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Manipur",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Sonepat",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Surat",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Tiruchirappalli",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIIT Una",
+      "category": "IIITs"
+    },
+    {
+      "name": "IIM Ahmedabad",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Bangalore",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Calcutta",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Lucknow",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Kozhikode",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Indore",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Shillong",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Rohtak",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Ranchi",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Raipur",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Tiruchirappalli",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Kashipur",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Udaipur",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Nagpur",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Visakhapatnam",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Bodh Gaya",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Sirmaur",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Jammu",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Sambalpur",
+      "category": "IIMs"
+    },
+    {
+      "name": "IIM Amritsar",
+      "category": "IIMs"
+    },
+    {
+      "name": "Nirma University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Pandit Deendayal Energy University (PDEU)",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT)",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Gujarat University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "L.D. College of Engineering",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Maharaja Sayajirao University of Baroda",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Ganpat University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Ahmedabad University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "CEPT University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Gujarat Technological University (GTU)",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Sardar Patel University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Charotar University of Science and Technology (CHARUSAT)",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Marwadi University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Parul University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "Silver Oak University",
+      "category": "Gujarat Universities & Institutes"
+    },
+    {
+      "name": "University of Delhi",
+      "category": "Central Universities"
+    },
+    {
+      "name": "Jawaharlal Nehru University (JNU)",
+      "category": "Central Universities"
+    },
+    {
+      "name": "Banaras Hindu University (BHU)",
+      "category": "Central Universities"
+    },
+    {
+      "name": "Aligarh Muslim University (AMU)",
+      "category": "Central Universities"
+    },
+    {
+      "name": "Jamia Millia Islamia",
+      "category": "Central Universities"
+    },
+    {
+      "name": "University of Hyderabad",
+      "category": "Central Universities"
+    },
+    {
+      "name": "Pondicherry University",
+      "category": "Central Universities"
+    },
+    {
+      "name": "BITS Pilani",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Vellore Institute of Technology (VIT)",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Manipal Academy of Higher Education",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "SRM Institute of Science and Technology",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Amity University",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Thapar Institute of Engineering & Technology",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Symbiosis International University",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Christ University",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Shiv Nadar University",
+      "category": "Deemed & Top Private Universities"
+    },
+    {
+      "name": "Anna University",
+      "category": "Major State & Technical Universities"
+    },
+    {
+      "name": "Jadavpur University",
+      "category": "Major State & Technical Universities"
+    },
+    {
+      "name": "Punjab Engineering College (PEC), Chandigarh",
+      "category": "Major State & Technical Universities"
+    },
+    {
+      "name": "College of Engineering Pune (COEP)",
+      "category": "Major State & Technical Universities"
+    },
+    {
+      "name": "Veermata Jijabai Technological Institute (VJTI), Mumbai",
+      "category": "Major State & Technical Universities"
+    },
+    {
+      "name": "Osmania University",
+      "category": "Major State & Technical Universities"
+    },
+    {
+      "name": "All India Institute of Medical Sciences (AIIMS), Delhi",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "JIPMER Puducherry",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "Christian Medical College (CMC), Vellore",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "National Law School of India University (NLSIU), Bangalore",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "NALSAR University of Law, Hyderabad",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "Indian School of Business (ISB), Hyderabad",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "XLRI Jamshedpur",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "Faculty of Management Studies (FMS), Delhi",
+      "category": "Medical, Law & Specialized Institutes"
+    },
+    {
+      "name": "A. D. Patel Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "A.K.G. Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "A.R.J. College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ABES Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ACE Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "AES American Embassy School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "AIMIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "AIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "AMC Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "APS College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "AQJ College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ASM Institute of Business Management and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aalim Muhammed Salegh College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aarupadai Veedu Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Acharya Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Acharya N.G. Ranga Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Acharya Nagarjuna Vishwavidhyalayamu",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Acropolis Institute of Technology and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Acropolis Technical Campus",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Adhiyamaan College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Adi Shankara Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Adikavi Nannaya University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aditanar College of Arts and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aditya Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Advanced Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Agra College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ajmer Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Akkineni Nageswara Rao College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Al-Ameen Educational and Medical Foundation",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Alagappa University College of Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Alard Institute of Management Sciences (AIMS)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aligarh Muslim University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "All India Institute of Medical Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "All Saints College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "All Saints College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Allahabad Agricultural Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Allahabad University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Allana Inistitute Of Management Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Allana Institute of Management Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Alpha College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amal Jyothi College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ambala College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ambedkar Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "American School of Bombay",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amity School of Engineering and Technology - New Delhi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amity University Lucknow Campus",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amity University Haryana",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrapali Institute of Management and Computer Applications",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrapali Institute of Technology and Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amravati University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrita Vishwa Vidyapeetham - Coimbatore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrita Vishwa Vidyapeetham - Amritapuri",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrita Vishwa Vidyapeetham - Bangalore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrita School of Arts and Sciences - Mysore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrita School of Arts and Sciences - Kochi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Amrutvahini College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anand Institute of Higher Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anand Institute of Information Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anbanathapuram Vahaira Charities College - A.V.C.",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Andhra University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Angel College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anil Neerukonda Institute of Technology and Sciences - ANITS",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anja Polytechnic College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anjalai Ammal Mahalingam Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anjuman College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Annai Mathammal Sheela Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Annai Teresa Magalir Palkalaikazhgam",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Annamacharya Institute of Technology and Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Annamalai University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Anurag group of Institutions",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Apeejay College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Apeejay Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Apex Institute of Management and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Appa Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Arasu Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Army Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Arul Anandar College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Arya College of Engineering and Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Arya Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aryabhatta Institute of Engineering and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Asansol Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Asia Pacific Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Assam Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Assam Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Assam University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Atal Birahi Vajpayee Indian Institute of Information Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Atharva College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Atmiya Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Atria Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Auden Technology and Management Academy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aurora P. G. College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Aurora Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Avanthi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Avinashilingam Institute for Home Science and Higher Education for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Awadhesh Pratap Singh Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ayya Nadar Janaki Ammal College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "B P Poddar Institute of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "B. P. Poddar Institute of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "B. V. B. College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "B.N. Mandal University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "B.S. Anangpuria Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "B.V.B. College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "B.V.C. Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BBS College of Engineering and. Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BK Birla Institue of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BLDEACET",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BMS College of Engineering (BMSCE)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BMS Institute of Technology (BMSIT)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BNM Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BSA College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BSA Crescent Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Baba Banda Singh Bahadur Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Baba Farid University of Health Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Baba Saheb Ambedkar Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Babaria Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Babasaheb Bhimrao Ambedkar Bihar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Babasaheb Bhimrao Ambedkar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Babu Banarasi Das National Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Babu Banarsi Das Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Babu Mohanlal Arya Smarak Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bahadhur Shastri National Academy of Administration",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Baharati Vidyapeeth College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bahai Institute for Higher Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Baldev Ram Mirdha Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Balaji Institute of Technology & Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Banaras Hindu University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Banarsidas Chandiwala Institute Of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Banasthali Vidyapith for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bangalore Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bangalore University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bankura Unnayani Institute of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bannari Amman Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bansal College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bansal Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bansal School of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bapuji Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bapuji Institute of Hi-Tech Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bapurao Deshmukh College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Barkatullah Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Basaveshwar Engineering College - Bagalkot",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Beant College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bellary Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bengal College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bengal Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bengal Engineering and Science University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bengal Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Berhampur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhajarang Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharat Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharath Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharath Niketan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharathiar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharathidasan University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharati Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharati Vidyapeeth Institute of Management and IT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharati Vidyapeeth University Institute of Management and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharatiya Vidya Bhavans S. P. Jain Institute of Management and Research (SPJIMR)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhartiya Pashu-Chikitsa Anusandhan Sansthan",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhatkhande Music Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhavnagar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhilai Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhiwani Institute of Technology and Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhoj Reddy Engineering College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhoomaraddi College of Engineering and Technology (BVBCET)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bhopal Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bidhan Chandra Krishi Viswavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bihar Yoga Bharati",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Biju Patnaik University of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Birbhum Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Birla Institute of Applied Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Birla Institute of Technology - Ranchi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Birla Institute of Technology and Science - BITS Pilani",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Birla Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Birsa Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Birsa Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bishop Heber College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Biyani Institute of Science and Management - BISMA",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Brindavan College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bundelkhand Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bundelkhand University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "C K Pithawala College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "C U Shah College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "C.B. Patel Computer College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CET Karnataka Information and Counselling",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CIT-Changa",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CMR College of Engineering Technology (CMRCET)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CMR College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CMR Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CSI College Of Engineering (CSICE)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CV Raman College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CVR College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Calcutta Institute of Engineering and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Calcutta Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Canara Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chandubhai S Patel Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Central Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Central Institute of English and Foreign Languages",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Central Institute of Fisheries Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Central Institute of Higher Tibetan Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Centre for Development of Advanced Computing",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Centre for Environmental Planning and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chaitanya Bharati Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chaityana Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chamelidevi Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chandigarh Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chandra Shekhar Azad University of Agriculture and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chaudhary Charan Singh Haryana Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chaudhary Charan Singh University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chaudhary Sarwan Kumar Himachal Pradesh Krishi Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chennai Mathematical Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Cherraans Arts and Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chettinad College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chhattisgarh Swami Vivekanand Technical University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chhatrapati Shahu Ji Maharaj University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chhatrapati Shivaji Institute of Technoloty",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chikhli College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chinmaya Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chitkara Educational Trust",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Chouksey Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Christ College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Christu Jayanthi Jubilee College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Co-operative Institute of Technology - Vadakara",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Cochin University of Science and Technology - Kerala",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Coimbatore Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Coimbatore Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering Kallooppara",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College Of Engineering Karunagapally",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering Poonjar",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering Roorkee",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering Thalassery",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering Trivandrum",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "College of Technology And Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Cummins College of Engineering for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "D. G. Ruparel College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "D.G. Vaishnav College - Chennai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "D.N.R College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "DAV College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "DAV Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "DB Pampa College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "DES Navinchandra Mehta Institute of Technology and Development",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "DMCE Online",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "DRK Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "DVR college of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dadi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dakshina Bharat Hindi Prachar Sabha",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Darda Engineering College Yavatmal",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dayalbagh Educational Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dayananda Sagar Institutions",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Deccan College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Deenbandhu Chhotu Ram University of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Deendayal Upadhyay Gorakhpur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Deepshikha College of Technical Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dehradun Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Delhi College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Delhi University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Delhi Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Deogiri College Aurangabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dev Sanskriti Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Devanga Arts College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Devi Ahilya Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Devineni Venkata Ramana and Dr. HS Mic College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dhanalakshmi College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dharmsinh Desai University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dhruva College of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dibrugarh University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dnyaneswar Vidyapeeth IST",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor B.R. Ambedkar Open University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor Babasaheb Ambedkar Technological University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor Balasaheb Sawant Konkan Krishi Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor Bhim Rao Ambedkar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor Harisingh Gour Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor Panjabrao Deshmukh Krishi Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor Ram Manohar Lohia Awadh University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Doctor Yashwant Singh Parmar University of Horticulture and Forestry",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Don Bosco Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr G R Damodaran College of Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr MGR College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr Mahalingam College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr Paul Raj Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. B.C. Roy Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. Babasaheb Ambedkar Marathwada University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. D. Y. Patil College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. D. Y. Patil Institute Of Management and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. Kedar Nath Modi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. M.G.R Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. Navalar Nedunchezhian College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. Pauls Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. Ram Manohar Lohia Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. Sivanthi Aditanar College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. T. Thimmaiah Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr.M.G.R University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dravidian University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dronacharya College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Durgapur Institute of Advanced Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ERandDCI Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "East Point College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Easwari Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Einstein College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Engineering College Ajmer",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Engineering College in Patiala",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Engineering College of Kota",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Erode Sengunthar Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ethiraj College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "FET",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "FORE School of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Faculdades Integradas Logatti",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Fakir Mohan University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Farah Institute of Computer Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Federal Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Fergusson College - Pune",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Feroz Gandhi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Forest Research Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Forte Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Fr. Conceicao Rodrigues College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Future Institute of Engineering and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gujarat Forensic Science University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G H Raisoni Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G. B. Pant Engineering College - Uttar Pradesh",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G. D. Goenka World Institute - Lancaster University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G. Narayanamma Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G. Pulla Reddy Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G. Pullaiah College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G.H. Patel College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "G.V.M. Institute of Technology and Management - GVMITM",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "GATES Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "GLA Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "GLS Institute of Computer Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "GMR Institute of Technology (GMRIT)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gnanamani College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "GS Medical College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "GVP College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Galgotia Institute of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Galgotias College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ganadipathy Tulsis Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gandhi Institute for Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gandhi Institute of Engineering and Technology (GIET)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gandhi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gandhi Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gandhigram Rural Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Garden City College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gauhati University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gauthami Degree College For Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gayatri Vidya Parishad College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Geeta Institute Of Management And Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Geetanjali Institute of Technical Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gitam Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gitam University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gitarattan International Business School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Global Academy of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Global Institute of Management and Technology (GIMT)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Global Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Goa Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Goa University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Godavari Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gogte Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gojan School of Business and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gokaraju Rangaraju Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gokhale Institute of Politics and Economics",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gopal Ramalingam Memorial Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government College Of Engineering - Pune",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government College of Arts",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government College of Engineering Auranagabd",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government College of Engineering and Ceramic Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government College of Engineering and Leather Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government Engineering College Ajmer",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government Polytechnic Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Government Polytechnic",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Govind Ballabh Pant Krishi Evam Praudyogik Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Govt. Mahila Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Graphic Era Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Great Lakes Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Greater Noida Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gudlavalleru Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gujarat Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gujarat Ayurved University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gujarat Vidyapith",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gulbarga University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gulzar Group Of Institutes",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gurgaon Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Ghasidas University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Gobind Singh College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Gobind Singh Indraprastha University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Jambeshwar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Nanak Dev University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Nanak Enginerring College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Ramdas Khalsa Institite of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Guru Tegh Bahadur Institute of Technology-GTBIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gurukula Kangri Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gurunanak Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gyan Ganga Institute of Technology and Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gyan Vihar School of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "H.K.R.H. College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "HKBK College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "HMS Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Haldia Insitute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Harcourt Butler Technological Institute - Kanpur",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Hemchandracharya North Gujarat University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Hemwati Nandan Bahuguna Garhwal University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Heritage Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Hi-Point College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Himachal Pradesh University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Hindustan College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Hindustan College of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Hitkarini College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Holy Mary Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Hyderabad Central University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "IBS Ahmedabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "IBS Hyderabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ICFAI Business School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ICFAI National College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ICFAI School of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ICFAI University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "IEC College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "IMPS College of Engineering and Technology - IMPSCET",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "IMS College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "INMANTEC Integrated Academy of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ilahia College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "India Business School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Agricultural Research Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Association for the Cultivation of Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Business Academy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Foreign Trade",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology - IIIT Allahabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology - IIIT Bangalore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology - IIIT Hyderabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology - IIIT Kolkata",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology - IIIT Pune",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology Jabalpur",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology and Management - Kerala",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Information Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Rural Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Science and Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Science - IISc Bangalore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Science Education and Research Pune",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Space Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Social Welfare and Business Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Bhubaneswar",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Bombay",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Delhi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Guwahati",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Kanpur",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Kharagpur",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Madras",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Powaii",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Roorkee",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Patna",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Ropar",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Hyderabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Gandhinagar",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Rajasthan",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Mandi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT Indore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Institute of Technology - IIT BHU",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian School of Business",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian School of Mines - Dhanbad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indian Statistical Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira College of Engineering and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira Gandhi Institute of Development and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira Gandhi Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira Gandhi Krishi Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira Gandhi National Open University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira Gandhi Rashtriya Mukta Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indraprastha Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+     {
+      "name": "Indus  Institute of Technology & Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indira Kala Sangeet Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indo Global Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indore Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indore Professional Studies Academy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Indus  University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Infant Jesus College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Informatics and Communication",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute for Development and Research in Banking Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute for Electronic Governance",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Advanced Computer and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Advanced Studies in Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Aeronautical Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Armament Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Engineering and Science IPS Academy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Foreign Trade and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Industrial and Computer Management and Research A.T.S.S. I.I.C.M.R.",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Information Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Management Research and Development",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Management Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Management Studies Career Development and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Management Studies Noida",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Management Studies- Ghaziabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Management Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Management and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Mathematical Sciences - IMSc Chennai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Productivity and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Road and Transport Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Rural Management Anand",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Technology and Science (ITS)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Institute of Technology and Marine Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Integral University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International Institute for Population Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International Institute for Special Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International Institute of Management Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International Management Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International School Of Informatics and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International School of Business and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International School of Business and Media",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International School of Information Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "International School of Management Excellence",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Invertis Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ishwarchand Vidya Sagar Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Islamiah Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Islamic University of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "J.B. Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "J.T. Mahajan College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jay Sriram College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "JIS College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "JM Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "JNTU College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "JSPMs Abacus Institute Of Computer Application",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "JSS Academy of Technical Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "JSS College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jabalpur Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jadavpur University - Jadavpur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jagan Institute of Management Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jagan Nath University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jagannath Institute for Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jagarlamudi Kuppuswamy Chowdary College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jai Narain Vyas University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jai Prakash Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jain University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaipur Engineering College and Research Centre",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaipur Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaipuria Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jamia Hamdard - Delhi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jansons School of Business",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jansons Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jawaharlal Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jawaharlal Nehru Centre for Advanced Scientific Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jawaharlal Nehru Engineering College - JNEC",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jawaharlal Nehru Technological University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jawaharlal Nehru University - JNU Delhi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jawaharlal Nehru Vishvavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaya College of Arts and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaya Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jayam College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jayawant Institute of Computer Applications",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jayawant Shikshan Prasarak Mandal",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jayawantrao Sawant College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaypee Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaypee University of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jaypee University of Engineering & Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jehangirabad Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jeppiaar Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jerusalem College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jind Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jiwaji University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jnana Vikas Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jodhpur Engineering College and Research Centre",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jodhpur Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jorhat Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jyothi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jyothi Nivas College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Jyothishmathi Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K L University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K. J. Somaiya College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K. K. Wagh Institute of Engineering Education and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K. R. School of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K. S. R. College of Technology - Tamilnadu",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K.C. College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KCG College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KGiSL Institute of Information Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KGiSL Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KIIT College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KIIT University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KLE Society College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KLN College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KLN College of Information Technology - KLNCIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KS Institute of Technology - KSIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KSR College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KSRM College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KVM College of Engineering and Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kakatiya Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kakatiya University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kakinada Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kalasalingam University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kalikata Viswavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kalinga Institute of Industrial Technology - Bhubaneshwar",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kalyani Government Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kamala Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kamaraj College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kameshwar Singh Darbhanga Sanskrit University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kamla Nehru Institute of Technology - KNIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kanchi Pallavan Enginnering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kandula Sreenivasa Reddy Memorial College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kannada University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kannur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kanpur Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karnatak University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karnataka State Open University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karpaga Vinayaga College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karpagam Arts and Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karpagam College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karpagam Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karpagam University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Karunya University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kathir College of Engineering - KCE",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kautilya Institute of Technology and Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kavikulguru Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kavikulguru Kalidas Sanskrit Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kedar Nath Ginni Devi Modi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kelkar Education Trust Vinayak Ganesh Vaze College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kerala University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kerala Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Keshav Mahavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Keshav Memorial Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Khadir Mohideen College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Khalsa College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kings College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kings Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K.I.T College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Koneru Lakshmaiah College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kongu Arts and Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kongu Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kongunadu Arts and Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kota Open University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Koti Womens College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Krishna Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Krishna Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Krishnasamy College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kristu Jyothi College of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kumaraguru College of Technology - KCT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kumaun University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kurukshetra University - Haryana",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kuvempu University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "LBS Institute of Technology for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "LBS PG College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "LD College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "LDRP Institute of Technology and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "LJ Institute of Computer Applications - LJMCA",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lady Shriram CC",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lakshmi Narain College of Technology - LNCT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lakshmibai National Institute of Physical Education",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lal Bahadur Shastri Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lala Lajpat Rai Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lalit Narayan Mithila University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Larsen and Toubro Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Late Bhausaheb Hiray S.S.Trusts College of Architecture",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Laxmi Devi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Laxmi Niwas Mittal Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Les Filles MVN Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lokamanya Tilak PG College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lokmanya Tilak College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Lovely Professional University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Loyola College - Chennai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Loyola Institute of Business Administration",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ludhiana College of Engineering and Technology - LCET",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "M. S. Ramaiah Institute of Technology - Bangalore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "M.S. Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MCKV Institute of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MDS University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MEASI Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MES College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MES College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MET Institute of Computer Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MET Institute of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MET Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MGM College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MH Saboo Siddik College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MIT College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MIT School of Telecom and Management Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MITS School of Biotechnology - MSB",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MK Institute of Computer Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MLR Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MLV Textile and Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MRD Arts and E E Laher Kosadia Commerce College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MVSR Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maamallan Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madanapalle Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madha Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madhav Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madhira Institute of Technology and Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madhya Pradesh Bhoj (Open) University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madina Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madras Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Madurai Kamaraj University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Magadh University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Magnus School of Business",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maha College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahakal Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharaj Vijayaram Gajapath Raj College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharaja Agrasen Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharaja Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharaja Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharaja Ranjit Singh College of Professional Sciences - MRS",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharaja Surajmal Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharana Pratap Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharana Pratap University of Agriculture and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharashtra Academy of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharashtra Animal and Fishery Sciences University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharashtra Institute of Technology (MIT)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharashtra University of Health Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharishi Arvind Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharishi Arvind Institute of Science and Management - MAISM",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharishi Mahesh Yogi Vedic Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharshi Dayanand Saraswati University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maharshi Dayanand University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Gandhi Institute of Technology - MGIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Gandhi Kashi Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Gandhi Memorial Medical College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Gandhi University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Jyotiba Phule (MJP) Rohilkhand University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Phule Krishi Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahaveer Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahendra Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maheshwara Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mailam Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Makhanlal Chaturvedi Rashtriya Patrakarita Vishwavidhyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Malankara Catholic College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Malaviya National Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Malla Reddy College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Malla Reddy Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mallabhum Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Malnad College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Malout Institute of Management and Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Management Development Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Management Education and Research Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Manav Rachna College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mandsaur Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mangalmay Institute of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mangalore University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mangalore Institiute of Technology and Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Manipur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Manjara Charitable Trust Rajiv Gandhi Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Manonmaniam Sundaranar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mar Athanasius College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mar Thoma Institute of Information Technology - MIIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Marathwada Institute of Technology Bulandshahr",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Marathwada Krishi Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Marathwada Mitra Mandal College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Marian Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Marine Engineering College - MERI",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Marudhar Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Matrusri Institute of Post Graduate Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maulana Azad College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maulana Azad National Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Maulana Azad National Urdu University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Medicaps Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Meenakshi College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Meenakshi Sundararajan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Meerut Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Meghnad Saha Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mepco Schlenk Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Military College of Telecommunication Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Misrimal Navajee Munoth Jain Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mizoram University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Model Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Model Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Modi Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mody Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mohamed Sathak A.J. College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mohan Lal Sukhadia University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mohandas College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mohanlal Sukhadia University - MLSU",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mona College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Moolji Jaitha College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mother Teresa Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Motilal Nehru National Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mount Carmel College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mudra Institute of Communications",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Muffakham Jah College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mugniram Bangur Memorial Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mukesh Patel School of Technology Management and Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mumbai Educational Trust (MET)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Munnar Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Murshidabad College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mysore Medical College & Research Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NBKR Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NERIST",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NLCPAS Navsari",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NMAM Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NMKRV College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NRI Institute of Information",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NRI Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NTR University of Health Sciences Andhra Pradesh",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nadar Mahajana Sangam S.Vellaichamy Nadar College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nagaland University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nagarjuna College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nagarjuna University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nagpur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nalanda Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nalanda Khula Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nalla Malla Reddy Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nallamuthu Gounder Mahalingam College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nandha Engineering College - Erode",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Narasu Sarathy Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Narayana Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Narendra Deva University of Agriculture and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nargund College of Pharmacy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Narmada College of Computer Application",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Narsee Monjee Institute of Management and Higher Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Narula Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Academy of Legal Studies and Research University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Dairy Research Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Construction Management and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Cooperative Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Design",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Engineering (NIE) Mysore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Fashion Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Industrial Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Mental Health and Neuro Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Pharmaceutical Education and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Calicut (NITC)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Durgapur",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Hamirpur",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Karnataka",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Kurukshetra",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Meghalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Silchar",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Warangal",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology Trichy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Insurance Academy (NIA)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Law Institute University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Law School of India University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "National Law University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nehru College of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nelson Marlborough Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Netaji Subhas Institute of Technology - Delhi",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Netaji Subhas Open University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Netaji Subhash Engineering College - NSEC",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Neville Wadia Institute of Management Studies and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "New Horizon College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nirma Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nirma University of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nishitha College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nishitha PG College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nitte Meenakshi Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nizams Institute of Medical Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Noble Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Noida Institute Of Enginnering And Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Noorul Islam College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nootan Sarva Vidyalaya Sanchalit MCA College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "North Gujarat University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "North Maharashtra University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "North Orissa University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Northwood High School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "North-Eastern Hill University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Northern India Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nova College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "N.S.S College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "O. U. College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Oriental Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Orissa University of Agriculture and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Oxford College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Oxford Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P. A. College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Palakkad Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P. E. S. College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P. S. R. Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P. V. P. Siddhartha Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P.B.R. Visvodaya Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P.C. Jabin Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P.E. Society Modern College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P.E.S. College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "P.G. College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "PDM College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "PRRM Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "PSG College of Arts and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "PSG College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "PSNA College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Paavai Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pachaiyappas College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr. D. Y. Patil Institute of Master of Computer Applications",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr D. Y. Patil Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "BVRIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Padre Conceicao College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pailan College of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pandit Ravishankar Shukla University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pandian Saraswathi yadava Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Panimalar Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Panipat Institute of Textile and Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Panjab University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Park College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Parul Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Patel College Of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Patna University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Peoples Education Society Institute of Technology - PESIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Peoples Educational Soceity School of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Periyar Maniammai College of Technology for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Periyar University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pimpri Chichwad Polytechnic",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pimpri Chinchwad College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Poddard International College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pondicherry Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ponjesly College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Poona College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Poornima College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Poornima Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Postgraduate Institute of Medical Education and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Potti Sreeramulu Telugu University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pragati Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Prakasam Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pranveer Singh Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Prestige Institute of Management Dewas",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Priyadarshini College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pune Institute of Computer Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pune Vidhyarthi Grihas College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Punjab Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Punjab College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Punjab Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Punjab Technical University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Punjab University - Chandigarh",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Punjabi University Neighbourhood Campus",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Punjabi University Patiala",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Pydah Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "QIS College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R. C. Patel Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R. D. Gardi Medical College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R. M. K. Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R. N. S. Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R. V. College of Engineering - Bangalore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R. V. S. College of Arts and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R. V. S. College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "R.P.Sharma Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "RCC Institute of Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "RL Jalappa Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "RMD Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "RV College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "RVR and JC College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rabindra Bharati University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Radha Govind Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Raghu Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Raipur Institute Of Tecnology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Raja College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Raja Mahendra College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajagiri School of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajalakshmi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajarambapu Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajarshi Shahu College Of Engineering - RSCOE",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajasthan Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajasthan College of Engineering For Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajasthan Institute Of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajasthan Sanskrit Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajasthan Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajeev Gandhi Memorial College Of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajeev Gandhi Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajeev Gandhi Technical University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajendra Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajiv Academy For Technology And Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajiv Gandhi Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajiv Gandhi University of Health Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajiv Gandhi University of Knowledge Technologies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rajlalakshmi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ramnarain Ruia College for Arts and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ramrao Adik Institute of Technology - Navi Mumbai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ranchi University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ranganathan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rani Durgavati Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rashtriya Sanskrit Vidyapeetha",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rashtriya Vidyalaya College of Engineering - RVCE",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rayat Institute of Engineering and Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rayat and Bahra Institute of Engineering and Bio-Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Regency Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Regional Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Reva Institute of Technology and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rishiraj Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rizvi College Of Arts",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Roland Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Royal School of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rukmani Devi Institute of Advanced Studies - RDIAS",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rungta College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rural Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rustamji Institute of Technology - RJIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S V Institute of Computer Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S. K. Patel Institute of Management and Computer Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.R.M.S. College of Engineering and Technology - Bareilly",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S. Sukhjinder Singh Engineering and Technology College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.D. Sabha Institute Of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.I.E.S. College of Management Studies (SIESCOMS)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.K.R. Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.P. Chowgule College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.R. Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.V.H. College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.V.K.P And Dr K.S. Raju Arts And Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "S.V.P.M College Of Engineering Malegaon (Bk)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SACS MAVMM Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SASTRA University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SCSVMV",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SCT Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SD College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SDM College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SDP College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SGGS College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SHM Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shobhit University Meerut",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SIBER College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SJM Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SLBS Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SLC Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SN Kansagra School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SNS College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SP Jain Institute of Management and Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SRM Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SRM University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SS Institute of Technology - Hyderabad",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SS Jain Subodh College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SSJ Engineering College - Sri Sai Jyothi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SSM College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SSN College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "ST. Peters Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Thomas College Of Engineering & Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "STJ Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SUS College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SVKP and Dr. Kalidindi Suryanarayana Raju Arts and Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sagi Ramakrishnam Raju Engineering College - SRKR",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sahrdaya College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sai-Sudhir Post Graduate College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sakthi Mariamman Engineering College - SMEC",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sambalpur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sambhram Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sampurnanand Sanskrit Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Samrat Ashok Technological Institute Vidisha - SATI",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sanjay Gandhi Memorial Government Polytechnic",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sanjay Gandhi Postgraduate lnstitute of Medical Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sankalchand Patel College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sankara College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sanketika Vidya Parishad Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sant Gadge Baba Amravati University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sant Longowal Institiute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sapthagiri College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Saranathan College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sardar Patel College of Engineering - Mumbai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sardar Patel Institute of Technology - Mumbai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sardar Vallabhbai Polytechnic College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sardar Vallabhbhai National Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Saroj Mohan Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sarva Vidhyalaya Institute of Computer Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sarvajanik College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sasi Institute of Technology and Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sathyabama Engineering College - Chennai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sathyabama Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sathyabama University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Satpriya Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Saurashtra University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Saveetha Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "School of Planning and Architecture",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Scient Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Seacom Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Seth Rajiv Govind Sable Institute Of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sethu Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shadan College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shadan Womens College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shankara Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shanmuganathan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shanmugha Arts",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shanmugha College of Engineering - Tamilnadu",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shantilal Shah Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sharda University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shekhawati Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shivaji University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shree Rayeshwar Institute of Engineering and IT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shree Sant Muktabai Institute of Technology - SMIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shreemati Nathibai Damodar Thackersey Womens University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Andal Alagar College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Balaji College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Govindram Seksaria Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Guru Gobind Singhji College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Guru Ram Rai Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Hanuman Vyayam Prasarak Mandals College of Engg and Tech",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Jagannath Sanskrit Vishwavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Lal Bahadur Shastri Rashtriya Sanskrit Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Mata Vaishno Devi University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Ram Murti Smarak College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Ramdeobaba Kamla Nehru College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Ramswaroop Memorial College of Engineering and Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Sant Gajanan Maharaja College of Engineering - SSGM",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Vaishnav Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Venkteshwar Institute Of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shri Vishnu Engineering College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shrimad Rajchandra Institute of Management and Computer Application",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Shrinathji Institute of Technology and Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Siddaganga Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Siddharth Institute of Engineering and Technology - SIETK",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Siddhu Kanhu Murmu University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sikkim Manipal University of Health",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sinhgad Academy of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sinhgad College of Engineering - SCOE",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sinhgad Institute of Management and Computer Application",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sinhgad Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sinhgad Technical Educational Society - Pune",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sinhudurg Shikshan Prasarak Mandals College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sipnas College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sir C R Reddy College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sir M. Visvesvaraya Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sir Padampat Singhania University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sir Visvesvaraya Memorial Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Smt Kashibai Navale College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Smt Kasturbai Walchand College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Smt Parvatibai Chowgule College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kamala and Venkappa M. Agadi College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SNDT Women's University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sobhasaria Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sona College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sophia Girls College Ajmer",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sourashtra College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "South Gujarat University - Surat",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "South Travancore Hindu College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sphoorthy Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Chaitanya College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Chitra Tirunal Institute for Medical Sciences and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Dattha Institute of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Narayana Guru Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Sankaracharya University of Sanskrit",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Sastha Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sreenidhi Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sreenivasa Institute of Technology and Management Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Balaji College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Datta College of Engineering and Science - SDITS",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Devi Womens Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Indu College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Jagadguru Balagangadaranath swamiji Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Jagadguru Chandrasekaranathaswamiji Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Jayachamarajendra College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Kaliswari College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Krishna College of Engineering and Technology (SKCET)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Krishnadevaraya University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Manakula Vinayagar Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Muthukumaran Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Padmavati Mahila Viswavidyalayam",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Prakash College of Engineering Tuni",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Ramachandra Medical College and Research Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Ramakrishna Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Ramakrishna Mission Vidyalaya College of Arts and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Ramanujar Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Sarathi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Sathya Sai Institute of Higher Learning",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Shakthi Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Siddhartha Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Sivasubramaniya Nadar College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Vasavi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Venkatesa Perumal College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Venkateswara College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Venkateswara University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Vidyaniketan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Srikalahasteeswara Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Srimad Andavan Arts and Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Srinivas Institute of Technology-Mangalore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Srinivasa Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Srinivasan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sriram Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St Anns College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St Josephs College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St Patricks PG College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St Stephen",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Francis Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Johns College of Engineering and Techonology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Josephs College (Autonomous) - Tiruchirappalli",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Margaret Engineering College - Neemrana",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Martins Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Marys Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Theressa Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Vincent Pallotti College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St. Xaviers College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "St.Xaviers Catholic College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SAINTGITS COLLEGE OF ENGINEERING",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Stani Memorial College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sudharsan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sushila Devi Bansal College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swami Keshvanand Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swami Parmanand College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swami Ramanand Teerth Marathwada University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swami Ramananda Tirtha Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swami Sachchidanand Polytechnic College Visnagar",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swami Sahajanand College of Commerce And Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swami Vivekananda PG College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Swarnandhra College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Symbiosis",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "T.K.M. College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "TERI School of Advanced Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "TRR College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Techno India Salt Lake",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "TRUBA Institute of Engineering and Information Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tagore Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tamil Nadu Agricultural University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tamil Nadu Doctor Ambedkar Law University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tamil Nadu Doctor M.G.R. Medical University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tamil Nadu Veterinary and Animal Sciences University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tamil University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tamilnadu College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tata Institute of Fundamental Research - TIFR Mumbai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tata Institute of Social Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tatysaheb Kore Institute of Engineering and Technology - Warana",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Technocrats Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Technological Institute Of Textile and Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Techno India College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Teerthanker Mahaveer Institute of Management and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tezpur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thadomal Shahani Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thakral College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thakur College Of Engeneering And Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thangal Kunju Musaliar College of Engineering - TKM",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thangavelu College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thapar Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "The American College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "The Heritage Academy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "The Maharaja Sayajirao University of Baroda",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Theegala Krishna Reddy College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thiagarajar College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Thiagarajar School of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tilak Maharashtra Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tilka Manjhi Bhagalpur University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Toc-H Institute of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Tripura University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "U. V. Patel College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ujjain Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Union Christian College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "United College of Engineering & Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "United Institute of Technology - UIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University Institute of Computer Science and Applications",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University Institute of Engineering and Technology - UIET",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University Institute of Technology Barkatullah University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "UIT RGPV",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University Visvesvaraya College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Agricultural Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Burdwan",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Calcutta",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Calicut",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Jammu",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Kalyani",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Kashmir",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Kerela",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Lucknow",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Madras",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Mumbai",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Mysore",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of North Bengal",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Petroleum and Energy Studies - UPES",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Pune",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Rajasthan",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Roorkee - UP",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "University of Vishweshwariya College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Utkal Sanskruti Viswavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Utkal University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Uttam Devi Mohan Lal College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Uttar Banga Krishni Viswavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Uttar Maharashtra Vidyapeeth",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Uttar Pradesh Rajarshi Tandon Open University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Uttar Pradesh Technical University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Uttaranchal Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "V. H. N. Senthikumaranadar College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "V. L. B. Janakiammal College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "V. S. Patel College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "V.B.S Purvanchal University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "V.S.M. College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "VEL TECH MULTI TECH Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "VHNSN College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "VIF College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "VR Siddhartha Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "VRS College of Engineering and Technology - VRSCET",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "VVV College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vaagdevi Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Valliammai Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "VNRVJIET",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vardhaman College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vasavi College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Veer Kunwar Singh University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Veer Narmad South Gujarat University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Veer Surendra Sai University Of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Veermata Jijabai Technological Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vel Tech High Tech Dr.Rangarajan Dr.Sakunthala Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Velammal College of Management and Computer Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Velammal Engineering College - VEC",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vellalar College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vellore Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vellore Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vemana Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vickram College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vidya Academy of Science and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vidya Bhawan Rural Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vidya Jyothi Institute of technology - VJIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vidya Pratishthan College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vidyalankar Institute Of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vidyalankar Polytechnic",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vidyasagar Viswavidyalaya",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vignan Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vignans Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vignana Jyothi College Of Engineering And Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vijetha Degree College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vikasa Engineering Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vikram University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Villa Marie P. G. College For Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vimal Jyothi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vinayaka Missions Research Foundation - University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vinoba Bhave University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vishwakarma Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Visva-Bharati",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Visvesvaraya National Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Visvesvaraya Technological University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Visveswaraiah Technological University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Viswajyothi College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekanand Education Society Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekanand Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekananda College of Computer Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekanandha Institute of Engineering and Technology for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekanandha College of Technology for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekananda Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekananda Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Vivekananda School of Post Graduate Studies",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Walchand College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "West Bengal National University of Juridical Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "West Bengal University of Animal and Fishery Sciences",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "West Bengal University of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Womens College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "XLRI Jamshedpur Business School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Xavier Institute of Management",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Xavier Institute of Social Service",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Yagyavalkya Institute of Technology - YIT",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Yashwantrao Chavan Maharashtra Open University",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Yeahwantro Chavan College Of Engineering (YCCE)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Zakir Hussain College of Engg & Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Velalar College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Eshwar College Of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "PSG Institute Of Technology and Applied Research",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahendra Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Knowledge Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SEAGI",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Vidyanikethan Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Gayatri Vidya Parishad College of Engineering for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KIT - Kalaignar Karunanidhi Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Info Institute of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KPR Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Sairam Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dr.NGP Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "PSGR Krishnammal College for Women",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Central Institute of Plastic Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Akshaya College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Sakthi Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Muthoot Institute of Technology and Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Ramco Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Dhirajlal Gandhi College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Velammal College Of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "TRP Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nandha College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "MIET Engineering College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Christ College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "K. Ramakrishnan College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Ramakrishna Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sree Chitra Thirunal College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Galaxy Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "JCT College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Krishna College of Technology (SKCT)",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Daiata Madhusudhana Sastry Sri Venkateswara Hindu College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CMF College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "CMS College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Kongunadu Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Bharathi Matriculation Higher Secondary School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Mahatma Gandhi Medical College & Research Institute",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SSS Film Academy",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Rathinam College of Arts",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SSN Institute of Engineering & Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Sri Guru Institute of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Suguna PIP School",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nehru College of Aeronautics & Applied Science",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SVS College of Engineering",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "KAP Viswanatham Government Medical College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SSM Institute of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "NGM Arts & Science College",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "SNS College of Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "RVS College of Engineering and Technology",
+      "category": "All India (Community List)"
+    },
+    {
+      "name": "Nehru Institute Of Engineering & Technology",
+      "category": "All India (Community List)"
+    }
+  ]
+}

@@ -1,0 +1,863 @@
+{
+  "meta": {
+    "description": "PathPilot role library with required skills, tools, advanced skills, Indian salary (LPA), and a per-role roadmap where every skill has a relevant learning video.",
+    "totalRoles": 41,
+    "totalCategories": 6,
+    "howToUse": "When a user picks a target role, use role.roadmap directly. Check role.tools against resume text to see which tools the candidate has/misses."
+  },
+  "categories": [
+    "Computer and Mathematical",
+    "Architecture and Engineering",
+    "Business and Financial Operations",
+    "Management",
+    "Arts, Design, Entertainment, Sports, and Media",
+    "Office and Administrative Support"
+  ],
+  "roles": [
+    {
+      "title": "Full Stack Developer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB", "SQL", "REST APIs", "Git"],
+      "tools": ["VS Code", "Postman", "GitHub", "npm"],
+      "advancedSkills": ["TypeScript", "Docker", "System Design", "AWS"],
+      "salaryLPA": { "min": 6, "max": 12 },
+      "roadmap": [
+        { "skill": "HTML", "video": "https://www.youtube.com/watch?v=kUMe1FH4CHE" },
+        { "skill": "CSS", "video": "https://www.youtube.com/watch?v=OXGznpKZ_sA" },
+        { "skill": "JavaScript", "video": "https://www.youtube.com/watch?v=PkZNo7MFNFg" },
+        { "skill": "React", "video": "https://www.youtube.com/watch?v=bMknfKXIFA8" },
+        { "skill": "Node.js", "video": "https://www.youtube.com/watch?v=Oe421EPjeBE" },
+        { "skill": "Express", "video": "https://www.youtube.com/watch?v=SccSCuHhOw0" },
+        { "skill": "MongoDB", "video": "https://www.youtube.com/watch?v=ofme2o29ngU" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "REST APIs", "video": "https://www.youtube.com/watch?v=lsMQRaeKNDk" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "VS Code", "video": "https://www.youtube.com/results?search_query=VS%20Code%20full%20course%20tutorial" },
+        { "skill": "Postman", "video": "https://www.youtube.com/results?search_query=Postman%20full%20course%20tutorial" },
+        { "skill": "GitHub", "video": "https://www.youtube.com/results?search_query=GitHub%20full%20course%20tutorial" },
+        { "skill": "npm", "video": "https://www.youtube.com/results?search_query=npm%20full%20course%20tutorial" },
+        { "skill": "TypeScript", "video": "https://www.youtube.com/watch?v=gp5H0Vw39yw" },
+        { "skill": "Docker", "video": "https://www.youtube.com/watch?v=3c-iBn73dDE" },
+        { "skill": "System Design", "video": "https://www.youtube.com/watch?v=bUHFg8CZFws" },
+        { "skill": "AWS", "video": "https://www.youtube.com/watch?v=ulprqHHWlng" }
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "React", "Git", "Responsive Design"],
+      "tools": ["VS Code", "Figma", "Chrome DevTools", "GitHub"],
+      "advancedSkills": ["TypeScript", "Testing", "Next.js", "Accessibility"],
+      "salaryLPA": { "min": 4, "max": 9 },
+      "roadmap": [
+        { "skill": "HTML", "video": "https://www.youtube.com/watch?v=kUMe1FH4CHE" },
+        { "skill": "CSS", "video": "https://www.youtube.com/watch?v=OXGznpKZ_sA" },
+        { "skill": "JavaScript", "video": "https://www.youtube.com/watch?v=PkZNo7MFNFg" },
+        { "skill": "React", "video": "https://www.youtube.com/watch?v=bMknfKXIFA8" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Responsive Design", "video": "https://www.youtube.com/results?search_query=Responsive%20Design%20full%20course%20tutorial" },
+        { "skill": "VS Code", "video": "https://www.youtube.com/results?search_query=VS%20Code%20full%20course%20tutorial" },
+        { "skill": "Figma", "video": "https://www.youtube.com/watch?v=FTFaQWZBqQ8" },
+        { "skill": "Chrome DevTools", "video": "https://www.youtube.com/results?search_query=Chrome%20DevTools%20full%20course%20tutorial" },
+        { "skill": "GitHub", "video": "https://www.youtube.com/results?search_query=GitHub%20full%20course%20tutorial" },
+        { "skill": "TypeScript", "video": "https://www.youtube.com/watch?v=gp5H0Vw39yw" },
+        { "skill": "Testing", "video": "https://www.youtube.com/watch?v=r9HdJ8P6GQI" },
+        { "skill": "Next.js", "video": "https://www.youtube.com/results?search_query=Next.js%20full%20course%20tutorial" },
+        { "skill": "Accessibility", "video": "https://www.youtube.com/results?search_query=Accessibility%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Backend Developer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Node.js", "Express", "SQL", "MongoDB", "REST APIs", "Git"],
+      "tools": ["Postman", "Docker", "GitHub", "MongoDB Compass"],
+      "advancedSkills": ["System Design", "Caching", "Microservices", "Redis"],
+      "salaryLPA": { "min": 5, "max": 10 },
+      "roadmap": [
+        { "skill": "Node.js", "video": "https://www.youtube.com/watch?v=Oe421EPjeBE" },
+        { "skill": "Express", "video": "https://www.youtube.com/watch?v=SccSCuHhOw0" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "MongoDB", "video": "https://www.youtube.com/watch?v=ofme2o29ngU" },
+        { "skill": "REST APIs", "video": "https://www.youtube.com/watch?v=lsMQRaeKNDk" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Postman", "video": "https://www.youtube.com/results?search_query=Postman%20full%20course%20tutorial" },
+        { "skill": "Docker", "video": "https://www.youtube.com/watch?v=3c-iBn73dDE" },
+        { "skill": "GitHub", "video": "https://www.youtube.com/results?search_query=GitHub%20full%20course%20tutorial" },
+        { "skill": "MongoDB Compass", "video": "https://www.youtube.com/results?search_query=MongoDB%20Compass%20full%20course%20tutorial" },
+        { "skill": "System Design", "video": "https://www.youtube.com/watch?v=bUHFg8CZFws" },
+        { "skill": "Caching", "video": "https://www.youtube.com/results?search_query=Caching%20full%20course%20tutorial" },
+        { "skill": "Microservices", "video": "https://www.youtube.com/results?search_query=Microservices%20full%20course%20tutorial" },
+        { "skill": "Redis", "video": "https://www.youtube.com/results?search_query=Redis%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Data Analyst",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Excel", "SQL", "Statistics", "Data Visualization", "Python"],
+      "tools": ["Power BI", "Tableau", "Excel", "Jupyter"],
+      "advancedSkills": ["Pandas", "A/B Testing", "Advanced SQL"],
+      "salaryLPA": { "min": 4, "max": 9 },
+      "roadmap": [
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Statistics", "video": "https://www.youtube.com/watch?v=xxpc-HPKN28" },
+        { "skill": "Data Visualization", "video": "https://www.youtube.com/watch?v=a9UrKTVEeZA" },
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" },
+        { "skill": "Power BI", "video": "https://www.youtube.com/watch?v=AGrl-H87pRU" },
+        { "skill": "Tableau", "video": "https://www.youtube.com/watch?v=aHaOIvR00So" },
+        { "skill": "Jupyter", "video": "https://www.youtube.com/results?search_query=Jupyter%20full%20course%20tutorial" },
+        { "skill": "Pandas", "video": "https://www.youtube.com/watch?v=vmEHCJofslg" },
+        { "skill": "A/B Testing", "video": "https://www.youtube.com/results?search_query=A%2FB%20Testing%20full%20course%20tutorial" },
+        { "skill": "Advanced SQL", "video": "https://www.youtube.com/results?search_query=Advanced%20SQL%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Data Scientist",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Python", "SQL", "Statistics", "Machine Learning", "Pandas", "NumPy"],
+      "tools": ["Jupyter", "scikit-learn", "Git", "Anaconda"],
+      "advancedSkills": ["Deep Learning", "MLOps", "Big Data", "Cloud"],
+      "salaryLPA": { "min": 8, "max": 16 },
+      "roadmap": [
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Statistics", "video": "https://www.youtube.com/watch?v=xxpc-HPKN28" },
+        { "skill": "Machine Learning", "video": "https://www.youtube.com/watch?v=NWONeJKn6kc" },
+        { "skill": "Pandas", "video": "https://www.youtube.com/watch?v=vmEHCJofslg" },
+        { "skill": "NumPy", "video": "https://www.youtube.com/watch?v=QUT1VHiLmmI" },
+        { "skill": "Jupyter", "video": "https://www.youtube.com/results?search_query=Jupyter%20full%20course%20tutorial" },
+        { "skill": "scikit-learn", "video": "https://www.youtube.com/watch?v=0Lt9w-BxKFQ" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Anaconda", "video": "https://www.youtube.com/results?search_query=Anaconda%20full%20course%20tutorial" },
+        { "skill": "Deep Learning", "video": "https://www.youtube.com/watch?v=VyWAvY2CF9c" },
+        { "skill": "MLOps", "video": "https://www.youtube.com/results?search_query=MLOps%20full%20course%20tutorial" },
+        { "skill": "Big Data", "video": "https://www.youtube.com/results?search_query=Big%20Data%20full%20course%20tutorial" },
+        { "skill": "Cloud", "video": "https://www.youtube.com/results?search_query=Cloud%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Python", "Machine Learning", "TensorFlow", "PyTorch", "SQL", "Statistics"],
+      "tools": ["Jupyter", "Docker", "Git", "MLflow"],
+      "advancedSkills": ["MLOps", "Kubernetes", "Model Deployment"],
+      "salaryLPA": { "min": 8, "max": 18 },
+      "roadmap": [
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" },
+        { "skill": "Machine Learning", "video": "https://www.youtube.com/watch?v=NWONeJKn6kc" },
+        { "skill": "TensorFlow", "video": "https://www.youtube.com/watch?v=tPYj3fFJGjk" },
+        { "skill": "PyTorch", "video": "https://www.youtube.com/watch?v=V_xro1bcAuA" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Statistics", "video": "https://www.youtube.com/watch?v=xxpc-HPKN28" },
+        { "skill": "Jupyter", "video": "https://www.youtube.com/results?search_query=Jupyter%20full%20course%20tutorial" },
+        { "skill": "Docker", "video": "https://www.youtube.com/watch?v=3c-iBn73dDE" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "MLflow", "video": "https://www.youtube.com/results?search_query=MLflow%20full%20course%20tutorial" },
+        { "skill": "MLOps", "video": "https://www.youtube.com/results?search_query=MLOps%20full%20course%20tutorial" },
+        { "skill": "Kubernetes", "video": "https://www.youtube.com/watch?v=X48VuDVv0do" },
+        { "skill": "Model Deployment", "video": "https://www.youtube.com/results?search_query=Model%20Deployment%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "AI Engineer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Python", "Deep Learning", "NLP", "PyTorch", "REST APIs"],
+      "tools": ["Hugging Face", "LangChain", "Git", "Docker"],
+      "advancedSkills": ["Vector Databases", "RAG", "Prompt Engineering", "MLOps"],
+      "salaryLPA": { "min": 9, "max": 20 },
+      "roadmap": [
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" },
+        { "skill": "Deep Learning", "video": "https://www.youtube.com/watch?v=VyWAvY2CF9c" },
+        { "skill": "NLP", "video": "https://www.youtube.com/watch?v=X2vAabgKiuM" },
+        { "skill": "PyTorch", "video": "https://www.youtube.com/watch?v=V_xro1bcAuA" },
+        { "skill": "REST APIs", "video": "https://www.youtube.com/watch?v=lsMQRaeKNDk" },
+        { "skill": "Hugging Face", "video": "https://www.youtube.com/results?search_query=Hugging%20Face%20full%20course%20tutorial" },
+        { "skill": "LangChain", "video": "https://www.youtube.com/results?search_query=LangChain%20full%20course%20tutorial" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Docker", "video": "https://www.youtube.com/watch?v=3c-iBn73dDE" },
+        { "skill": "Vector Databases", "video": "https://www.youtube.com/results?search_query=Vector%20Databases%20full%20course%20tutorial" },
+        { "skill": "RAG", "video": "https://www.youtube.com/results?search_query=RAG%20full%20course%20tutorial" },
+        { "skill": "Prompt Engineering", "video": "https://www.youtube.com/results?search_query=Prompt%20Engineering%20full%20course%20tutorial" },
+        { "skill": "MLOps", "video": "https://www.youtube.com/results?search_query=MLOps%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Data Engineer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Python", "SQL", "ETL", "Spark", "Data Visualization"],
+      "tools": ["Airflow", "Kafka", "dbt", "AWS"],
+      "advancedSkills": ["Data Warehousing", "Cloud", "Streaming"],
+      "salaryLPA": { "min": 6, "max": 14 },
+      "roadmap": [
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "ETL", "video": "https://www.youtube.com/watch?v=OW5OgsLpDCQ" },
+        { "skill": "Spark", "video": "https://www.youtube.com/watch?v=_C8kWso4ne4" },
+        { "skill": "Data Visualization", "video": "https://www.youtube.com/watch?v=a9UrKTVEeZA" },
+        { "skill": "Airflow", "video": "https://www.youtube.com/results?search_query=Airflow%20full%20course%20tutorial" },
+        { "skill": "Kafka", "video": "https://www.youtube.com/results?search_query=Kafka%20full%20course%20tutorial" },
+        { "skill": "dbt", "video": "https://www.youtube.com/results?search_query=dbt%20full%20course%20tutorial" },
+        { "skill": "AWS", "video": "https://www.youtube.com/watch?v=ulprqHHWlng" },
+        { "skill": "Data Warehousing", "video": "https://www.youtube.com/results?search_query=Data%20Warehousing%20full%20course%20tutorial" },
+        { "skill": "Cloud", "video": "https://www.youtube.com/results?search_query=Cloud%20full%20course%20tutorial" },
+        { "skill": "Streaming", "video": "https://www.youtube.com/results?search_query=Streaming%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Linux", "Docker", "CI/CD", "Git", "Bash"],
+      "tools": ["Jenkins", "Docker", "GitHub Actions", "Terraform"],
+      "advancedSkills": ["Kubernetes", "AWS", "Monitoring", "Ansible"],
+      "salaryLPA": { "min": 6, "max": 14 },
+      "roadmap": [
+        { "skill": "Linux", "video": "https://www.youtube.com/watch?v=sWbUDq4S6Y8" },
+        { "skill": "Docker", "video": "https://www.youtube.com/watch?v=3c-iBn73dDE" },
+        { "skill": "CI/CD", "video": "https://www.youtube.com/watch?v=scEDHsr3APg" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Bash", "video": "https://www.youtube.com/watch?v=tK9Oc6AEnR4" },
+        { "skill": "Jenkins", "video": "https://www.youtube.com/results?search_query=Jenkins%20full%20course%20tutorial" },
+        { "skill": "GitHub Actions", "video": "https://www.youtube.com/results?search_query=GitHub%20Actions%20full%20course%20tutorial" },
+        { "skill": "Terraform", "video": "https://www.youtube.com/watch?v=SLB_c_ayRMo" },
+        { "skill": "Kubernetes", "video": "https://www.youtube.com/watch?v=X48VuDVv0do" },
+        { "skill": "AWS", "video": "https://www.youtube.com/watch?v=ulprqHHWlng" },
+        { "skill": "Monitoring", "video": "https://www.youtube.com/results?search_query=Monitoring%20full%20course%20tutorial" },
+        { "skill": "Ansible", "video": "https://www.youtube.com/results?search_query=Ansible%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Cloud Engineer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["AWS", "Linux", "Networking", "Docker"],
+      "tools": ["AWS Console", "Terraform", "Docker", "CloudWatch"],
+      "advancedSkills": ["Kubernetes", "Serverless", "Security"],
+      "salaryLPA": { "min": 7, "max": 16 },
+      "roadmap": [
+        { "skill": "AWS", "video": "https://www.youtube.com/watch?v=ulprqHHWlng" },
+        { "skill": "Linux", "video": "https://www.youtube.com/watch?v=sWbUDq4S6Y8" },
+        { "skill": "Networking", "video": "https://www.youtube.com/watch?v=qiQR5rTSshw" },
+        { "skill": "Docker", "video": "https://www.youtube.com/watch?v=3c-iBn73dDE" },
+        { "skill": "AWS Console", "video": "https://www.youtube.com/results?search_query=AWS%20Console%20full%20course%20tutorial" },
+        { "skill": "Terraform", "video": "https://www.youtube.com/watch?v=SLB_c_ayRMo" },
+        { "skill": "CloudWatch", "video": "https://www.youtube.com/results?search_query=CloudWatch%20full%20course%20tutorial" },
+        { "skill": "Kubernetes", "video": "https://www.youtube.com/watch?v=X48VuDVv0do" },
+        { "skill": "Serverless", "video": "https://www.youtube.com/results?search_query=Serverless%20full%20course%20tutorial" },
+        { "skill": "Security", "video": "https://www.youtube.com/results?search_query=Security%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "QA / Test Engineer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Testing", "SQL", "Git"],
+      "tools": ["Selenium", "Postman", "JIRA", "Cypress"],
+      "advancedSkills": ["Automation Testing", "API Testing", "CI/CD"],
+      "salaryLPA": { "min": 3, "max": 8 },
+      "roadmap": [
+        { "skill": "Testing", "video": "https://www.youtube.com/watch?v=r9HdJ8P6GQI" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Selenium", "video": "https://www.youtube.com/results?search_query=Selenium%20full%20course%20tutorial" },
+        { "skill": "Postman", "video": "https://www.youtube.com/results?search_query=Postman%20full%20course%20tutorial" },
+        { "skill": "JIRA", "video": "https://www.youtube.com/results?search_query=JIRA%20full%20course%20tutorial" },
+        { "skill": "Cypress", "video": "https://www.youtube.com/results?search_query=Cypress%20full%20course%20tutorial" },
+        { "skill": "Automation Testing", "video": "https://www.youtube.com/results?search_query=Automation%20Testing%20full%20course%20tutorial" },
+        { "skill": "API Testing", "video": "https://www.youtube.com/results?search_query=API%20Testing%20full%20course%20tutorial" },
+        { "skill": "CI/CD", "video": "https://www.youtube.com/watch?v=scEDHsr3APg" }
+      ]
+    },
+    {
+      "title": "Database Administrator",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["SQL", "Linux"],
+      "tools": ["MySQL", "PostgreSQL", "MongoDB", "pgAdmin"],
+      "advancedSkills": ["Replication", "Performance Tuning", "NoSQL"],
+      "salaryLPA": { "min": 5, "max": 12 },
+      "roadmap": [
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Linux", "video": "https://www.youtube.com/watch?v=sWbUDq4S6Y8" },
+        { "skill": "MySQL", "video": "https://www.youtube.com/results?search_query=MySQL%20full%20course%20tutorial" },
+        { "skill": "PostgreSQL", "video": "https://www.youtube.com/results?search_query=PostgreSQL%20full%20course%20tutorial" },
+        { "skill": "MongoDB", "video": "https://www.youtube.com/watch?v=ofme2o29ngU" },
+        { "skill": "pgAdmin", "video": "https://www.youtube.com/results?search_query=pgAdmin%20full%20course%20tutorial" },
+        { "skill": "Replication", "video": "https://www.youtube.com/results?search_query=Replication%20full%20course%20tutorial" },
+        { "skill": "Performance Tuning", "video": "https://www.youtube.com/results?search_query=Performance%20Tuning%20full%20course%20tutorial" },
+        { "skill": "NoSQL", "video": "https://www.youtube.com/results?search_query=NoSQL%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Mobile App Developer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Java", "REST APIs", "Git", "UI Design"],
+      "tools": ["Android Studio", "Firebase", "GitHub"],
+      "advancedSkills": ["Kotlin", "React Native", "Flutter", "CI/CD"],
+      "salaryLPA": { "min": 4, "max": 10 },
+      "roadmap": [
+        { "skill": "Java", "video": "https://www.youtube.com/watch?v=grEKMHGYyns" },
+        { "skill": "REST APIs", "video": "https://www.youtube.com/watch?v=lsMQRaeKNDk" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "UI Design", "video": "https://www.youtube.com/watch?v=c9Wg6Cb_YlU" },
+        { "skill": "Android Studio", "video": "https://www.youtube.com/results?search_query=Android%20Studio%20full%20course%20tutorial" },
+        { "skill": "Firebase", "video": "https://www.youtube.com/results?search_query=Firebase%20full%20course%20tutorial" },
+        { "skill": "GitHub", "video": "https://www.youtube.com/results?search_query=GitHub%20full%20course%20tutorial" },
+        { "skill": "Kotlin", "video": "https://www.youtube.com/results?search_query=Kotlin%20full%20course%20tutorial" },
+        { "skill": "React Native", "video": "https://www.youtube.com/results?search_query=React%20Native%20full%20course%20tutorial" },
+        { "skill": "Flutter", "video": "https://www.youtube.com/results?search_query=Flutter%20full%20course%20tutorial" },
+        { "skill": "CI/CD", "video": "https://www.youtube.com/watch?v=scEDHsr3APg" }
+      ]
+    },
+    {
+      "title": "Software Architect",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["System Design", "REST APIs", "Docker"],
+      "tools": ["Draw.io", "Docker", "AWS", "Git"],
+      "advancedSkills": ["Microservices", "Design Patterns", "Scalability"],
+      "salaryLPA": { "min": 15, "max": 35 },
+      "roadmap": [
+        { "skill": "System Design", "video": "https://www.youtube.com/watch?v=bUHFg8CZFws" },
+        { "skill": "REST APIs", "video": "https://www.youtube.com/watch?v=lsMQRaeKNDk" },
+        { "skill": "Docker", "video": "https://www.youtube.com/watch?v=3c-iBn73dDE" },
+        { "skill": "Draw.io", "video": "https://www.youtube.com/results?search_query=Draw.io%20full%20course%20tutorial" },
+        { "skill": "AWS", "video": "https://www.youtube.com/watch?v=ulprqHHWlng" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Microservices", "video": "https://www.youtube.com/results?search_query=Microservices%20full%20course%20tutorial" },
+        { "skill": "Design Patterns", "video": "https://www.youtube.com/results?search_query=Design%20Patterns%20full%20course%20tutorial" },
+        { "skill": "Scalability", "video": "https://www.youtube.com/results?search_query=Scalability%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Game Developer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["C++", "Machine Learning"],
+      "tools": ["Unity", "Unreal Engine", "Git", "Blender"],
+      "advancedSkills": ["Shaders", "Multiplayer", "Optimization"],
+      "salaryLPA": { "min": 4, "max": 12 },
+      "roadmap": [
+        { "skill": "C++", "video": "https://www.youtube.com/watch?v=vLnPwxZdW4Y" },
+        { "skill": "Machine Learning", "video": "https://www.youtube.com/watch?v=NWONeJKn6kc" },
+        { "skill": "Unity", "video": "https://www.youtube.com/results?search_query=Unity%20full%20course%20tutorial" },
+        { "skill": "Unreal Engine", "video": "https://www.youtube.com/results?search_query=Unreal%20Engine%20full%20course%20tutorial" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "Blender", "video": "https://www.youtube.com/results?search_query=Blender%20full%20course%20tutorial" },
+        { "skill": "Shaders", "video": "https://www.youtube.com/results?search_query=Shaders%20full%20course%20tutorial" },
+        { "skill": "Multiplayer", "video": "https://www.youtube.com/results?search_query=Multiplayer%20full%20course%20tutorial" },
+        { "skill": "Optimization", "video": "https://www.youtube.com/results?search_query=Optimization%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Blockchain Developer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["JavaScript", "REST APIs"],
+      "tools": ["Solidity", "Hardhat", "MetaMask", "Remix"],
+      "advancedSkills": ["Smart Contracts", "Web3", "Security Auditing"],
+      "salaryLPA": { "min": 6, "max": 16 },
+      "roadmap": [
+        { "skill": "JavaScript", "video": "https://www.youtube.com/watch?v=PkZNo7MFNFg" },
+        { "skill": "REST APIs", "video": "https://www.youtube.com/watch?v=lsMQRaeKNDk" },
+        { "skill": "Solidity", "video": "https://www.youtube.com/results?search_query=Solidity%20full%20course%20tutorial" },
+        { "skill": "Hardhat", "video": "https://www.youtube.com/results?search_query=Hardhat%20full%20course%20tutorial" },
+        { "skill": "MetaMask", "video": "https://www.youtube.com/results?search_query=MetaMask%20full%20course%20tutorial" },
+        { "skill": "Remix", "video": "https://www.youtube.com/results?search_query=Remix%20full%20course%20tutorial" },
+        { "skill": "Smart Contracts", "video": "https://www.youtube.com/results?search_query=Smart%20Contracts%20full%20course%20tutorial" },
+        { "skill": "Web3", "video": "https://www.youtube.com/results?search_query=Web3%20full%20course%20tutorial" },
+        { "skill": "Security Auditing", "video": "https://www.youtube.com/results?search_query=Security%20Auditing%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["HTML", "CSS", "JavaScript", "Git"],
+      "tools": ["VS Code", "GitHub", "Chrome DevTools"],
+      "advancedSkills": ["React", "Node.js", "Responsive Design"],
+      "salaryLPA": { "min": 3, "max": 8 },
+      "roadmap": [
+        { "skill": "HTML", "video": "https://www.youtube.com/watch?v=kUMe1FH4CHE" },
+        { "skill": "CSS", "video": "https://www.youtube.com/watch?v=OXGznpKZ_sA" },
+        { "skill": "JavaScript", "video": "https://www.youtube.com/watch?v=PkZNo7MFNFg" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "VS Code", "video": "https://www.youtube.com/results?search_query=VS%20Code%20full%20course%20tutorial" },
+        { "skill": "GitHub", "video": "https://www.youtube.com/results?search_query=GitHub%20full%20course%20tutorial" },
+        { "skill": "Chrome DevTools", "video": "https://www.youtube.com/results?search_query=Chrome%20DevTools%20full%20course%20tutorial" },
+        { "skill": "React", "video": "https://www.youtube.com/watch?v=bMknfKXIFA8" },
+        { "skill": "Node.js", "video": "https://www.youtube.com/watch?v=Oe421EPjeBE" },
+        { "skill": "Responsive Design", "video": "https://www.youtube.com/results?search_query=Responsive%20Design%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Business Intelligence Analyst",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["SQL", "Data Visualization", "Excel", "Statistics"],
+      "tools": ["Power BI", "Tableau", "Excel"],
+      "advancedSkills": ["Data Modeling", "DAX", "ETL"],
+      "salaryLPA": { "min": 5, "max": 12 },
+      "roadmap": [
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Data Visualization", "video": "https://www.youtube.com/watch?v=a9UrKTVEeZA" },
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "Statistics", "video": "https://www.youtube.com/watch?v=xxpc-HPKN28" },
+        { "skill": "Power BI", "video": "https://www.youtube.com/watch?v=AGrl-H87pRU" },
+        { "skill": "Tableau", "video": "https://www.youtube.com/watch?v=aHaOIvR00So" },
+        { "skill": "Data Modeling", "video": "https://www.youtube.com/results?search_query=Data%20Modeling%20full%20course%20tutorial" },
+        { "skill": "DAX", "video": "https://www.youtube.com/results?search_query=DAX%20full%20course%20tutorial" },
+        { "skill": "ETL", "video": "https://www.youtube.com/watch?v=OW5OgsLpDCQ" }
+      ]
+    },
+    {
+      "title": "Statistician",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Statistics", "R", "Python"],
+      "tools": ["R Studio", "SPSS", "Excel"],
+      "advancedSkills": ["Bayesian Methods", "Machine Learning"],
+      "salaryLPA": { "min": 5, "max": 12 },
+      "roadmap": [
+        { "skill": "Statistics", "video": "https://www.youtube.com/watch?v=xxpc-HPKN28" },
+        { "skill": "R", "video": "https://www.youtube.com/watch?v=_V8eKsto3Ug" },
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" },
+        { "skill": "R Studio", "video": "https://www.youtube.com/results?search_query=R%20Studio%20full%20course%20tutorial" },
+        { "skill": "SPSS", "video": "https://www.youtube.com/results?search_query=SPSS%20full%20course%20tutorial" },
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "Bayesian Methods", "video": "https://www.youtube.com/results?search_query=Bayesian%20Methods%20full%20course%20tutorial" },
+        { "skill": "Machine Learning", "video": "https://www.youtube.com/watch?v=NWONeJKn6kc" }
+      ]
+    },
+    {
+      "title": "VAPT Analyst / Penetration Tester",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Networking", "Linux", "Kali Linux", "OWASP Top 10", "Security Fundamentals"],
+      "tools": ["Nmap", "Metasploit", "Burp Suite", "Nuclei", "Wireshark"],
+      "advancedSkills": ["Report Writing", "Web App Security", "OSCP", "Active Directory"],
+      "salaryLPA": { "min": 6, "max": 14 },
+      "roadmap": [
+        { "skill": "Networking", "video": "https://www.youtube.com/watch?v=qiQR5rTSshw" },
+        { "skill": "Linux", "video": "https://www.youtube.com/watch?v=sWbUDq4S6Y8" },
+        { "skill": "Kali Linux", "video": "https://www.youtube.com/watch?v=lZAoFs75_cs" },
+        { "skill": "OWASP Top 10", "video": "https://www.youtube.com/watch?v=avfKI-fj5CU" },
+        { "skill": "Security Fundamentals", "video": "https://www.youtube.com/watch?v=U_P23SqJaDc" },
+        { "skill": "Nmap", "video": "https://www.youtube.com/watch?v=4t4kBkMsDbQ" },
+        { "skill": "Metasploit", "video": "https://www.youtube.com/watch?v=8lR27r8Y_ik" },
+        { "skill": "Burp Suite", "video": "https://www.youtube.com/watch?v=G3hpAeoZ4ek" },
+        { "skill": "Nuclei", "video": "https://www.youtube.com/watch?v=b5qMyQvL1ZA" },
+        { "skill": "Wireshark", "video": "https://www.youtube.com/watch?v=TkCSr30UojM" },
+        { "skill": "Report Writing", "video": "https://www.youtube.com/results?search_query=Report%20Writing%20full%20course%20tutorial" },
+        { "skill": "Web App Security", "video": "https://www.youtube.com/results?search_query=Web%20App%20Security%20full%20course%20tutorial" },
+        { "skill": "OSCP", "video": "https://www.youtube.com/results?search_query=OSCP%20full%20course%20tutorial" },
+        { "skill": "Active Directory", "video": "https://www.youtube.com/results?search_query=Active%20Directory%20full%20course%20tutorial" }
+      ],
+      "growthSkills": [
+        { "skill": "SQLMap", "video": "https://www.youtube.com/results?search_query=SQLMap%20full%20course%20tutorial" },
+        { "skill": "Hydra", "video": "https://www.youtube.com/results?search_query=Hydra%20password%20cracking%20tutorial" },
+        { "skill": "John the Ripper", "video": "https://www.youtube.com/results?search_query=John%20the%20Ripper%20tutorial" },
+        { "skill": "Python for Exploit Scripting", "video": "https://www.youtube.com/results?search_query=Python%20for%20penetration%20testing%20tutorial" },
+        { "skill": "Mobile App Pentesting", "video": "https://www.youtube.com/results?search_query=mobile%20app%20penetration%20testing%20MobSF%20tutorial" },
+        { "skill": "Cloud Pentesting (AWS/Azure)", "video": "https://www.youtube.com/results?search_query=cloud%20penetration%20testing%20AWS%20Azure%20tutorial" },
+        { "skill": "Red Teaming", "video": "https://www.youtube.com/results?search_query=red%20teaming%20full%20course%20tutorial" },
+        { "skill": "Bug Bounty Hunting", "video": "https://www.youtube.com/results?search_query=bug%20bounty%20hunting%20tutorial" },
+        { "skill": "CTF Practice (HTB/TryHackMe)", "video": "https://www.youtube.com/results?search_query=HackTheBox%20TryHackMe%20walkthrough%20beginner" }
+      ]
+    },
+    {
+      "title": "Cybersecurity Analyst",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Networking", "Linux", "Security Fundamentals", "SIEM", "Incident Response"],
+      "tools": ["Wireshark", "Splunk", "Nmap"],
+      "advancedSkills": ["Threat Hunting", "Cloud Security", "Python"],
+      "salaryLPA": { "min": 5, "max": 12 },
+      "roadmap": [
+        { "skill": "Networking", "video": "https://www.youtube.com/watch?v=qiQR5rTSshw" },
+        { "skill": "Linux", "video": "https://www.youtube.com/watch?v=sWbUDq4S6Y8" },
+        { "skill": "Security Fundamentals", "video": "https://www.youtube.com/watch?v=U_P23SqJaDc" },
+        { "skill": "SIEM", "video": "https://www.youtube.com/watch?v=Wdz_eDpwyEo" },
+        { "skill": "Incident Response", "video": "https://www.youtube.com/watch?v=nZb_1i5aB6E" },
+        { "skill": "Wireshark", "video": "https://www.youtube.com/watch?v=TkCSr30UojM" },
+        { "skill": "Splunk", "video": "https://www.youtube.com/results?search_query=Splunk%20full%20course%20tutorial" },
+        { "skill": "Nmap", "video": "https://www.youtube.com/watch?v=4t4kBkMsDbQ" },
+        { "skill": "Threat Hunting", "video": "https://www.youtube.com/results?search_query=Threat%20Hunting%20full%20course%20tutorial" },
+        { "skill": "Cloud Security", "video": "https://www.youtube.com/results?search_query=Cloud%20Security%20full%20course%20tutorial" },
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" }
+      ]
+    },
+    {
+      "title": "SOC Analyst",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["Networking", "SIEM", "Security Fundamentals"],
+      "tools": ["Splunk", "Wireshark", "ELK"],
+      "advancedSkills": ["Threat Intelligence", "EDR", "Python"],
+      "salaryLPA": { "min": 4, "max": 10 },
+      "roadmap": [
+        { "skill": "Networking", "video": "https://www.youtube.com/watch?v=qiQR5rTSshw" },
+        { "skill": "SIEM", "video": "https://www.youtube.com/watch?v=Wdz_eDpwyEo" },
+        { "skill": "Security Fundamentals", "video": "https://www.youtube.com/watch?v=U_P23SqJaDc" },
+        { "skill": "Splunk", "video": "https://www.youtube.com/results?search_query=Splunk%20full%20course%20tutorial" },
+        { "skill": "Wireshark", "video": "https://www.youtube.com/watch?v=TkCSr30UojM" },
+        { "skill": "ELK", "video": "https://www.youtube.com/results?search_query=ELK%20full%20course%20tutorial" },
+        { "skill": "Threat Intelligence", "video": "https://www.youtube.com/results?search_query=Threat%20Intelligence%20full%20course%20tutorial" },
+        { "skill": "EDR", "video": "https://www.youtube.com/results?search_query=EDR%20full%20course%20tutorial" },
+        { "skill": "Python", "video": "https://www.youtube.com/watch?v=rfscVS0vtbw" }
+      ]
+    },
+    {
+      "title": "Web App Security Engineer",
+      "category": "Computer and Mathematical",
+      "requiredSkills": ["OWASP Top 10", "Networking", "Linux", "Security Fundamentals"],
+      "tools": ["Burp Suite", "Nuclei", "Nmap", "OWASP ZAP"],
+      "advancedSkills": ["API Security", "Secure Code Review", "Bug Bounty"],
+      "salaryLPA": { "min": 6, "max": 15 },
+      "roadmap": [
+        { "skill": "OWASP Top 10", "video": "https://www.youtube.com/watch?v=avfKI-fj5CU" },
+        { "skill": "Networking", "video": "https://www.youtube.com/watch?v=qiQR5rTSshw" },
+        { "skill": "Linux", "video": "https://www.youtube.com/watch?v=sWbUDq4S6Y8" },
+        { "skill": "Security Fundamentals", "video": "https://www.youtube.com/watch?v=U_P23SqJaDc" },
+        { "skill": "Burp Suite", "video": "https://www.youtube.com/watch?v=G3hpAeoZ4ek" },
+        { "skill": "Nuclei", "video": "https://www.youtube.com/watch?v=b5qMyQvL1ZA" },
+        { "skill": "Nmap", "video": "https://www.youtube.com/watch?v=4t4kBkMsDbQ" },
+        { "skill": "OWASP ZAP", "video": "https://www.youtube.com/results?search_query=OWASP%20ZAP%20full%20course%20tutorial" },
+        { "skill": "API Security", "video": "https://www.youtube.com/results?search_query=API%20Security%20full%20course%20tutorial" },
+        { "skill": "Secure Code Review", "video": "https://www.youtube.com/results?search_query=Secure%20Code%20Review%20full%20course%20tutorial" },
+        { "skill": "Bug Bounty", "video": "https://www.youtube.com/results?search_query=Bug%20Bounty%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Civil Engineer",
+      "category": "Architecture and Engineering",
+      "requiredSkills": ["Communication"],
+      "tools": ["AutoCAD", "STAAD Pro", "Revit", "MS Project"],
+      "advancedSkills": ["Estimation", "Site Management", "Codes & Standards"],
+      "salaryLPA": { "min": 3, "max": 8 },
+      "roadmap": [
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "AutoCAD", "video": "https://www.youtube.com/results?search_query=AutoCAD%20full%20course%20tutorial" },
+        { "skill": "STAAD Pro", "video": "https://www.youtube.com/results?search_query=STAAD%20Pro%20full%20course%20tutorial" },
+        { "skill": "Revit", "video": "https://www.youtube.com/results?search_query=Revit%20full%20course%20tutorial" },
+        { "skill": "MS Project", "video": "https://www.youtube.com/results?search_query=MS%20Project%20full%20course%20tutorial" },
+        { "skill": "Estimation", "video": "https://www.youtube.com/results?search_query=Estimation%20full%20course%20tutorial" },
+        { "skill": "Site Management", "video": "https://www.youtube.com/results?search_query=Site%20Management%20full%20course%20tutorial" },
+        { "skill": "Codes & Standards", "video": "https://www.youtube.com/results?search_query=Codes%20%26%20Standards%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Mechanical Engineer",
+      "category": "Architecture and Engineering",
+      "requiredSkills": ["Communication"],
+      "tools": ["AutoCAD", "SolidWorks", "ANSYS", "MS Project"],
+      "advancedSkills": ["Thermodynamics", "GD&T", "Manufacturing Processes"],
+      "salaryLPA": { "min": 3, "max": 8 },
+      "roadmap": [
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "AutoCAD", "video": "https://www.youtube.com/results?search_query=AutoCAD%20full%20course%20tutorial" },
+        { "skill": "SolidWorks", "video": "https://www.youtube.com/results?search_query=SolidWorks%20full%20course%20tutorial" },
+        { "skill": "ANSYS", "video": "https://www.youtube.com/results?search_query=ANSYS%20full%20course%20tutorial" },
+        { "skill": "MS Project", "video": "https://www.youtube.com/results?search_query=MS%20Project%20full%20course%20tutorial" },
+        { "skill": "Thermodynamics", "video": "https://www.youtube.com/results?search_query=Thermodynamics%20full%20course%20tutorial" },
+        { "skill": "GD&T", "video": "https://www.youtube.com/results?search_query=GD%26T%20full%20course%20tutorial" },
+        { "skill": "Manufacturing Processes", "video": "https://www.youtube.com/results?search_query=Manufacturing%20Processes%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Electrical Engineer",
+      "category": "Architecture and Engineering",
+      "requiredSkills": ["Communication"],
+      "tools": ["AutoCAD Electrical", "MATLAB", "PLC Software"],
+      "advancedSkills": ["Power Systems", "Control Systems", "Circuit Design"],
+      "salaryLPA": { "min": 3, "max": 9 },
+      "roadmap": [
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "AutoCAD Electrical", "video": "https://www.youtube.com/results?search_query=AutoCAD%20Electrical%20full%20course%20tutorial" },
+        { "skill": "MATLAB", "video": "https://www.youtube.com/results?search_query=MATLAB%20full%20course%20tutorial" },
+        { "skill": "PLC Software", "video": "https://www.youtube.com/results?search_query=PLC%20Programming%20full%20course%20tutorial" },
+        { "skill": "Power Systems", "video": "https://www.youtube.com/results?search_query=Power%20Systems%20full%20course%20tutorial" },
+        { "skill": "Control Systems", "video": "https://www.youtube.com/results?search_query=Control%20Systems%20full%20course%20tutorial" },
+        { "skill": "Circuit Design", "video": "https://www.youtube.com/results?search_query=Circuit%20Design%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Embedded Systems Engineer",
+      "category": "Architecture and Engineering",
+      "requiredSkills": ["C++", "Networking"],
+      "tools": ["Arduino IDE", "Keil", "Git"],
+      "advancedSkills": ["RTOS", "Microcontrollers", "IoT Protocols"],
+      "salaryLPA": { "min": 4, "max": 11 },
+      "roadmap": [
+        { "skill": "C++", "video": "https://www.youtube.com/watch?v=vLnPwxZdW4Y" },
+        { "skill": "Networking", "video": "https://www.youtube.com/watch?v=qiQR5rTSshw" },
+        { "skill": "Arduino IDE", "video": "https://www.youtube.com/results?search_query=Arduino%20full%20course%20tutorial" },
+        { "skill": "Keil", "video": "https://www.youtube.com/results?search_query=Keil%20uVision%20full%20course%20tutorial" },
+        { "skill": "Git", "video": "https://www.youtube.com/watch?v=RGOj5yH7evk" },
+        { "skill": "RTOS", "video": "https://www.youtube.com/results?search_query=RTOS%20full%20course%20tutorial" },
+        { "skill": "Microcontrollers", "video": "https://www.youtube.com/results?search_query=Microcontrollers%20full%20course%20tutorial" },
+        { "skill": "IoT Protocols", "video": "https://www.youtube.com/results?search_query=IoT%20Protocols%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Product Manager",
+      "category": "Management",
+      "requiredSkills": ["Product Strategy", "User Research", "Roadmapping", "Analytics", "Communication"],
+      "tools": ["Figma", "JIRA", "Google Analytics"],
+      "advancedSkills": ["Go-to-Market", "OKRs", "Customer Interviews", "Leadership"],
+      "salaryLPA": { "min": 12, "max": 28 },
+      "roadmap": [
+        { "skill": "Product Strategy", "video": "https://www.youtube.com/watch?v=Qc6QH4K2P5o" },
+        { "skill": "User Research", "video": "https://www.youtube.com/watch?v=4Gj7_XsmhHc" },
+        { "skill": "Roadmapping", "video": "https://www.youtube.com/watch?v=xyv5e0Yf_6k" },
+        { "skill": "Analytics", "video": "https://www.youtube.com/results?search_query=Product%20Analytics%20full%20course%20tutorial" },
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "Figma", "video": "https://www.youtube.com/watch?v=FTFaQWZBqQ8" },
+        { "skill": "JIRA", "video": "https://www.youtube.com/results?search_query=JIRA%20full%20course%20tutorial" },
+        { "skill": "Google Analytics", "video": "https://www.youtube.com/results?search_query=Google%20Analytics%20full%20course%20tutorial" },
+        { "skill": "Go-to-Market", "video": "https://www.youtube.com/results?search_query=Go-to-Market%20Strategy%20full%20course%20tutorial" },
+        { "skill": "OKRs", "video": "https://www.youtube.com/results?search_query=OKRs%20full%20course%20tutorial" },
+        { "skill": "Customer Interviews", "video": "https://www.youtube.com/results?search_query=Customer%20Interviews%20full%20course%20tutorial" },
+        { "skill": "Leadership", "video": "https://www.youtube.com/results?search_query=Leadership%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Project Manager",
+      "category": "Management",
+      "requiredSkills": ["Project Planning", "Agile", "Communication", "Risk Management", "Budgeting"],
+      "tools": ["JIRA", "MS Project", "Confluence"],
+      "advancedSkills": ["PMP", "Change Control", "Resource Management", "Cost Forecasting"],
+      "salaryLPA": { "min": 8, "max": 18 },
+      "roadmap": [
+        { "skill": "Project Planning", "video": "https://www.youtube.com/results?search_query=Project%20Planning%20full%20course%20tutorial" },
+        { "skill": "Agile", "video": "https://www.youtube.com/watch?v=Z9QbYZh1YXY" },
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "Risk Management", "video": "https://www.youtube.com/results?search_query=Risk%20Management%20full%20course%20tutorial" },
+        { "skill": "Budgeting", "video": "https://www.youtube.com/results?search_query=Budgeting%20full%20course%20tutorial" },
+        { "skill": "JIRA", "video": "https://www.youtube.com/results?search_query=JIRA%20full%20course%20tutorial" },
+        { "skill": "MS Project", "video": "https://www.youtube.com/results?search_query=MS%20Project%20full%20course%20tutorial" },
+        { "skill": "Confluence", "video": "https://www.youtube.com/results?search_query=Confluence%20full%20course%20tutorial" },
+        { "skill": "PMP", "video": "https://www.youtube.com/results?search_query=PMP%20full%20course%20tutorial" },
+        { "skill": "Change Control", "video": "https://www.youtube.com/results?search_query=Change%20Control%20full%20course%20tutorial" },
+        { "skill": "Resource Management", "video": "https://www.youtube.com/results?search_query=Resource%20Management%20full%20course%20tutorial" },
+        { "skill": "Cost Forecasting", "video": "https://www.youtube.com/results?search_query=Cost%20Forecasting%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Scrum Master",
+      "category": "Management",
+      "requiredSkills": ["Agile", "Scrum", "Facilitation", "Communication"],
+      "tools": ["JIRA", "Confluence", "Miro"],
+      "advancedSkills": ["Conflict Resolution", "Scaled Agile", "Team Coaching"],
+      "salaryLPA": { "min": 8, "max": 16 },
+      "roadmap": [
+        { "skill": "Agile", "video": "https://www.youtube.com/watch?v=Z9QbYZh1YXY" },
+        { "skill": "Scrum", "video": "https://www.youtube.com/results?search_query=Scrum%20full%20course%20tutorial" },
+        { "skill": "Facilitation", "video": "https://www.youtube.com/results?search_query=Facilitation%20Skills%20full%20course%20tutorial" },
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "JIRA", "video": "https://www.youtube.com/results?search_query=JIRA%20full%20course%20tutorial" },
+        { "skill": "Confluence", "video": "https://www.youtube.com/results?search_query=Confluence%20full%20course%20tutorial" },
+        { "skill": "Miro", "video": "https://www.youtube.com/results?search_query=Miro%20full%20course%20tutorial" },
+        { "skill": "Conflict Resolution", "video": "https://www.youtube.com/results?search_query=Conflict%20Resolution%20full%20course%20tutorial" },
+        { "skill": "Scaled Agile", "video": "https://www.youtube.com/results?search_query=Scaled%20Agile%20full%20course%20tutorial" },
+        { "skill": "Team Coaching", "video": "https://www.youtube.com/results?search_query=Team%20Coaching%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "category": "Business and Financial Operations",
+      "requiredSkills": ["Requirements Analysis", "SQL", "Excel", "Documentation", "Communication"],
+      "tools": ["Power BI", "JIRA", "Excel"],
+      "advancedSkills": ["Business Case", "Change Management", "UAT"],
+      "salaryLPA": { "min": 5, "max": 12 },
+      "roadmap": [
+        { "skill": "Requirements Analysis", "video": "https://www.youtube.com/results?search_query=Requirements%20Analysis%20full%20course%20tutorial" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "Documentation", "video": "https://www.youtube.com/results?search_query=Business%20Documentation%20full%20course%20tutorial" },
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "Power BI", "video": "https://www.youtube.com/watch?v=AGrl-H87pRU" },
+        { "skill": "JIRA", "video": "https://www.youtube.com/results?search_query=JIRA%20full%20course%20tutorial" },
+        { "skill": "Business Case", "video": "https://www.youtube.com/results?search_query=Business%20Case%20full%20course%20tutorial" },
+        { "skill": "Change Management", "video": "https://www.youtube.com/results?search_query=Change%20Management%20full%20course%20tutorial" },
+        { "skill": "UAT", "video": "https://www.youtube.com/results?search_query=UAT%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Financial Analyst",
+      "category": "Business and Financial Operations",
+      "requiredSkills": ["Excel", "Financial Modeling", "Accounting", "Valuation"],
+      "tools": ["Excel", "Power BI", "Bloomberg Terminal"],
+      "advancedSkills": ["Investment Analysis", "Risk Management", "M&A"],
+      "salaryLPA": { "min": 4, "max": 12 },
+      "roadmap": [
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "Financial Modeling", "video": "https://www.youtube.com/results?search_query=Financial%20Modeling%20full%20course%20tutorial" },
+        { "skill": "Accounting", "video": "https://www.youtube.com/results?search_query=Accounting%20Basics%20full%20course%20tutorial" },
+        { "skill": "Valuation", "video": "https://www.youtube.com/results?search_query=Company%20Valuation%20full%20course%20tutorial" },
+        { "skill": "Power BI", "video": "https://www.youtube.com/watch?v=AGrl-H87pRU" },
+        { "skill": "Bloomberg Terminal", "video": "https://www.youtube.com/results?search_query=Bloomberg%20Terminal%20full%20course%20tutorial" },
+        { "skill": "Investment Analysis", "video": "https://www.youtube.com/results?search_query=Investment%20Analysis%20full%20course%20tutorial" },
+        { "skill": "Risk Management", "video": "https://www.youtube.com/results?search_query=Risk%20Management%20full%20course%20tutorial" },
+        { "skill": "M&A", "video": "https://www.youtube.com/results?search_query=Mergers%20and%20Acquisitions%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "HR Specialist",
+      "category": "Business and Financial Operations",
+      "requiredSkills": ["Recruitment", "Communication", "HRMS", "Onboarding"],
+      "tools": ["HRMS Software", "Excel", "LinkedIn Recruiter"],
+      "advancedSkills": ["Talent Management", "Compensation", "HR Strategy"],
+      "salaryLPA": { "min": 3, "max": 8 },
+      "roadmap": [
+        { "skill": "Recruitment", "video": "https://www.youtube.com/results?search_query=Recruitment%20full%20course%20tutorial" },
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "HRMS", "video": "https://www.youtube.com/results?search_query=HRMS%20full%20course%20tutorial" },
+        { "skill": "Onboarding", "video": "https://www.youtube.com/results?search_query=Employee%20Onboarding%20full%20course%20tutorial" },
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "LinkedIn Recruiter", "video": "https://www.youtube.com/results?search_query=LinkedIn%20Recruiter%20full%20course%20tutorial" },
+        { "skill": "Talent Management", "video": "https://www.youtube.com/results?search_query=Talent%20Management%20full%20course%20tutorial" },
+        { "skill": "Compensation", "video": "https://www.youtube.com/results?search_query=Compensation%20and%20Benefits%20full%20course%20tutorial" },
+        { "skill": "HR Strategy", "video": "https://www.youtube.com/results?search_query=HR%20Strategy%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Operations Analyst",
+      "category": "Business and Financial Operations",
+      "requiredSkills": ["Excel", "Process Improvement", "SQL", "Reporting"],
+      "tools": ["Excel", "Power BI", "SQL"],
+      "advancedSkills": ["Six Sigma", "ERP", "Forecasting"],
+      "salaryLPA": { "min": 4, "max": 10 },
+      "roadmap": [
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "Process Improvement", "video": "https://www.youtube.com/results?search_query=Process%20Improvement%20full%20course%20tutorial" },
+        { "skill": "SQL", "video": "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+        { "skill": "Reporting", "video": "https://www.youtube.com/results?search_query=Business%20Reporting%20full%20course%20tutorial" },
+        { "skill": "Power BI", "video": "https://www.youtube.com/watch?v=AGrl-H87pRU" },
+        { "skill": "Six Sigma", "video": "https://www.youtube.com/results?search_query=Six%20Sigma%20full%20course%20tutorial" },
+        { "skill": "ERP", "video": "https://www.youtube.com/results?search_query=ERP%20full%20course%20tutorial" },
+        { "skill": "Forecasting", "video": "https://www.youtube.com/results?search_query=Forecasting%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Digital Marketer",
+      "category": "Business and Financial Operations",
+      "requiredSkills": ["SEO", "Social Media", "Google Analytics", "Content Strategy", "Email Marketing"],
+      "tools": ["Google Analytics", "Meta Ads Manager", "Mailchimp"],
+      "advancedSkills": ["Growth Marketing", "Funnel Optimization", "CRM"],
+      "salaryLPA": { "min": 3, "max": 9 },
+      "roadmap": [
+        { "skill": "SEO", "video": "https://www.youtube.com/watch?v=DvwS7cV9GmQ" },
+        { "skill": "Social Media", "video": "https://www.youtube.com/results?search_query=Social%20Media%20Marketing%20full%20course%20tutorial" },
+        { "skill": "Google Analytics", "video": "https://www.youtube.com/results?search_query=Google%20Analytics%20full%20course%20tutorial" },
+        { "skill": "Content Strategy", "video": "https://www.youtube.com/watch?v=J1R1Vcd4uQE" },
+        { "skill": "Email Marketing", "video": "https://www.youtube.com/results?search_query=Email%20Marketing%20full%20course%20tutorial" },
+        { "skill": "Meta Ads Manager", "video": "https://www.youtube.com/results?search_query=Meta%20Ads%20Manager%20full%20course%20tutorial" },
+        { "skill": "Mailchimp", "video": "https://www.youtube.com/results?search_query=Mailchimp%20full%20course%20tutorial" },
+        { "skill": "Growth Marketing", "video": "https://www.youtube.com/results?search_query=Growth%20Marketing%20full%20course%20tutorial" },
+        { "skill": "Funnel Optimization", "video": "https://www.youtube.com/results?search_query=Funnel%20Optimization%20full%20course%20tutorial" },
+        { "skill": "CRM", "video": "https://www.youtube.com/results?search_query=CRM%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Content Writer",
+      "category": "Arts, Design, Entertainment, Sports, and Media",
+      "requiredSkills": ["Writing", "Grammar", "SEO Basics", "Research", "Editing"],
+      "tools": ["Google Docs", "Grammarly", "WordPress"],
+      "advancedSkills": ["Brand Voice", "Content Planning", "SEO Strategy"],
+      "salaryLPA": { "min": 3, "max": 7 },
+      "roadmap": [
+        { "skill": "Writing", "video": "https://www.youtube.com/results?search_query=Content%20Writing%20full%20course%20tutorial" },
+        { "skill": "Grammar", "video": "https://www.youtube.com/results?search_query=English%20Grammar%20full%20course%20tutorial" },
+        { "skill": "SEO Basics", "video": "https://www.youtube.com/watch?v=DvwS7cV9GmQ" },
+        { "skill": "Research", "video": "https://www.youtube.com/results?search_query=Research%20Skills%20full%20course%20tutorial" },
+        { "skill": "Editing", "video": "https://www.youtube.com/results?search_query=Copy%20Editing%20full%20course%20tutorial" },
+        { "skill": "WordPress", "video": "https://www.youtube.com/results?search_query=WordPress%20full%20course%20tutorial" },
+        { "skill": "Brand Voice", "video": "https://www.youtube.com/results?search_query=Brand%20Voice%20full%20course%20tutorial" },
+        { "skill": "Content Planning", "video": "https://www.youtube.com/results?search_query=Content%20Planning%20full%20course%20tutorial" },
+        { "skill": "SEO Strategy", "video": "https://www.youtube.com/results?search_query=SEO%20Strategy%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "UI/UX Designer",
+      "category": "Arts, Design, Entertainment, Sports, and Media",
+      "requiredSkills": ["Figma", "Wireframing", "Prototyping", "User Research", "Visual Design"],
+      "tools": ["Figma", "Adobe XD", "Miro"],
+      "advancedSkills": ["Design Systems", "Usability Testing", "Interaction Design"],
+      "salaryLPA": { "min": 4, "max": 12 },
+      "roadmap": [
+        { "skill": "Figma", "video": "https://www.youtube.com/watch?v=FTFaQWZBqQ8" },
+        { "skill": "Wireframing", "video": "https://www.youtube.com/results?search_query=Wireframing%20full%20course%20tutorial" },
+        { "skill": "Prototyping", "video": "https://www.youtube.com/results?search_query=Prototyping%20full%20course%20tutorial" },
+        { "skill": "User Research", "video": "https://www.youtube.com/watch?v=4Gj7_XsmhHc" },
+        { "skill": "Visual Design", "video": "https://www.youtube.com/results?search_query=Visual%20Design%20full%20course%20tutorial" },
+        { "skill": "Adobe XD", "video": "https://www.youtube.com/results?search_query=Adobe%20XD%20full%20course%20tutorial" },
+        { "skill": "Miro", "video": "https://www.youtube.com/results?search_query=Miro%20full%20course%20tutorial" },
+        { "skill": "Design Systems", "video": "https://www.youtube.com/watch?v=1-7JMuPHIb8" },
+        { "skill": "Usability Testing", "video": "https://www.youtube.com/results?search_query=Usability%20Testing%20full%20course%20tutorial" },
+        { "skill": "Interaction Design", "video": "https://www.youtube.com/results?search_query=Interaction%20Design%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Product Designer",
+      "category": "Arts, Design, Entertainment, Sports, and Media",
+      "requiredSkills": ["Figma", "UX Research", "Prototyping", "Design Systems", "Visual Design"],
+      "tools": ["Figma", "Adobe XD", "Notion"],
+      "advancedSkills": ["Design Leadership", "Service Design", "Product Strategy"],
+      "salaryLPA": { "min": 6, "max": 15 },
+      "roadmap": [
+        { "skill": "Figma", "video": "https://www.youtube.com/watch?v=FTFaQWZBqQ8" },
+        { "skill": "UX Research", "video": "https://www.youtube.com/watch?v=4Gj7_XsmhHc" },
+        { "skill": "Prototyping", "video": "https://www.youtube.com/results?search_query=Prototyping%20full%20course%20tutorial" },
+        { "skill": "Design Systems", "video": "https://www.youtube.com/watch?v=1-7JMuPHIb8" },
+        { "skill": "Visual Design", "video": "https://www.youtube.com/results?search_query=Visual%20Design%20full%20course%20tutorial" },
+        { "skill": "Adobe XD", "video": "https://www.youtube.com/results?search_query=Adobe%20XD%20full%20course%20tutorial" },
+        { "skill": "Notion", "video": "https://www.youtube.com/results?search_query=Notion%20full%20course%20tutorial" },
+        { "skill": "Design Leadership", "video": "https://www.youtube.com/results?search_query=Design%20Leadership%20full%20course%20tutorial" },
+        { "skill": "Service Design", "video": "https://www.youtube.com/results?search_query=Service%20Design%20full%20course%20tutorial" },
+        { "skill": "Product Strategy", "video": "https://www.youtube.com/watch?v=Qc6QH4K2P5o" }
+      ]
+    },
+    {
+      "title": "Graphic Designer",
+      "category": "Arts, Design, Entertainment, Sports, and Media",
+      "requiredSkills": ["Adobe Photoshop", "Adobe Illustrator", "Typography", "Visual Design"],
+      "tools": ["Photoshop", "Illustrator", "Canva"],
+      "advancedSkills": ["Branding", "Motion Graphics", "Print Design"],
+      "salaryLPA": { "min": 2.5, "max": 7 },
+      "roadmap": [
+        { "skill": "Adobe Photoshop", "video": "https://www.youtube.com/results?search_query=Adobe%20Photoshop%20full%20course%20tutorial" },
+        { "skill": "Adobe Illustrator", "video": "https://www.youtube.com/results?search_query=Adobe%20Illustrator%20full%20course%20tutorial" },
+        { "skill": "Typography", "video": "https://www.youtube.com/results?search_query=Typography%20full%20course%20tutorial" },
+        { "skill": "Visual Design", "video": "https://www.youtube.com/results?search_query=Visual%20Design%20full%20course%20tutorial" },
+        { "skill": "Canva", "video": "https://www.youtube.com/results?search_query=Canva%20full%20course%20tutorial" },
+        { "skill": "Branding", "video": "https://www.youtube.com/results?search_query=Branding%20full%20course%20tutorial" },
+        { "skill": "Motion Graphics", "video": "https://www.youtube.com/results?search_query=Motion%20Graphics%20full%20course%20tutorial" },
+        { "skill": "Print Design", "video": "https://www.youtube.com/results?search_query=Print%20Design%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Executive Assistant",
+      "category": "Office and Administrative Support",
+      "requiredSkills": ["Communication", "Scheduling", "Excel", "Documentation"],
+      "tools": ["MS Office", "Google Workspace", "Calendly"],
+      "advancedSkills": ["Event Coordination", "Travel Management", "Confidentiality"],
+      "salaryLPA": { "min": 3, "max": 7 },
+      "roadmap": [
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "Scheduling", "video": "https://www.youtube.com/results?search_query=Calendar%20Management%20full%20course%20tutorial" },
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "Documentation", "video": "https://www.youtube.com/results?search_query=Business%20Documentation%20full%20course%20tutorial" },
+        { "skill": "MS Office", "video": "https://www.youtube.com/results?search_query=MS%20Office%20full%20course%20tutorial" },
+        { "skill": "Google Workspace", "video": "https://www.youtube.com/results?search_query=Google%20Workspace%20full%20course%20tutorial" },
+        { "skill": "Event Coordination", "video": "https://www.youtube.com/results?search_query=Event%20Coordination%20full%20course%20tutorial" },
+        { "skill": "Travel Management", "video": "https://www.youtube.com/results?search_query=Corporate%20Travel%20Management%20full%20course%20tutorial" }
+      ]
+    },
+    {
+      "title": "Operations Coordinator",
+      "category": "Office and Administrative Support",
+      "requiredSkills": ["Excel", "Communication", "Process Improvement", "Reporting"],
+      "tools": ["Excel", "MS Office", "Trello"],
+      "advancedSkills": ["Vendor Management", "SOPs", "KPI Tracking"],
+      "salaryLPA": { "min": 3, "max": 7 },
+      "roadmap": [
+        { "skill": "Excel", "video": "https://www.youtube.com/watch?v=Vl0H-qTclOg" },
+        { "skill": "Communication", "video": "https://www.youtube.com/watch?v=HAnw168huqA" },
+        { "skill": "Process Improvement", "video": "https://www.youtube.com/results?search_query=Process%20Improvement%20full%20course%20tutorial" },
+        { "skill": "Reporting", "video": "https://www.youtube.com/results?search_query=Business%20Reporting%20full%20course%20tutorial" },
+        { "skill": "Trello", "video": "https://www.youtube.com/results?search_query=Trello%20full%20course%20tutorial" },
+        { "skill": "Vendor Management", "video": "https://www.youtube.com/results?search_query=Vendor%20Management%20full%20course%20tutorial" },
+        { "skill": "SOPs", "video": "https://www.youtube.com/results?search_query=Standard%20Operating%20Procedures%20full%20course%20tutorial" },
+        { "skill": "KPI Tracking", "video": "https://www.youtube.com/results?search_query=KPI%20Tracking%20full%20course%20tutorial" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3484 @@
+{
+  "meta": {
+    "description": "PathPilot companies list: Indian IT + top MNCs, each with the roles they hire and the key skills per role.",
+    "totalCompanies": 92,
+    "totalCategories": 8,
+    "note": "Salary bands are approximate India entry-level ranges (LPA). Tiers are rough eligibility hints (Mass recruiter = easiest, Dream = hardest)."
+  },
+  "categories": [
+    "Indian IT Services",
+    "Global Product / MNC",
+    "Indian Product / Startup",
+    "Consulting / GCC",
+    "Core Engineering",
+    "Semiconductor / Deep Tech",
+    "Cybersecurity",
+    "Analytics / Data"
+  ],
+  "companies": [
+    {
+      "name": "Tata Consultancy Services (TCS)",
+      "category": "Indian IT Services",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Assistant System Engineer",
+          "skills": [
+            "Data Structures",
+            "Algorithms",
+            "OOP",
+            "Java/C++/Python",
+            "SQL",
+            "Aptitude & Reasoning",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Business Process Associate",
+          "skills": [
+            "Communication",
+            "MS Excel",
+            "Process Documentation",
+            "SQL Basics",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "QA / Test Engineer",
+          "skills": [
+            "Manual Testing",
+            "Selenium",
+            "Test Case Design",
+            "SQL",
+            "Bug Tracking",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–7 LPA"
+    },
+    {
+      "name": "Infosys",
+      "category": "Indian IT Services",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Systems Engineer",
+          "skills": [
+            "Data Structures",
+            "Algorithms",
+            "Java",
+            "SQL",
+            "Problem Solving",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Digital Specialist Engineer",
+          "skills": [
+            "Python",
+            "Cloud Basics (AWS/Azure)",
+            "Full Stack Development",
+            "APIs",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Power Programmer",
+          "skills": [
+            "Advanced DSA",
+            "System Design",
+            "Java/C++",
+            "Competitive Programming",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "3.6–9 LPA"
+    },
+    {
+      "name": "Wipro",
+      "category": "Indian IT Services",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Project Engineer",
+          "skills": [
+            "Data Structures",
+            "Java/Python",
+            "SQL",
+            "OOP Concepts",
+            "Communication",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Cloud Support Associate",
+          "skills": [
+            "AWS/Azure Basics",
+            "Linux",
+            "Networking Fundamentals",
+            "Troubleshooting",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "QA Analyst",
+          "skills": [
+            "Manual & Automation Testing",
+            "Selenium",
+            "Test Planning",
+            "SQL",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–6.5 LPA"
+    },
+    {
+      "name": "HCLTech",
+      "category": "Indian IT Services",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee",
+          "skills": [
+            "Programming Fundamentals (Java/C++)",
+            "Data Structures",
+            "SQL",
+            "Networking Basics",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Infrastructure Support Engineer",
+          "skills": [
+            "Linux/Windows Admin",
+            "Networking",
+            "Cloud Basics",
+            "ITIL Fundamentals",
+            "Docker",
+            "Kubernetes",
+            "CI/CD",
+            "AWS",
+            "Linux"
+          ]
+        },
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/Python",
+            "REST APIs",
+            "SQL",
+            "Git",
+            "Agile",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–7 LPA"
+    },
+    {
+      "name": "Tech Mahindra",
+      "category": "Indian IT Services",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Associate Software Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "SQL",
+            "Networking Basics",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Network Engineer",
+          "skills": [
+            "Telecom Protocols",
+            "Networking (CCNA level)",
+            "Linux",
+            "Troubleshooting",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Test Engineer",
+          "skills": [
+            "Manual Testing",
+            "Automation (Selenium)",
+            "Test Case Design",
+            "SQL",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "3.2–6.5 LPA"
+    },
+    {
+      "name": "Cognizant",
+      "category": "Indian IT Services",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Programmer Analyst Trainee",
+          "skills": [
+            "Java/Python/C#",
+            "Data Structures",
+            "SQL",
+            "Problem Solving",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "Requirement Gathering",
+            "SQL",
+            "Domain Knowledge (BFSI/Healthcare)",
+            "Communication",
+            "Excel",
+            "Data Visualization"
+          ]
+        },
+        {
+          "role": "QA Engineer",
+          "skills": [
+            "Manual Testing",
+            "Selenium",
+            "API Testing",
+            "SQL",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "4–6.5 LPA"
+    },
+    {
+      "name": "Capgemini",
+      "category": "Indian IT Services",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Analyst - Software Engineering",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "SQL",
+            "Cloud Fundamentals",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "DevOps Engineer",
+          "skills": [
+            "CI/CD (Jenkins)",
+            "Docker",
+            "AWS/Azure",
+            "Linux",
+            "Scripting",
+            "Kubernetes",
+            "CI/CD",
+            "AWS"
+          ]
+        },
+        {
+          "role": "SAP Consultant",
+          "skills": [
+            "SAP Modules (FI/MM/SD)",
+            "ABAP Basics",
+            "Business Process Knowledge",
+            "Communication",
+            "Excel",
+            "SQL",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "4–8 LPA"
+    },
+    {
+      "name": "LTIMindtree",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "SQL",
+            "Cloud Basics",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Digital Engineer",
+          "skills": [
+            "Full Stack Development",
+            "React/Angular",
+            "Node.js",
+            "REST APIs",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Data Engineer",
+          "skills": [
+            "SQL",
+            "Python",
+            "ETL Pipelines",
+            "Spark Basics",
+            "Git",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "4–8 LPA"
+    },
+    {
+      "name": "Mphasis",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Associate Software Engineer",
+          "skills": [
+            "Java/.NET",
+            "SQL",
+            "Data Structures",
+            "Cloud Fundamentals",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Cognitive/AI Engineer",
+          "skills": [
+            "Python",
+            "Machine Learning Basics",
+            "NLP Fundamentals",
+            "SQL",
+            "TensorFlow",
+            "PyTorch",
+            "Deep Learning",
+            "NLP",
+            "Computer Vision"
+          ]
+        },
+        {
+          "role": "QA Automation Engineer",
+          "skills": [
+            "Selenium",
+            "Java/Python",
+            "API Testing",
+            "CI/CD",
+            "Jest",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "4–8 LPA"
+    },
+    {
+      "name": "Persistent Systems",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/Python/C++",
+            "Data Structures",
+            "System Design Basics",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Cloud Engineer",
+          "skills": [
+            "AWS/Azure/GCP",
+            "Kubernetes",
+            "Terraform",
+            "CI/CD",
+            "Docker",
+            "AWS",
+            "Linux"
+          ]
+        },
+        {
+          "role": "Product Engineer",
+          "skills": [
+            "Full Stack Development",
+            "APIs",
+            "Databases",
+            "Agile",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "5–10 LPA"
+    },
+    {
+      "name": "Coforge",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Associate Software Engineer",
+          "skills": [
+            "Java/.NET",
+            "SQL",
+            "Data Structures",
+            "OOP",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Business Analyst - BFSI",
+          "skills": [
+            "Requirement Analysis",
+            "SQL",
+            "Insurance/Travel Domain Knowledge",
+            "Communication",
+            "Excel",
+            "Data Visualization"
+          ]
+        },
+        {
+          "role": "QA Engineer",
+          "skills": [
+            "Manual Testing",
+            "Selenium",
+            "Test Documentation",
+            "SQL",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "4–7 LPA"
+    },
+    {
+      "name": "Hexaware Technologies",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Associate Software Engineer",
+          "skills": [
+            "Java/Python",
+            "SQL",
+            "Data Structures",
+            "Cloud Basics",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "RPA Developer",
+          "skills": [
+            "UiPath/Automation Anywhere",
+            "Process Analysis",
+            "SQL",
+            "VB Scripting",
+            "Excel",
+            "Data Visualization"
+          ]
+        },
+        {
+          "role": "QA Automation Engineer",
+          "skills": [
+            "Selenium",
+            "Java",
+            "API Testing",
+            "CI/CD",
+            "Jest",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "3.8–7 LPA"
+    },
+    {
+      "name": "Zensar Technologies",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Associate Software Engineer",
+          "skills": [
+            "Java/Python",
+            "SQL",
+            "Data Structures",
+            "Web Development",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Cloud & DevOps Engineer",
+          "skills": [
+            "AWS/Azure",
+            "Docker",
+            "Jenkins",
+            "Linux",
+            "Kubernetes",
+            "CI/CD",
+            "AWS"
+          ]
+        },
+        {
+          "role": "QA Engineer",
+          "skills": [
+            "Manual & Automation Testing",
+            "Selenium",
+            "SQL",
+            "Test Case Design",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "3.8–7 LPA"
+    },
+    {
+      "name": "Birlasoft",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Associate Engineer",
+          "skills": [
+            "Java/.NET",
+            "SQL",
+            "Data Structures",
+            "OOP",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "SAP Functional Consultant",
+          "skills": [
+            "SAP FI/MM/SD Modules",
+            "Manufacturing Domain Knowledge",
+            "Business Process Mapping",
+            "Communication",
+            "Excel",
+            "SQL",
+            "Data Visualization"
+          ]
+        },
+        {
+          "role": "QA Engineer",
+          "skills": [
+            "Manual Testing",
+            "Selenium",
+            "Test Case Design",
+            "SQL",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "3.8–7 LPA"
+    },
+    {
+      "name": "Cyient",
+      "category": "Indian IT Services",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee",
+          "skills": [
+            "Engineering Design (CAD/CAM)",
+            "Programming Basics",
+            "Problem Solving",
+            "Communication",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Embedded Software Engineer",
+          "skills": [
+            "C/C++",
+            "Microcontrollers",
+            "RTOS",
+            "Embedded Debugging",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Aerospace/Mechanical Design Engineer",
+          "skills": [
+            "CATIA/SolidWorks",
+            "GD&T",
+            "Structural Analysis Basics",
+            "Technical Documentation",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–6.5 LPA"
+    },
+    {
+      "name": "Google",
+      "category": "Global Product / MNC",
+      "tier": "Dream (FAANG)",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "System Design",
+            "Distributed Systems",
+            "C++/Java/Python",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "APM (Associate Product Manager)",
+          "skills": [
+            "Product Sense",
+            "Analytics",
+            "Communication",
+            "Prioritization",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Site Reliability Engineer",
+          "skills": [
+            "Linux",
+            "Distributed Systems",
+            "Python/Go",
+            "Monitoring & Observability",
+            "Docker",
+            "Kubernetes",
+            "CI/CD",
+            "AWS"
+          ]
+        }
+      ],
+      "salaryBand": "20–45 LPA"
+    },
+    {
+      "name": "Microsoft",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "System Design",
+            "C#/C++/Java",
+            "Cloud (Azure)",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Program Manager",
+          "skills": [
+            "Product Thinking",
+            "Stakeholder Management",
+            "SQL",
+            "Communication",
+            "Excel",
+            "Data Visualization"
+          ]
+        },
+        {
+          "role": "Data & Applied Scientist",
+          "skills": [
+            "Machine Learning",
+            "Python",
+            "Statistics",
+            "SQL",
+            "TensorFlow",
+            "PyTorch",
+            "Deep Learning",
+            "NLP",
+            "Computer Vision"
+          ]
+        }
+      ],
+      "salaryBand": "18–40 LPA"
+    },
+    {
+      "name": "Amazon",
+      "category": "Global Product / MNC",
+      "tier": "Dream (FAANG)",
+      "roles": [
+        {
+          "role": "SDE (Software Development Engineer)",
+          "skills": [
+            "Data Structures & Algorithms",
+            "System Design",
+            "Java/C++",
+            "AWS",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Data Visualization",
+            "Six Sigma Basics"
+          ]
+        },
+        {
+          "role": "Operations Manager (Area/Ops)",
+          "skills": [
+            "Process Management",
+            "Leadership",
+            "Excel",
+            "Problem Solving",
+            "Git",
+            "SQL"
+          ]
+        }
+      ],
+      "salaryBand": "16–40 LPA"
+    },
+    {
+      "name": "Meta",
+      "category": "Global Product / MNC",
+      "tier": "Dream (FAANG)",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "System Design",
+            "React",
+            "Distributed Systems",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Engineer",
+          "skills": [
+            "SQL",
+            "Python",
+            "ETL Pipelines",
+            "Big Data (Hive/Spark)",
+            "Git",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "25–50 LPA"
+    },
+    {
+      "name": "Apple",
+      "category": "Global Product / MNC",
+      "tier": "Dream (FAANG)",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Swift/C++",
+            "iOS/macOS Fundamentals",
+            "System Design",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Hardware Engineer",
+          "skills": [
+            "Embedded Systems",
+            "Circuit Design",
+            "Signal Processing",
+            "PCB Design",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "22–45 LPA"
+    },
+    {
+      "name": "Adobe",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Member of Technical Staff (MTS)",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/C++",
+            "System Design",
+            "Web Technologies",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Computer Scientist",
+          "skills": [
+            "Machine Learning",
+            "Computer Vision/NLP",
+            "Python",
+            "Research",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "18–35 LPA"
+    },
+    {
+      "name": "Salesforce",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Member of Technical Staff",
+          "skills": [
+            "Java/Apex",
+            "Data Structures",
+            "Cloud Architecture",
+            "REST APIs",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Associate Solutions Engineer",
+          "skills": [
+            "CRM Fundamentals",
+            "Salesforce Platform (Apex/LWC)",
+            "Communication",
+            "Presentation Skills",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        }
+      ],
+      "salaryBand": "16–32 LPA"
+    },
+    {
+      "name": "Oracle",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Applications Engineer",
+          "skills": [
+            "Java/SQL/PL-SQL",
+            "Data Structures",
+            "Oracle Cloud Fundamentals",
+            "Problem Solving",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Database Engineer",
+          "skills": [
+            "SQL",
+            "Oracle DB Administration",
+            "Performance Tuning",
+            "Data Structures",
+            "Git",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "8–18 LPA"
+    },
+    {
+      "name": "SAP Labs India",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Developer Associate",
+          "skills": [
+            "Java/ABAP",
+            "Data Structures",
+            "SAP HANA",
+            "Cloud Basics",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "UX Designer",
+          "skills": [
+            "Figma",
+            "Design Systems",
+            "User Research",
+            "Prototyping",
+            "React",
+            "CSS",
+            "Responsive Design",
+            "Accessibility"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "IBM",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "Cloud (IBM Cloud)",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "Python",
+            "Machine Learning",
+            "SQL",
+            "Statistics",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        },
+        {
+          "role": "Consultant",
+          "skills": [
+            "Business Analysis",
+            "SQL",
+            "Communication",
+            "Domain Knowledge",
+            "Excel",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "6–14 LPA"
+    },
+    {
+      "name": "Cisco",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "C/C++",
+            "Data Structures",
+            "Networking Protocols",
+            "Linux",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Network Engineer",
+          "skills": [
+            "Routing & Switching",
+            "CCNA/CCNP Concepts",
+            "Network Security",
+            "Troubleshooting",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "10–22 LPA"
+    },
+    {
+      "name": "Intel",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Hardware/Silicon Engineer",
+          "skills": [
+            "Verilog/VHDL",
+            "Digital Design",
+            "Computer Architecture",
+            "STA",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "C/C++",
+            "Data Structures",
+            "Operating Systems",
+            "Firmware",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "10–22 LPA"
+    },
+    {
+      "name": "NVIDIA",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "GPU/ASIC Design Engineer",
+          "skills": [
+            "Verilog/VHDL",
+            "Digital Design",
+            "Computer Architecture",
+            "Timing Analysis",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Software Engineer - CUDA",
+          "skills": [
+            "C/C++",
+            "CUDA Programming",
+            "Parallel Computing",
+            "Data Structures",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Deep Learning Engineer",
+          "skills": [
+            "Python",
+            "PyTorch/TensorFlow",
+            "Machine Learning",
+            "Linear Algebra",
+            "TensorFlow",
+            "PyTorch",
+            "Deep Learning",
+            "NLP",
+            "Computer Vision"
+          ]
+        }
+      ],
+      "salaryBand": "18–40 LPA"
+    },
+    {
+      "name": "Qualcomm",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "ASIC/RTL Design Engineer",
+          "skills": [
+            "Verilog/VHDL",
+            "Digital Design",
+            "Computer Architecture",
+            "Low Power Design",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Embedded Software Engineer",
+          "skills": [
+            "C/C++",
+            "RTOS",
+            "Embedded Linux",
+            "Debugging",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "14–28 LPA"
+    },
+    {
+      "name": "VMware",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "C/C++/Java",
+            "Operating Systems",
+            "Virtualization Concepts",
+            "Data Structures",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Cloud Engineer",
+          "skills": [
+            "Kubernetes",
+            "Virtualization",
+            "Networking",
+            "Linux",
+            "Docker",
+            "CI/CD",
+            "AWS"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Uber",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "System Design",
+            "Go/Java",
+            "Distributed Systems",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "SQL",
+            "Python",
+            "A/B Testing",
+            "Statistics",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "18–35 LPA"
+    },
+    {
+      "name": "LinkedIn",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "System Design",
+            "Java",
+            "Distributed Systems",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Engineer",
+          "skills": [
+            "SQL",
+            "Kafka",
+            "Big Data (Hadoop/Spark)",
+            "Python",
+            "Git",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "20–38 LPA"
+    },
+    {
+      "name": "PayPal",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java",
+            "Data Structures",
+            "System Design",
+            "Payment Systems Basics",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Risk Analyst",
+          "skills": [
+            "SQL",
+            "Fraud Detection",
+            "Statistics",
+            "Excel",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        }
+      ],
+      "salaryBand": "12–24 LPA"
+    },
+    {
+      "name": "Walmart Global Tech",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/Node.js",
+            "Data Structures",
+            "System Design",
+            "Microservices",
+            "Git",
+            "REST APIs",
+            "CI/CD"
+          ]
+        },
+        {
+          "role": "Data Engineer",
+          "skills": [
+            "SQL",
+            "Python",
+            "Spark",
+            "Cloud (GCP/Azure)",
+            "Git",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Expedia Group",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Tableau",
+            "A/B Testing",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Atlassian",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java",
+            "System Design",
+            "REST APIs",
+            "Git",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Product Manager",
+          "skills": [
+            "Product Sense",
+            "Analytics",
+            "Roadmapping",
+            "Communication",
+            "Excel",
+            "SQL",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "18–35 LPA"
+    },
+    {
+      "name": "ServiceNow",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/JavaScript",
+            "Data Structures",
+            "Cloud Platforms",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Technical Support Engineer",
+          "skills": [
+            "Troubleshooting",
+            "SQL",
+            "Networking Basics",
+            "Communication",
+            "Git",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Nutanix",
+      "category": "Global Product / MNC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "C/C++/Python",
+            "Distributed Systems",
+            "Virtualization",
+            "Data Structures",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Systems Reliability Engineer",
+          "skills": [
+            "Linux",
+            "Networking",
+            "Automation Scripting",
+            "Monitoring",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "12–24 LPA"
+    },
+    {
+      "name": "Goldman Sachs",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Technology Analyst",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Python",
+            "System Design",
+            "SQL",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Investment Banking Analyst",
+          "skills": [
+            "Financial Modeling",
+            "Excel",
+            "Valuation",
+            "Communication",
+            "Git",
+            "SQL"
+          ]
+        }
+      ],
+      "salaryBand": "18–32 LPA"
+    },
+    {
+      "name": "JPMorgan",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "System Design",
+            "SQL",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Markets Analyst",
+          "skills": [
+            "Financial Markets Knowledge",
+            "Excel",
+            "Statistics",
+            "Communication",
+            "Git",
+            "SQL"
+          ]
+        }
+      ],
+      "salaryBand": "16–30 LPA"
+    },
+    {
+      "name": "Morgan Stanley",
+      "category": "Global Product / MNC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Technology Analyst",
+          "skills": [
+            "Java/C++",
+            "Data Structures",
+            "System Design",
+            "SQL",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Financial Analyst",
+          "skills": [
+            "Financial Modeling",
+            "Excel",
+            "Accounting Basics",
+            "Communication",
+            "Git",
+            "SQL"
+          ]
+        }
+      ],
+      "salaryBand": "16–30 LPA"
+    },
+    {
+      "name": "Flipkart",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "System Design",
+            "Java",
+            "Microservices",
+            "Git",
+            "REST APIs",
+            "CI/CD"
+          ]
+        },
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Data Visualization",
+            "E-commerce Metrics"
+          ]
+        },
+        {
+          "role": "Product Manager",
+          "skills": [
+            "Product Sense",
+            "Analytics",
+            "SQL",
+            "Roadmapping",
+            "Excel",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "12–25 LPA"
+    },
+    {
+      "name": "Swiggy",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Go",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Analyst",
+          "skills": [
+            "SQL",
+            "Python",
+            "A/B Testing",
+            "Dashboards",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "10–22 LPA"
+    },
+    {
+      "name": "Zomato",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Kotlin",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Growth/Marketing Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "A/B Testing",
+            "Communication",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Paytm",
+      "category": "Indian Product / Startup",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "REST APIs",
+            "Payment Systems",
+            "Git",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "QA Automation Engineer",
+          "skills": [
+            "Selenium/Appium",
+            "Java",
+            "API Testing",
+            "CI/CD",
+            "Jest",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "8–16 LPA"
+    },
+    {
+      "name": "PhonePe",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Golang",
+            "System Design",
+            "Distributed Systems",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "Python",
+            "Machine Learning",
+            "SQL",
+            "Statistics",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "12–25 LPA"
+    },
+    {
+      "name": "Razorpay",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Golang/Java",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Product Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Product Metrics",
+            "Communication",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "12–24 LPA"
+    },
+    {
+      "name": "Zerodha",
+      "category": "Indian Product / Startup",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Golang/Python",
+            "Data Structures",
+            "System Design",
+            "Trading Systems Basics",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Analyst",
+          "skills": [
+            "SQL",
+            "Python",
+            "Statistics",
+            "Financial Markets Knowledge",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "CRED",
+      "category": "Indian Product / Startup",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Kotlin/Java",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Product Designer",
+          "skills": [
+            "Figma",
+            "Interaction Design",
+            "User Research",
+            "Prototyping",
+            "React",
+            "CSS",
+            "Responsive Design",
+            "Accessibility"
+          ]
+        }
+      ],
+      "salaryBand": "15–30 LPA"
+    },
+    {
+      "name": "Ola",
+      "category": "Indian Product / Startup",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Python",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Data Visualization",
+            "Operations Metrics"
+          ]
+        }
+      ],
+      "salaryBand": "8–18 LPA"
+    },
+    {
+      "name": "Meesho",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Python",
+            "System Design",
+            "Microservices",
+            "Git",
+            "REST APIs",
+            "CI/CD"
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "Python",
+            "Machine Learning",
+            "SQL",
+            "Statistics",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "10–22 LPA"
+    },
+    {
+      "name": "Myntra",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Fashion E-commerce Metrics",
+            "Communication",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Freshworks",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Ruby/Java",
+            "System Design",
+            "SaaS Fundamentals",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Product Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Product Metrics",
+            "Communication",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Nykaa",
+      "category": "Indian Product / Startup",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "REST APIs",
+            "E-commerce Systems",
+            "Git",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Digital Marketing Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "SEO/SEM Basics",
+            "Analytics Tools",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "7–15 LPA"
+    },
+    {
+      "name": "Dream11",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java",
+            "System Design",
+            "High-Concurrency Systems",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "Python",
+            "Machine Learning",
+            "SQL",
+            "Statistics",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "12–24 LPA"
+    },
+    {
+      "name": "Postman",
+      "category": "Indian Product / Startup",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "JavaScript/Node.js",
+            "System Design",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Developer Advocate",
+          "skills": [
+            "API Fundamentals",
+            "Technical Writing",
+            "Public Speaking",
+            "Community Building",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "15–30 LPA"
+    },
+    {
+      "name": "BrowserStack",
+      "category": "Indian Product / Startup",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Golang",
+            "System Design",
+            "Distributed Systems",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "QA Automation Engineer",
+          "skills": [
+            "Selenium/Appium",
+            "Java/Python",
+            "CI/CD",
+            "Test Frameworks",
+            "Jest",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "12–25 LPA"
+    },
+    {
+      "name": "InMobi",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Data Structures & Algorithms",
+            "Java/Scala",
+            "System Design",
+            "Big Data",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Data Analyst",
+          "skills": [
+            "SQL",
+            "Python",
+            "AdTech Metrics",
+            "Dashboards",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Zoho",
+      "category": "Indian Product / Startup",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/JavaScript",
+            "Data Structures",
+            "System Design",
+            "SaaS Product Development",
+            "Git",
+            "REST APIs",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "QA Engineer",
+          "skills": [
+            "Manual & Automation Testing",
+            "Java",
+            "Test Case Design",
+            "SQL",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "5–12 LPA"
+    },
+    {
+      "name": "Deloitte",
+      "category": "Consulting / GCC",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Analyst - Consulting",
+          "skills": [
+            "Excel",
+            "PowerPoint",
+            "Business Analysis",
+            "Communication",
+            "Git",
+            "SQL"
+          ]
+        },
+        {
+          "role": "Technology Analyst",
+          "skills": [
+            "Java/Python",
+            "SQL",
+            "Cloud Basics",
+            "Problem Solving",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Audit Associate",
+          "skills": [
+            "Accounting Fundamentals",
+            "Excel",
+            "Attention to Detail",
+            "Communication",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        }
+      ],
+      "salaryBand": "4.5–9 LPA"
+    },
+    {
+      "name": "EY (Ernst & Young)",
+      "category": "Consulting / GCC",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Assurance Associate",
+          "skills": [
+            "Accounting Fundamentals",
+            "Excel",
+            "Auditing Standards",
+            "Attention to Detail",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Technology Consultant",
+          "skills": [
+            "SQL",
+            "Java/Python",
+            "Business Analysis",
+            "Cloud Basics",
+            "Excel",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "4.5–9 LPA"
+    },
+    {
+      "name": "PwC (PricewaterhouseCoopers)",
+      "category": "Consulting / GCC",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Associate - Assurance",
+          "skills": [
+            "Accounting Fundamentals",
+            "Excel",
+            "Auditing Standards",
+            "Attention to Detail",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Technology Consultant",
+          "skills": [
+            "SQL",
+            "Data Analysis",
+            "Cloud Basics",
+            "Communication",
+            "Excel",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "4.5–9 LPA"
+    },
+    {
+      "name": "KPMG",
+      "category": "Consulting / GCC",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Analyst - Advisory",
+          "skills": [
+            "Excel",
+            "Financial Analysis",
+            "Communication",
+            "Business Research",
+            "Git",
+            "SQL"
+          ]
+        },
+        {
+          "role": "IT Risk Consultant",
+          "skills": [
+            "SQL",
+            "Cybersecurity Basics",
+            "Risk Frameworks",
+            "Auditing",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        }
+      ],
+      "salaryBand": "4.5–8.5 LPA"
+    },
+    {
+      "name": "Accenture",
+      "category": "Consulting / GCC",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Associate Software Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "SQL",
+            "Cloud Basics",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Management Consulting Analyst",
+          "skills": [
+            "Excel",
+            "PowerPoint",
+            "Business Analysis",
+            "Communication",
+            "Git",
+            "SQL"
+          ]
+        },
+        {
+          "role": "Cloud Engineer",
+          "skills": [
+            "AWS/Azure",
+            "DevOps Tools",
+            "Kubernetes",
+            "Scripting",
+            "Docker",
+            "CI/CD",
+            "AWS",
+            "Linux"
+          ]
+        }
+      ],
+      "salaryBand": "4.5–9 LPA"
+    },
+    {
+      "name": "McKinsey Digital",
+      "category": "Consulting / GCC",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "Case Interview Skills",
+            "Structured Problem Solving",
+            "Excel",
+            "Data Storytelling",
+            "SQL",
+            "Data Visualization"
+          ]
+        },
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Python/Java",
+            "Data Structures",
+            "Cloud Basics",
+            "Analytics",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "20–35 LPA"
+    },
+    {
+      "name": "JPMorgan Chase (GCC)",
+      "category": "Consulting / GCC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Operations Analyst",
+          "skills": [
+            "Excel",
+            "Process Improvement",
+            "Financial Product Knowledge",
+            "Communication",
+            "Git",
+            "SQL"
+          ]
+        },
+        {
+          "role": "Business Intelligence Analyst",
+          "skills": [
+            "SQL",
+            "Tableau/Power BI",
+            "Data Analysis",
+            "Excel",
+            "Git"
+          ]
+        }
+      ],
+      "salaryBand": "8–16 LPA"
+    },
+    {
+      "name": "Target GCC (India)",
+      "category": "Consulting / GCC",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "Cloud (GCP/Azure)",
+            "Microservices",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD"
+          ]
+        },
+        {
+          "role": "Data Analyst",
+          "skills": [
+            "SQL",
+            "Python",
+            "Retail Analytics",
+            "Dashboards",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Lowe's India",
+      "category": "Consulting / GCC",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "Cloud Basics",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "SQL",
+            "Excel",
+            "Retail Domain Knowledge",
+            "Communication",
+            "Data Visualization"
+          ]
+        }
+      ],
+      "salaryBand": "8–16 LPA"
+    },
+    {
+      "name": "Larsen & Toubro (L&T)",
+      "category": "Core Engineering",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee - Civil",
+          "skills": [
+            "AutoCAD",
+            "Structural Design",
+            "Site Engineering",
+            "Project Management Basics",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Graduate Engineer Trainee - Mechanical",
+          "skills": [
+            "SolidWorks/CATIA",
+            "Manufacturing Processes",
+            "GD&T",
+            "Problem Solving",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Software Engineer (L&T Infotech Group)",
+          "skills": [
+            "Java/Python",
+            "Data Structures",
+            "SQL",
+            "Problem Solving",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–7 LPA"
+    },
+    {
+      "name": "Tata Motors",
+      "category": "Core Engineering",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee - Automotive",
+          "skills": [
+            "Automotive Systems",
+            "CAD (CATIA/SolidWorks)",
+            "GD&T",
+            "Manufacturing Processes",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Production Engineer",
+          "skills": [
+            "Lean Manufacturing",
+            "Quality Control",
+            "Process Optimization",
+            "Six Sigma Basics",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–6.5 LPA"
+    },
+    {
+      "name": "Mahindra & Mahindra",
+      "category": "Core Engineering",
+      "tier": "Mass recruiter",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee",
+          "skills": [
+            "CAD Tools",
+            "Automotive Engineering",
+            "Manufacturing Processes",
+            "Problem Solving",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Quality Engineer",
+          "skills": [
+            "Quality Control",
+            "Six Sigma Basics",
+            "Root Cause Analysis",
+            "Statistical Process Control",
+            "Jest",
+            "CI/CD",
+            "Git",
+            "REST APIs"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–6.5 LPA"
+    },
+    {
+      "name": "Bosch",
+      "category": "Core Engineering",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Software Engineer - Embedded",
+          "skills": [
+            "C/C++",
+            "Embedded Systems",
+            "RTOS",
+            "Automotive Protocols (CAN)",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Graduate Engineer Trainee - Mechanical",
+          "skills": [
+            "CAD (CATIA)",
+            "Manufacturing Processes",
+            "Six Sigma Basics",
+            "GD&T",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "5–10 LPA"
+    },
+    {
+      "name": "Siemens",
+      "category": "Core Engineering",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee - Electrical",
+          "skills": [
+            "Power Systems",
+            "PLC/SCADA",
+            "Automation Basics",
+            "Circuit Design",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "C++/Java",
+            "Data Structures",
+            "Industrial IoT Basics",
+            "Problem Solving",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "5–10 LPA"
+    },
+    {
+      "name": "Bajaj Auto",
+      "category": "Core Engineering",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee",
+          "skills": [
+            "CAD Tools",
+            "Automotive Design",
+            "Manufacturing Processes",
+            "Quality Control",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "R&D Engineer",
+          "skills": [
+            "Engine Design",
+            "Simulation Tools (ANSYS)",
+            "Testing & Validation",
+            "CAD Tools",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "4–7 LPA"
+    },
+    {
+      "name": "Ashok Leyland",
+      "category": "Core Engineering",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee",
+          "skills": [
+            "CAD Tools",
+            "Automotive Systems",
+            "Manufacturing Processes",
+            "Problem Solving",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Production Engineer",
+          "skills": [
+            "Lean Manufacturing",
+            "Quality Control",
+            "Process Optimization",
+            "Six Sigma Basics",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–6.5 LPA"
+    },
+    {
+      "name": "Godrej & Boyce",
+      "category": "Core Engineering",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Graduate Engineer Trainee",
+          "skills": [
+            "CAD Tools",
+            "Manufacturing Processes",
+            "Product Design",
+            "Quality Control",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Design Engineer",
+          "skills": [
+            "SolidWorks/AutoCAD",
+            "GD&T",
+            "Material Selection",
+            "Prototyping",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "3.5–7 LPA"
+    },
+    {
+      "name": "Texas Instruments",
+      "category": "Semiconductor / Deep Tech",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Analog Design Engineer",
+          "skills": [
+            "Analog Circuit Design",
+            "SPICE Simulation",
+            "Semiconductor Physics",
+            "Layout Basics",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Digital Design Engineer",
+          "skills": [
+            "Verilog/VHDL",
+            "Digital Design",
+            "RTL Coding",
+            "Timing Analysis",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "AMD",
+      "category": "Semiconductor / Deep Tech",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "ASIC Design Engineer",
+          "skills": [
+            "Verilog/VHDL",
+            "Computer Architecture",
+            "RTL Design",
+            "STA",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Physical Design Engineer",
+          "skills": [
+            "Synthesis",
+            "Place & Route",
+            "Timing Closure",
+            "Low Power Design",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "14–28 LPA"
+    },
+    {
+      "name": "Analog Devices",
+      "category": "Semiconductor / Deep Tech",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Analog/Mixed-Signal Design Engineer",
+          "skills": [
+            "Analog Circuit Design",
+            "SPICE Simulation",
+            "PCB Design",
+            "Signal Processing",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "DSP Engineer",
+          "skills": [
+            "Digital Signal Processing",
+            "MATLAB",
+            "C/C++",
+            "Embedded Systems",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Synopsys",
+      "category": "Semiconductor / Deep Tech",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "R&D Engineer - EDA Tools",
+          "skills": [
+            "C++",
+            "Data Structures",
+            "Algorithms",
+            "VLSI Fundamentals",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Application Engineer",
+          "skills": [
+            "Verilog/VHDL",
+            "Static Timing Analysis",
+            "Customer Support",
+            "Scripting (TCL/Python)",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Cadence Design Systems",
+      "category": "Semiconductor / Deep Tech",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "R&D Software Engineer",
+          "skills": [
+            "C++",
+            "Data Structures",
+            "Algorithms",
+            "VLSI CAD Fundamentals",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Verification Engineer",
+          "skills": [
+            "SystemVerilog",
+            "UVM",
+            "Verilog/VHDL",
+            "Debugging",
+            "Git",
+            "SQL",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "Palo Alto Networks",
+      "category": "Cybersecurity",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Security Engineer",
+          "skills": [
+            "Network Security",
+            "Firewalls",
+            "SIEM",
+            "Threat Hunting",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Software Engineer - Security Products",
+          "skills": [
+            "Python/Go",
+            "Data Structures",
+            "Cloud Security",
+            "APIs",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Penetration Tester",
+          "skills": [
+            "Networking",
+            "Linux",
+            "Kali Linux",
+            "OWASP Top 10",
+            "Security Fundamentals",
+            "Nmap",
+            "Metasploit",
+            "Burp Suite",
+            "Nuclei",
+            "Wireshark",
+            "Report Writing",
+            "Web App Security",
+            "OSCP",
+            "Active Directory",
+            "SQLMap",
+            "Hydra",
+            "John the Ripper",
+            "Python for Exploit Scripting",
+            "Mobile App Pentesting",
+            "Cloud Pentesting (AWS/Azure)",
+            "Red Teaming",
+            "Bug Bounty Hunting",
+            "CTF Practice (HTB/TryHackMe)"
+          ]
+        }
+      ],
+      "salaryBand": "14–28 LPA"
+    },
+    {
+      "name": "CrowdStrike",
+      "category": "Cybersecurity",
+      "tier": "Dream",
+      "roles": [
+        {
+          "role": "Threat Intelligence Analyst",
+          "skills": [
+            "Threat Hunting",
+            "Malware Analysis",
+            "SIEM",
+            "Incident Response",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "Python/Go/C++",
+            "Data Structures",
+            "Endpoint Security Concepts",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        }
+      ],
+      "salaryBand": "14–28 LPA"
+    },
+    {
+      "name": "Fortinet",
+      "category": "Cybersecurity",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Security Engineer",
+          "skills": [
+            "Network Security",
+            "Firewalls (FortiGate)",
+            "VPN",
+            "Threat Analysis",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "C/C++",
+            "Networking Protocols",
+            "Data Structures",
+            "Debugging",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Penetration Tester",
+          "skills": [
+            "Networking",
+            "Linux",
+            "Kali Linux",
+            "OWASP Top 10",
+            "Security Fundamentals",
+            "Nmap",
+            "Metasploit",
+            "Burp Suite",
+            "Nuclei",
+            "Wireshark",
+            "Report Writing",
+            "Web App Security",
+            "OSCP",
+            "Active Directory",
+            "Python for Exploit Scripting",
+            "Mobile App Pentesting",
+            "Bug Bounty Hunting"
+          ]
+        }
+      ],
+      "salaryBand": "8–16 LPA"
+    },
+    {
+      "name": "Zscaler",
+      "category": "Cybersecurity",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Security Engineer",
+          "skills": [
+            "Cloud Security",
+            "SASE/Zero Trust Concepts",
+            "Networking",
+            "SIEM",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Software Development Engineer",
+          "skills": [
+            "Java/Go",
+            "Data Structures",
+            "Distributed Systems",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Penetration Tester",
+          "skills": [
+            "Networking",
+            "Linux",
+            "Kali Linux",
+            "OWASP Top 10",
+            "Security Fundamentals",
+            "Nmap",
+            "Metasploit",
+            "Burp Suite",
+            "Nuclei",
+            "Wireshark",
+            "Report Writing",
+            "Web App Security",
+            "OSCP",
+            "Active Directory",
+            "SQLMap",
+            "Hydra",
+            "John the Ripper",
+            "Cloud Pentesting (AWS/Azure)",
+            "CTF Practice (HTB/TryHackMe)"
+          ]
+        }
+      ],
+      "salaryBand": "10–20 LPA"
+    },
+    {
+      "name": "McAfee",
+      "category": "Cybersecurity",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Security Analyst",
+          "skills": [
+            "Malware Analysis",
+            "SIEM",
+            "Endpoint Security",
+            "Incident Response",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Software Engineer",
+          "skills": [
+            "C++/Python",
+            "Data Structures",
+            "Security Fundamentals",
+            "APIs",
+            "Git",
+            "REST APIs",
+            "System Design",
+            "CI/CD",
+            "Microservices"
+          ]
+        },
+        {
+          "role": "Penetration Tester",
+          "skills": [
+            "Networking",
+            "Linux",
+            "Kali Linux",
+            "OWASP Top 10",
+            "Security Fundamentals",
+            "Nmap",
+            "Metasploit",
+            "Burp Suite",
+            "Nuclei",
+            "Wireshark",
+            "Report Writing",
+            "Web App Security",
+            "OSCP",
+            "Active Directory"
+          ]
+        }
+      ],
+      "salaryBand": "6–14 LPA"
+    },
+    {
+      "name": "Sophos",
+      "category": "Cybersecurity",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Threat Researcher",
+          "skills": [
+            "Malware Analysis",
+            "Reverse Engineering",
+            "Threat Hunting",
+            "Scripting (Python)",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "SOC Analyst",
+          "skills": [
+            "SIEM",
+            "Incident Response",
+            "Nmap/Burp Suite",
+            "Log Analysis",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Penetration Tester",
+          "skills": [
+            "Networking",
+            "Linux",
+            "Kali Linux",
+            "OWASP Top 10",
+            "Security Fundamentals",
+            "Nmap",
+            "Metasploit",
+            "Burp Suite",
+            "Nuclei",
+            "Wireshark",
+            "Report Writing",
+            "Web App Security",
+            "OSCP",
+            "Active Directory",
+            "SQLMap",
+            "Hydra"
+          ]
+        }
+      ],
+      "salaryBand": "6–14 LPA"
+    },
+    {
+      "name": "Fractal Analytics",
+      "category": "Analytics / Data",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Analytics Consultant",
+          "skills": [
+            "Python",
+            "SQL",
+            "Machine Learning",
+            "Statistics",
+            "Business Storytelling",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "Python/R",
+            "Machine Learning",
+            "Deep Learning Basics",
+            "SQL",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "8–16 LPA"
+    },
+    {
+      "name": "Mu Sigma",
+      "category": "Analytics / Data",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Decision Scientist (Trainee)",
+          "skills": [
+            "SQL",
+            "Python/R",
+            "Statistics",
+            "Problem Framing",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Business Analyst",
+          "skills": [
+            "Excel",
+            "SQL",
+            "Data Visualization",
+            "Communication"
+          ]
+        }
+      ],
+      "salaryBand": "5–10 LPA"
+    },
+    {
+      "name": "LatentView Analytics",
+      "category": "Analytics / Data",
+      "tier": "Mid-tier",
+      "roles": [
+        {
+          "role": "Analyst - Data Science",
+          "skills": [
+            "Python",
+            "SQL",
+            "Machine Learning",
+            "Statistics",
+            "Git",
+            "Excel"
+          ]
+        },
+        {
+          "role": "Business Intelligence Analyst",
+          "skills": [
+            "SQL",
+            "Power BI/Tableau",
+            "Excel",
+            "Data Modeling",
+            "Git"
+          ]
+        }
+      ],
+      "salaryBand": "6–12 LPA"
+    },
+    {
+      "name": "Tiger Analytics",
+      "category": "Analytics / Data",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "Python",
+            "Machine Learning",
+            "SQL",
+            "Statistics",
+            "Cloud (AWS/Azure)",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        },
+        {
+          "role": "Data Engineer",
+          "skills": [
+            "SQL",
+            "Python",
+            "ETL Pipelines",
+            "Spark",
+            "Cloud Data Platforms",
+            "Git",
+            "Excel"
+          ]
+        }
+      ],
+      "salaryBand": "8–16 LPA"
+    },
+    {
+      "name": "ZS Associates",
+      "category": "Analytics / Data",
+      "tier": "Tier-1",
+      "roles": [
+        {
+          "role": "Business Technology Associate",
+          "skills": [
+            "SQL",
+            "Python",
+            "Business Analysis",
+            "Data Visualization",
+            "Network Security",
+            "Cryptography",
+            "Penetration Testing",
+            "Wireshark",
+            "Nmap"
+          ]
+        },
+        {
+          "role": "Data Scientist",
+          "skills": [
+            "Python/R",
+            "Machine Learning",
+            "Statistics",
+            "Pharma/Healthcare Analytics",
+            "Pandas",
+            "NumPy",
+            "Data Visualization",
+            "Scikit-learn",
+            "Jupyter"
+          ]
+        }
+      ],
+      "salaryBand": "7–15 LPA"
+    }
+  ]
+}
