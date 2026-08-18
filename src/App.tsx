@@ -1421,13 +1421,21 @@ function TestView({ category, round, questions: qs, answers, setAnswers, submitt
     function handleVisibility() { if (document.hidden) onSubmit('You switched tabs or minimized the window.'); }
     function handleBlur() { onSubmit('You switched to another window or application.'); }
     function handleCopy(e: ClipboardEvent) { e.preventDefault(); onSubmit('Copying was detected during the test.'); }
+    // The PrintScreen key captures to the clipboard without ever blurring or
+    // hiding the page, so it's invisible to the three listeners above — this
+    // is the one screenshot path a plain "switched away" check can't catch.
+    // Windows' own Snip & Sketch (Win+Shift+S) still hands focus to its
+    // overlay first, so that path is already covered by handleBlur.
+    function handleKeyDown(e: KeyboardEvent) { if (e.key === 'PrintScreen') onSubmit('A screenshot was attempted during the test.'); }
     document.addEventListener('visibilitychange', handleVisibility);
     window.addEventListener('blur', handleBlur);
     document.addEventListener('copy', handleCopy);
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
       document.removeEventListener('visibilitychange', handleVisibility);
       window.removeEventListener('blur', handleBlur);
       document.removeEventListener('copy', handleCopy);
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, [submitted, onSubmit]);
 
