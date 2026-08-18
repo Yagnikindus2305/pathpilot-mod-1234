@@ -901,19 +901,22 @@ async function pruneStaleRoadmapSkills(userId: string, requiredSkills: string[])
   if (stale.length) await supabase.from('roadmap_skills').delete().eq('user_id', userId).in('skill_name', stale);
 }
 
-// Regenerates the whole roadmap from a fresh skill set — used after both a
-// new resume analysis AND a resume comparison, so the roadmap always
-// reflects the most recently uploaded resume rather than going stale after
-// Compare (which previously never touched roadmap_skills at all).
+// Regenerates the roadmap's required-skill list from a fresh skill set —
+// used after both a new resume analysis AND a resume comparison, so the
+// roadmap always reflects the most recently uploaded resume rather than
+// going stale after Compare (which previously never touched roadmap_skills
+// at all).
 async function syncRoadmap(skills: string[], role: string, userId: string) {
-  // A new resume means skills need to be re-verified against what THIS
-  // resume shows — carrying old done-checkmarks forward would leave
-  // Aptitude/Compare unlocked on stale progress. Reset first, so the
-  // roadmap (and everything gated behind it) has to be earned again.
-  await supabase.from('roadmap_skills').delete().eq('user_id', userId);
   const roadmapItems = isKnownRole(role)
     ? await fetchRoadmap(role, skills).then((res) => res.roadmap).catch(() => getRoleRoadmap(role, skills))
     : (await fetchAIRole(role))?.roadmap || getRoleRoadmap(role, skills);
+  // Drop only skills the new resume/role no longer needs — a manually
+  // checked-off roadmap skill is self-reported real progress, not something
+  // this resume's text has to keep proving, so it must never be wiped just
+  // because a different (or re-analyzed) resume came in. Upserting without a
+  // `done` field leaves each row's existing done-status untouched; only
+  // brand-new rows start out unmarked.
+  await pruneStaleRoadmapSkills(userId, roadmapItems.map((item) => item.skill));
   const rows = roadmapItems.map((item) => ({ user_id: userId, skill_name: item.skill, priority: item.priority || 'Must Have' }));
   if (rows.length) {
     const { error } = await supabase.from('roadmap_skills').upsert(rows, { onConflict: 'user_id,skill_name' });
@@ -1249,15 +1252,23 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
       .then(({ data }) => { if (!cancelled) setLatestResume(data as typeof latestResume); });
     return () => { cancelled = true; };
   }, [user]);
+  const [workExperience, setWorkExperience] = useState<WorkExperience[]>([]);
+  useEffect(() => {
+    if (!user) { setWorkExperience([]); return; }
+    let cancelled = false;
+    supabase.from('work_experiences').select('*').eq('user_id', user.id).order('start_date', { ascending: false })
+      .then(({ data }) => { if (!cancelled) setWorkExperience((data || []) as WorkExperience[]); });
+    return () => { cancelled = true; };
+  }, [user]);
 
   async function generateResume() {
     if (!user) return;
     const doneRoadmapSkills = skills.filter((s) => s.done).map((s) => s.skill_name);
     const originalSkills = latestResume?.skills || [];
+    // One combined skills list — no separate "recently learned" callout, so
+    // it reads like a normal resume's skills section rather than an
+    // annotated diff.
     const allSkills = Array.from(new Set([...(profile?.saved_skills || originalSkills), ...doneRoadmapSkills]));
-    const originalSet = new Set(originalSkills);
-    const newlyLearned = allSkills.filter((s) => !originalSet.has(s));
-    const existingSkills = allSkills.filter((s) => originalSet.has(s));
 
     // Loaded on demand rather than bundled up front — jsPDF is only ever
     // needed once someone actually clicks this button.
@@ -1305,16 +1316,22 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
     y += 4;
 
     writeHeading('SKILLS');
-    if (existingSkills.length) writeParagraph(existingSkills.join(', '));
-    if (newlyLearned.length) {
-      y += 2;
-      doc.setFont('helvetica', 'bold');
-      writeParagraph('Recently learned via PathPilot roadmap:');
-      doc.setFont('helvetica', 'normal');
-      writeParagraph(newlyLearned.join(', '));
-    }
-    if (!existingSkills.length && !newlyLearned.length) writeParagraph('No skills detected yet.');
+    writeParagraph(allSkills.length ? allSkills.join(', ') : 'No skills detected yet.');
     y += 4;
+
+    if (workExperience.length) {
+      writeHeading('WORK EXPERIENCE');
+      for (const exp of workExperience) {
+        ensureSpace();
+        doc.setFont('helvetica', 'bold');
+        doc.text(`${exp.title} - ${exp.company_name}`, marginX, y);
+        y += 5.5;
+        doc.setFont('helvetica', 'normal');
+        if (exp.description) writeParagraph(exp.description);
+        y += 3;
+      }
+      y += 1;
+    }
 
     if (latestResume?.raw_text) {
       writeHeading('ORIGINAL RESUME CONTENT');
