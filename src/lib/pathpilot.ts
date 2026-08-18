@@ -81,11 +81,17 @@ export function getRoleByTitle(title?: string): PathpilotRole | undefined {
   return richRoleList.find((role) => role.title.toLowerCase() === title.toLowerCase());
 }
 
-export function getRoleRoadmap(roleTitle?: string, knownSkills: string[] = []): Array<PathpilotRoadmapItem & { priority?: 'Must Have' | 'Nice to Have' | 'Advanced' }> {
+// Always returns the role's FULL skill catalog — it used to drop any skill
+// already present in knownSkills, which made the roadmap's own total shrink
+// and reshuffle every time a new resume changed what counted as "known"
+// (e.g. 23/23 complete one upload, then 14/21 the next). Completion is
+// tracked separately (App.tsx checks each item against knownSkills/done),
+// so the denominator here stays fixed per role and only the done-count
+// moves — matching how a roadmap total is expected to behave.
+export function getRoleRoadmap(roleTitle?: string): Array<PathpilotRoadmapItem & { priority?: 'Must Have' | 'Nice to Have' | 'Advanced' }> {
   const role = getRoleByTitle(roleTitle);
 
   if (role?.roadmap?.length) {
-    const known = new Set(knownSkills.map((skill) => skill.toLowerCase()));
     // The rich roadmap JSON only stores {skill, video} — without this, every
     // item defaulted to 'Must Have' downstream (App.tsx's `priority: item.priority
     // || 'Must Have'`), so the Roadmap page's Nice to Have / Advanced sections
@@ -99,19 +105,15 @@ export function getRoleRoadmap(roleTitle?: string, knownSkills: string[] = []): 
       if (req?.advanced.some((s) => s.toLowerCase() === lower)) return 'Advanced';
       return 'Nice to Have';
     };
-    return role.roadmap
-      .filter((item) => !known.has(item.skill.toLowerCase()))
-      .map((item) => ({ ...item, priority: priorityFor(item.skill) }));
+    return role.roadmap.map((item) => ({ ...item, priority: priorityFor(item.skill) }));
   }
 
   const fallback = ROLE_SKILLS[roleTitle || 'Full Stack Developer'] || ROLE_SKILLS['Full Stack Developer'];
-  const skills = [
+  return [
     ...fallback.must.map((skill) => ({ skill, priority: 'Must Have' as const, video: '' })),
     ...fallback.nice.map((skill) => ({ skill, priority: 'Nice to Have' as const, video: '' })),
     ...fallback.advanced.map((skill) => ({ skill, priority: 'Advanced' as const, video: '' })),
-  ].filter((item) => !knownSkills.some((known) => known.toLowerCase() === item.skill.toLowerCase()));
-
-  return skills;
+  ];
 }
 
 // The full skill set a role expects — used to keep a user's roadmap_skills rows
@@ -137,11 +139,9 @@ export function getRoleRequiredSkills(roleTitle?: string): string[] {
 // done — this is what makes "Grow further" actually surface something new for
 // a role whose base roadmap has been fully completed, instead of the roadmap
 // staying capped at the original list forever.
-export function getRoleGrowthSkills(roleTitle?: string, knownSkills: string[] = []): PathpilotRoadmapItem[] {
+export function getRoleGrowthSkills(roleTitle?: string): PathpilotRoadmapItem[] {
   const role = getRoleByTitle(roleTitle);
-  if (!role?.growthSkills?.length) return [];
-  const known = new Set(knownSkills.map((skill) => skill.toLowerCase()));
-  return role.growthSkills.filter((item) => !known.has(item.skill.toLowerCase()));
+  return role?.growthSkills?.length ? role.growthSkills : [];
 }
 
 export function getToolCheck(roleTitle: string, resumeText: string) {

@@ -908,8 +908,8 @@ async function pruneStaleRoadmapSkills(userId: string, requiredSkills: string[])
 // at all).
 async function syncRoadmap(skills: string[], role: string, userId: string) {
   const roadmapItems = isKnownRole(role)
-    ? await fetchRoadmap(role, skills).then((res) => res.roadmap).catch(() => getRoleRoadmap(role, skills))
-    : (await fetchAIRole(role))?.roadmap || getRoleRoadmap(role, skills);
+    ? await fetchRoadmap(role, skills).then((res) => res.roadmap).catch(() => getRoleRoadmap(role))
+    : (await fetchAIRole(role))?.roadmap || getRoleRoadmap(role);
   // Drop only skills the new resume/role no longer needs — a manually
   // checked-off roadmap skill is self-reported real progress, not something
   // this resume's text has to keep proving, so it must never be wiped just
@@ -953,8 +953,13 @@ function ResumeAnalysisPage({ go, onProgress }: { go: (module: Module) => void; 
       const saved = data as ResumeAnalysis;
       setAnalysis(saved);
       setHistory((prev) => [saved, ...prev]);
-      await updateProfile({ saved_skills: result.skills });
-      await syncRoadmap(result.skills, profile?.target_role || 'Full Stack Developer', user.id);
+      // Accumulate rather than replace — a narrower follow-up resume (or one
+      // that just phrases things differently) shouldn't make the app "forget"
+      // skills an earlier upload already proved, which was quietly resetting
+      // roadmap requirements back open every time.
+      const mergedSkills = Array.from(new Set([...(profile?.saved_skills || []), ...result.skills]));
+      await updateProfile({ saved_skills: mergedSkills });
+      await syncRoadmap(mergedSkills, profile?.target_role || 'Full Stack Developer', user.id);
       if (user.email) await logActivity(user.email, 'resume_analyzed', session?.access_token);
       onProgress?.();
     }
@@ -1191,17 +1196,23 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
     if (!user) return;
     if (aiLoading) { setSkills([]); return; }
     const knownSkills = profile?.saved_skills || [];
+    const knownLower = new Set(knownSkills.map((s) => s.toLowerCase()));
     const apply = async (roadmapItems: Array<{ skill: string; video: string; priority?: 'Must Have' | 'Nice to Have' | 'Advanced' }>, requiredSkills: string[]) => {
       await pruneStaleRoadmapSkills(user.id, requiredSkills);
       const { data: existingRows } = await supabase.from('roadmap_skills').select('skill_name, done').eq('user_id', user.id);
       const doneMap = new Map((existingRows || []).map((r: { skill_name: string; done: boolean }) => [r.skill_name, r.done]));
+      // A skill counts as done if it's been manually checked off OR your
+      // resume history already proves it — either way it's real progress,
+      // and neither path should ever make an item vanish from the list (that's
+      // what used to make the total shrink and reshuffle on every upload).
+      const isDone = (skillName: string) => Boolean(doneMap.get(skillName)) || knownLower.has(skillName.toLowerCase());
 
       // Once every current-tier item is checked off, unlock the role's growth
       // tier so the roadmap has somewhere to go instead of sitting at "done"
       // forever — this is what "Grow further" actually surfaces. AI-inferred
       // roles have no separate growth tier, so this stays base-only for them.
-      const baseAllDone = roadmapItems.length > 0 && roadmapItems.every((item) => doneMap.get(item.skill));
-      const growthItems = (!aiRole && baseAllDone) ? getRoleGrowthSkills(role, knownSkills) : [];
+      const baseAllDone = roadmapItems.length > 0 && roadmapItems.every((item) => isDone(item.skill));
+      const growthItems = (!aiRole && baseAllDone) ? getRoleGrowthSkills(role) : [];
       const combined = [
         ...roadmapItems.map((item) => ({ ...item, tier: 'base' as const })),
         ...growthItems.map((item) => ({ ...item, priority: 'Advanced' as const, tier: 'growth' as const })),
@@ -1211,7 +1222,7 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
         id: `${role}-${item.tier}-${index}`,
         skill_name: item.skill,
         priority: item.priority || 'Must Have',
-        done: doneMap.get(item.skill) || false,
+        done: isDone(item.skill),
         video: item.video,
       })));
       onProgress?.();
@@ -1223,7 +1234,7 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
     }
     fetchRoadmap(role, knownSkills)
       .then((res) => apply(res.roadmap, getRoleRequiredSkills(role)))
-      .catch(() => apply(getRoleRoadmap(role, knownSkills), getRoleRequiredSkills(role)));
+      .catch(() => apply(getRoleRoadmap(role), getRoleRequiredSkills(role)));
   }, [user, role, profile?.saved_skills, onProgress, aiRole, aiLoading]);
 
   useEffect(() => {
@@ -1495,7 +1506,7 @@ function TestView({ category, round, questions: qs, answers, setAnswers, submitt
   return <><PageHeader eyebrow={`APTITUDE TEST · ROUND ${round}${round > 1 ? ' (HARDER)' : ''}`} title={category}><div className="test-header-actions">{!submitted && <span className={timeLeft <= 60 ? 'timer-pill low' : 'timer-pill'}>{formatTime(timeLeft)}</span>}<button className="secondary-btn" onClick={onBack}><ArrowRight size={15} className="back-icon" /> All categories</button></div></PageHeader>{!submitted && <p className="anti-cheat-notice"><ShieldCheck size={13} /> Stay on this tab and don't copy answers — switching tabs, windows, or copying auto-submits your test.</p>}{submitted ? <div className="test-result"><div className="result-trophy"><Trophy size={28} /></div><div className="eyebrow">TEST COMPLETE</div>{autoSubmitReason && <p className="auto-submit-note">Auto-submitted — {autoSubmitReason}</p>}<h2>You scored {score} out of {qs.length}</h2><p>{score / qs.length >= .7 ? `Excellent work. You are building real interview momentum. Round ${round + 1} will pull tougher questions.` : 'Good attempt. Review the gaps and give it another shot.'}</p><ProgressRing score={Math.round(score / qs.length * 100)} size={130} />{score / qs.length >= .7 && <button className="primary-btn" onClick={() => go('roadmap')}>Back to Skill Roadmap <ArrowRight size={16} /></button>}<button className={score / qs.length >= .7 ? 'secondary-btn' : 'primary-btn'} onClick={() => { setAnswers([]); onBack(); }}>Back to categories <ArrowRight size={16} /></button></div> : <div className="question-list no-select" onContextMenu={(e) => e.preventDefault()}>{qs.map((q, i) => <div className="question-card" key={q.q}><div className="question-number">0{i + 1}</div><h2>{q.q}</h2><div className="options">{q.options.map((option, oi) => <button className={answers[i] === oi ? 'option selected' : 'option'} onClick={() => { const next = [...answers]; next[i] = oi; setAnswers(next); }} key={option}><span>{String.fromCharCode(65 + oi)}</span>{option}{answers[i] === oi && <Check size={16} />}</button>)}</div></div>)}<button className="primary-btn submit-test" onClick={() => onSubmit()}>Submit answers ({answeredCount}/{qs.length} answered) <ArrowRight size={17} /></button></div>}</>;
 }
 
-function ComparePage({ roadmap, onProgress, go }: { roadmap: RoadmapSkill[]; onProgress?: () => void; go: (module: Module) => void }) { const { user, profile, updateProfile, session } = useAuth(); const [oldFile, setOldFile] = useState<File | null>(null); const [newFile, setNewFile] = useState<File | null>(null); const [result, setResult] = useState<{ old: ReturnType<typeof analyzeResumeText>; next: ReturnType<typeof analyzeResumeText> } | null>(null); const [busy, setBusy] = useState(false); async function compare() { if (!oldFile || !newFile || !user) return; setBusy(true); const [{ text: oldText }, { text: newText }, experienceText] = await Promise.all([extractResumeText(oldFile), extractResumeText(newFile), fetchExperienceText(user.id)]); const old = analyzeResumeText(oldText || oldFile.name); const oldCombinedText = oldText || oldFile.name; const newCombinedText = [newText || newFile.name, experienceText].filter(Boolean).join('\n\n'); const next = analyzeResumeText(newCombinedText); setResult({ old, next }); await supabase.from('resume_comparisons').insert({ user_id: user.id, old_score: old.atsScore, new_score: next.atsScore, skills_gained: next.skills.filter((s) => !old.skills.includes(s)), new_roles: next.jobRoles.filter((r) => !old.jobRoles.some((x) => x.role === r.role)).map((r) => r.role) }); await Promise.all([oldFile, newFile].map(async (f, i) => { const isOld = i === 0; const a = isOld ? old : next; const text = isOld ? oldCombinedText : newCombinedText; const storagePath = `${user.id}/${Date.now()}-${i}-${f.name.replace(/[^a-zA-Z0-9._-]/g, '_')}`; const { error: uploadError } = await supabase.storage.from('resumes').upload(storagePath, f); await supabase.from('resume_analyses').insert({ user_id: user.id, file_name: f.name, ats_score: a.atsScore, skills: a.skills, job_roles: a.jobRoles, raw_text: text, file_path: uploadError ? null : storagePath }); })); await updateProfile({ saved_skills: next.skills }); await syncRoadmap(next.skills, profile?.target_role || 'Full Stack Developer', user.id); if (user.email) await logActivity(user.email, 'resume_compared', session?.access_token); onProgress?.(); setBusy(false); } return <><PageHeader eyebrow="MODULE 05 / BEFORE & AFTER" title="See your progress clearly." /><div className="module-intro"><p>Compare two versions of your resume to see what changed, what improved, and which new roles opened up.</p></div>{!result ? <><div className="compare-upload"><ResumeDrop label="OLD RESUME" file={oldFile} setFile={setOldFile} /><div className="vs-badge">VS</div><ResumeDrop label="NEW RESUME" file={newFile} setFile={setNewFile} /></div><button className="primary-btn compare-btn" disabled={!oldFile || !newFile || busy} onClick={compare}>{busy ? 'Comparing resumes…' : 'Compare resumes'}<Sparkles size={17} /></button></> : <CompareResult result={result} roadmap={roadmap} reset={() => setResult(null)} profile={profile} go={go} />}</>; }
+function ComparePage({ roadmap, onProgress, go }: { roadmap: RoadmapSkill[]; onProgress?: () => void; go: (module: Module) => void }) { const { user, profile, updateProfile, session } = useAuth(); const [oldFile, setOldFile] = useState<File | null>(null); const [newFile, setNewFile] = useState<File | null>(null); const [result, setResult] = useState<{ old: ReturnType<typeof analyzeResumeText>; next: ReturnType<typeof analyzeResumeText> } | null>(null); const [busy, setBusy] = useState(false); async function compare() { if (!oldFile || !newFile || !user) return; setBusy(true); const [{ text: oldText }, { text: newText }, experienceText] = await Promise.all([extractResumeText(oldFile), extractResumeText(newFile), fetchExperienceText(user.id)]); const old = analyzeResumeText(oldText || oldFile.name); const oldCombinedText = oldText || oldFile.name; const newCombinedText = [newText || newFile.name, experienceText].filter(Boolean).join('\n\n'); const next = analyzeResumeText(newCombinedText); setResult({ old, next }); await supabase.from('resume_comparisons').insert({ user_id: user.id, old_score: old.atsScore, new_score: next.atsScore, skills_gained: next.skills.filter((s) => !old.skills.includes(s)), new_roles: next.jobRoles.filter((r) => !old.jobRoles.some((x) => x.role === r.role)).map((r) => r.role) }); await Promise.all([oldFile, newFile].map(async (f, i) => { const isOld = i === 0; const a = isOld ? old : next; const text = isOld ? oldCombinedText : newCombinedText; const storagePath = `${user.id}/${Date.now()}-${i}-${f.name.replace(/[^a-zA-Z0-9._-]/g, '_')}`; const { error: uploadError } = await supabase.storage.from('resumes').upload(storagePath, f); await supabase.from('resume_analyses').insert({ user_id: user.id, file_name: f.name, ats_score: a.atsScore, skills: a.skills, job_roles: a.jobRoles, raw_text: text, file_path: uploadError ? null : storagePath }); })); const mergedSkills = Array.from(new Set([...(profile?.saved_skills || []), ...next.skills])); await updateProfile({ saved_skills: mergedSkills }); await syncRoadmap(mergedSkills, profile?.target_role || 'Full Stack Developer', user.id); if (user.email) await logActivity(user.email, 'resume_compared', session?.access_token); onProgress?.(); setBusy(false); } return <><PageHeader eyebrow="MODULE 05 / BEFORE & AFTER" title="See your progress clearly." /><div className="module-intro"><p>Compare two versions of your resume to see what changed, what improved, and which new roles opened up.</p></div>{!result ? <><div className="compare-upload"><ResumeDrop label="OLD RESUME" file={oldFile} setFile={setOldFile} /><div className="vs-badge">VS</div><ResumeDrop label="NEW RESUME" file={newFile} setFile={setNewFile} /></div><button className="primary-btn compare-btn" disabled={!oldFile || !newFile || busy} onClick={compare}>{busy ? 'Comparing resumes…' : 'Compare resumes'}<Sparkles size={17} /></button></> : <CompareResult result={result} roadmap={roadmap} reset={() => setResult(null)} profile={profile} go={go} />}</>; }
 function ResumeDrop({ label, file, setFile }: { label: string; file: File | null; setFile: (f: File | null) => void }) { return <div className="resume-drop"><div className="eyebrow">{label}</div><label className="drop-inner"><div className="upload-icon small"><Upload size={19} /></div><strong>{file ? file.name : 'Choose a resume'}</strong><span>PDF, DOCX or TXT</span><input type="file" accept=".pdf,.docx,.txt" onChange={(e) => setFile(e.target.files?.[0] || null)} /></label></div>; }
 function CompareResult({ result, roadmap, reset, profile, go }: { result: { old: ReturnType<typeof analyzeResumeText>; next: ReturnType<typeof analyzeResumeText> }; roadmap: RoadmapSkill[]; reset: () => void; profile: Profile | null; go: (module: Module) => void }) {
   const { user, session, updateProfile } = useAuth();
