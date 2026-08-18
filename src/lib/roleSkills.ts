@@ -272,11 +272,10 @@ export function getMissingSkills(detectedSkills: string[], targetRole: string): 
   return [...build(req.must, 'Must Have'), ...build(req.nice, 'Nice to Have'), ...build(req.advanced, 'Advanced')];
 }
 
-// pathpilot-mod-123: aptitude_70 milestone dropped since Module 4 (Aptitude)
-// isn't part of this scoped demo build.
 export const DEFAULT_MILESTONES = [
   { key: 'complete_profile', label: 'Complete your profile' },
   { key: 'analyze_resume', label: 'Analyze your resume' },
   { key: 'complete_roadmap', label: 'Complete your skill roadmap' },
+  { key: 'aptitude_70', label: 'Score 70%+ on an aptitude test' },
   { key: 'apply_10', label: 'Apply to 10 job roles' },
 ];
