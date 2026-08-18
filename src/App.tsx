@@ -1250,7 +1250,7 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
     return () => { cancelled = true; };
   }, [user]);
 
-  function generateResume() {
+  async function generateResume() {
     if (!user) return;
     const doneRoadmapSkills = skills.filter((s) => s.done).map((s) => s.skill_name);
     const originalSkills = latestResume?.skills || [];
@@ -1259,35 +1259,69 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
     const newlyLearned = allSkills.filter((s) => !originalSet.has(s));
     const existingSkills = allSkills.filter((s) => originalSet.has(s));
 
-    const lines: string[] = [];
-    lines.push(profile?.full_name || 'Your Name');
-    lines.push([role, profile?.college, profile?.course].filter(Boolean).join(' | '));
-    if (user.email) lines.push(user.email);
-    lines.push('');
-    lines.push('SKILLS');
-    lines.push('-'.repeat(40));
-    if (existingSkills.length) lines.push(existingSkills.join(', '));
-    if (newlyLearned.length) {
-      lines.push('');
-      lines.push(`Recently learned via PathPilot roadmap: ${newlyLearned.join(', ')}`);
+    // Loaded on demand rather than bundled up front — jsPDF is only ever
+    // needed once someone actually clicks this button.
+    const { default: jsPDF } = await import('jspdf');
+    const doc = new jsPDF();
+    const marginX = 15;
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    const usableWidth = pageWidth - marginX * 2;
+    let y = 20;
+
+    function ensureSpace() {
+      if (y > pageHeight - 20) { doc.addPage(); y = 20; }
     }
-    if (!existingSkills.length && !newlyLearned.length) lines.push('No skills detected yet.');
-    if (latestResume?.raw_text) {
-      lines.push('');
-      lines.push('ORIGINAL RESUME CONTENT');
-      lines.push('-'.repeat(40));
-      lines.push(latestResume.raw_text);
+    function writeHeading(text: string) {
+      ensureSpace();
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(12);
+      doc.text(text, marginX, y);
+      y += 6;
+      doc.setDrawColor(200);
+      doc.line(marginX, y, pageWidth - marginX, y);
+      y += 6;
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(10);
+    }
+    function writeParagraph(text: string) {
+      const lines: string[] = doc.splitTextToSize(text, usableWidth);
+      for (const line of lines) {
+        ensureSpace();
+        doc.text(line, marginX, y);
+        y += 5.5;
+      }
     }
 
-    const blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${(profile?.full_name || 'pathpilot').replace(/\s+/g, '_')}_updated_resume.txt`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(18);
+    doc.text(profile?.full_name || 'Your Name', marginX, y);
+    y += 8;
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(10);
+    const subtitle = [role, profile?.college, profile?.course].filter(Boolean).join(' | ');
+    if (subtitle) { doc.text(subtitle, marginX, y); y += 5.5; }
+    if (user.email) { doc.text(user.email, marginX, y); y += 5.5; }
+    y += 4;
+
+    writeHeading('SKILLS');
+    if (existingSkills.length) writeParagraph(existingSkills.join(', '));
+    if (newlyLearned.length) {
+      y += 2;
+      doc.setFont('helvetica', 'bold');
+      writeParagraph('Recently learned via PathPilot roadmap:');
+      doc.setFont('helvetica', 'normal');
+      writeParagraph(newlyLearned.join(', '));
+    }
+    if (!existingSkills.length && !newlyLearned.length) writeParagraph('No skills detected yet.');
+    y += 4;
+
+    if (latestResume?.raw_text) {
+      writeHeading('ORIGINAL RESUME CONTENT');
+      writeParagraph(latestResume.raw_text);
+    }
+
+    doc.save(`${(profile?.full_name || 'pathpilot').replace(/\s+/g, '_')}_updated_resume.pdf`);
   }
 
   const done = skills.filter((x) => x.done).length;
@@ -1309,7 +1343,7 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
     onProgress?.();
   }
 
-  return <><PageHeader eyebrow="MODULE 03 / SKILL DIRECTION" title="Close the gap with intention."><div className="role-pill"><Target size={15} /> {role}{aiRole && <span className="ai-badge">AI-matched</span>}</div></PageHeader><div className="roadmap-hero"><div><div className="eyebrow light">YOUR ROADMAP</div><h2>{done} of {skills.length || 0} skills covered</h2><p>Progress is not about knowing everything. It’s about knowing what’s next.</p></div><ProgressRing score={skills.length ? Math.round(done / skills.length * 100) : 0} size={124} /></div>{!skills.length ? <div className="empty-state">{aiLoading ? `Looking up skills for "${role}" with AI…` : 'Preparing your personalized roadmap…'}</div> : <div className="roadmap-groups">{(['Must Have', 'Nice to Have', 'Advanced'] as const).map((tier) => { const items = skills.filter((s) => s.priority === tier); if (!items.length) return null; const doneInTier = items.filter((s) => s.done).length; return <div key={tier}><div className="roadmap-tier-head"><span className={`priority ${tier.toLowerCase().replace(' ', '-')}`}>{tier}</span><span className="roadmap-tier-count">({doneInTier}/{items.length})</span></div><div className="roadmap-tier-grid">{items.map((skill) => <div className={skill.done ? 'roadmap-row completed' : 'roadmap-row'} key={skill.id}><button className="check-toggle" onClick={() => toggle(skill)}>{skill.done ? <Check size={15} /> : <Circle size={17} />}</button><div className="roadmap-skill"><strong>{skill.skill_name}</strong></div><a className="watch-link" href={skill.video || `https://www.youtube.com/results?search_query=${encodeURIComponent(skill.skill_name + ' tutorial')}`} target="_blank" rel="noreferrer"><Play size={13} /> Watch</a><button className="mark-btn" onClick={() => toggle(skill)}>{skill.done ? 'Completed' : 'Mark done'}</button></div>)}</div></div>; })}</div>}{!skills.length && <div className="empty-state"><Target size={28} /><strong>Your roadmap will appear after your first resume analysis.</strong><button className="primary-btn" onClick={() => go('resume')}>Analyze resume <ArrowRight size={16} /></button></div>}{skills.length > 0 && <div className="content-card resume-generate-card"><SectionTitle icon={FileText} title="Updated resume" action={<span className="muted-label">{done} of {skills.length} skills covered</span>} /><p className="missing-intro">{done === skills.length ? "You've completed every skill on this roadmap — generate a fresh resume with everything you've learned, ready to send out." : "Generate a resume any time — it folds in every roadmap skill you've completed so far, layered on top of your original resume."}</p><button type="button" className="primary-btn" onClick={generateResume} disabled={!latestResume}><Download size={16} /> Generate updated resume</button></div>}<div className="content-card company-card"><SectionTitle icon={BriefcaseBusiness} title="Companies you can target" action={<span className="muted-label">Based on your current skills</span>} /><p className="company-card-copy">Ranked by how much of each company's role you already match — not a generic list.</p>{companyMatches.length ? <div className="company-grid">{companyMatches.slice(0, 12).map((c) => <div className="company-pill" key={c.company}><strong>{c.company}</strong><span>{c.category}</span><small>{c.bestMatch.role} · {c.bestMatch.matchPct}% match</small></div>)}</div> : <div className="empty-state">{(profile?.saved_skills || []).length ? 'No company data loaded yet — add pathpilot_companies.json to server/data/.' : 'Analyze your resume first so we know which skills to match against companies.'}</div>}</div><div className="next-banner"><div className="banner-icon"><GraduationCap size={20} /></div><div><strong>Ready to test your knowledge?</strong><p>Put your skills under a little pressure with a focused aptitude test.</p></div><button onClick={() => go('aptitude')}>Take a test <ArrowRight size={16} /></button></div></>;
+  return <><PageHeader eyebrow="MODULE 03 / SKILL DIRECTION" title="Close the gap with intention."><div className="role-pill"><Target size={15} /> {role}{aiRole && <span className="ai-badge">AI-matched</span>}</div></PageHeader><div className="roadmap-hero"><div><div className="eyebrow light">YOUR ROADMAP</div><h2>{done} of {skills.length || 0} skills covered</h2><p>Progress is not about knowing everything. It’s about knowing what’s next.</p></div><ProgressRing score={skills.length ? Math.round(done / skills.length * 100) : 0} size={124} /></div>{!skills.length ? <div className="empty-state">{aiLoading ? `Looking up skills for "${role}" with AI…` : 'Preparing your personalized roadmap…'}</div> : <div className="roadmap-groups">{(['Must Have', 'Nice to Have', 'Advanced'] as const).map((tier) => { const items = skills.filter((s) => s.priority === tier); if (!items.length) return null; const doneInTier = items.filter((s) => s.done).length; return <div key={tier}><div className="roadmap-tier-head"><span className={`priority ${tier.toLowerCase().replace(' ', '-')}`}>{tier}</span><span className="roadmap-tier-count">({doneInTier}/{items.length})</span></div><div className="roadmap-tier-grid">{items.map((skill) => <div className={skill.done ? 'roadmap-row completed' : 'roadmap-row'} key={skill.id}><button className="check-toggle" onClick={() => toggle(skill)}>{skill.done ? <Check size={15} /> : <Circle size={17} />}</button><div className="roadmap-skill"><strong>{skill.skill_name}</strong></div><a className="watch-link" href={skill.video || `https://www.youtube.com/results?search_query=${encodeURIComponent(skill.skill_name + ' tutorial')}`} target="_blank" rel="noreferrer"><Play size={13} /> Watch</a><button className="mark-btn" onClick={() => toggle(skill)}>{skill.done ? 'Completed' : 'Mark done'}</button></div>)}</div></div>; })}</div>}{!skills.length && <div className="empty-state"><Target size={28} /><strong>Your roadmap will appear after your first resume analysis.</strong><button className="primary-btn" onClick={() => go('resume')}>Analyze resume <ArrowRight size={16} /></button></div>}{skills.length > 0 && done === skills.length && <div className="content-card resume-generate-card"><SectionTitle icon={FileText} title="Updated resume" action={<span className="muted-label">{done} of {skills.length} skills covered</span>} /><p className="missing-intro">You've completed every skill on this roadmap — generate a fresh resume with everything you've learned, ready to send out.</p><button type="button" className="primary-btn" onClick={generateResume} disabled={!latestResume}><Download size={16} /> Generate updated resume (PDF)</button></div>}<div className="content-card company-card"><SectionTitle icon={BriefcaseBusiness} title="Companies you can target" action={<span className="muted-label">Based on your current skills</span>} /><p className="company-card-copy">Ranked by how much of each company's role you already match — not a generic list.</p>{companyMatches.length ? <div className="company-grid">{companyMatches.slice(0, 12).map((c) => <div className="company-pill" key={c.company}><strong>{c.company}</strong><span>{c.category}</span><small>{c.bestMatch.role} · {c.bestMatch.matchPct}% match</small></div>)}</div> : <div className="empty-state">{(profile?.saved_skills || []).length ? 'No company data loaded yet — add pathpilot_companies.json to server/data/.' : 'Analyze your resume first so we know which skills to match against companies.'}</div>}</div><div className="next-banner"><div className="banner-icon"><GraduationCap size={20} /></div><div><strong>Ready to test your knowledge?</strong><p>Put your skills under a little pressure with a focused aptitude test.</p></div><button onClick={() => go('aptitude')}>Take a test <ArrowRight size={16} /></button></div></>;
 }
 
 const questions = QUESTIONS;
