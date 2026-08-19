@@ -580,9 +580,10 @@ function RadarChart({ data, size = 240 }: { data: { label: string; value: number
 // into an unreadable mess) — click or tap a point to see exactly what it
 // means: its value, date, and an optional detail string (e.g. the resume
 // file name), shown in a small card below the chart.
-function SkillGrowthChart({ points, height = 168 }: { points: { label: string; value: number; detail?: string }[]; height?: number }) {
+function SkillGrowthChart({ points, height = 168, onActiveChange }: { points: { label: string; value: number; detail?: string }[]; height?: number; onActiveChange?: (index: number | null) => void }) {
   const gradId = useId();
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndexState] = useState<number | null>(null);
+  const setActiveIndex = (index: number | null) => { setActiveIndexState(index); onActiveChange?.(index); };
   if (points.length === 0) {
     return <div className="empty-state growth-chart-empty">Analyze a resume to start tracking growth here.</div>;
   }
@@ -857,6 +858,15 @@ function Dashboard({ go }: { go: (module: Module) => void }) {
   // time — instead of the old chart's five hardcoded bar heights that never
   // reflected anything about the actual account.
   const growthPoints = resumeHistory.map((r) => ({ label: new Date(r.created_at).toLocaleDateString('en-IN', { month: 'short', day: 'numeric' }), value: r.skills.length, detail: `${r.file_name} · ${new Date(r.created_at).toLocaleString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit' })}` }));
+  // Clicking a chart point (e.g. "12 skills detected") should show which 12
+  // -- that specific resume's own detected skills -- not the all-time
+  // accumulated list, which was misleading (a point could say 12 while the
+  // tags below always showed all 23 ever gained, regardless of which point
+  // was selected).
+  const [activeGrowthIndex, setActiveGrowthIndex] = useState<number | null>(null);
+  const activeResume = activeGrowthIndex != null ? resumeHistory[activeGrowthIndex] : null;
+  const displayedSkillNames = activeResume ? activeResume.skills : gainedSkillNames;
+  const displayedSkillsLabel = activeResume ? `${activeResume.skills.length} skills from this resume` : `${skillsGained} skills this journey`;
   const roadmapDone = roadmap.length > 0 && roadmap.every(isRoadmapItemDone);
   const aptitudePassed = results.some((r) => r.score / Math.max(r.total, 1) >= .7);
   const appliedCount = applications.length;
@@ -880,7 +890,7 @@ function Dashboard({ go }: { go: (module: Module) => void }) {
   const nextLabel = readyForNextRound ? 'Grow further' : 'Continue building';
   const nextHeadline = readyForNextRound ? 'Your path is taking shape.' : `${skillsRemaining} skill video${skillsRemaining === 1 ? '' : 's'} left to close the gap.`;
   const nextSubCopy = readyForNextRound ? 'Re-analyze your resume to surface new missing skills and start a tougher round.' : 'Every skill you build is a step closer to the role you want.';
-  return <><PageHeader eyebrow="YOUR MOMENTUM" title={`Good to see you, ${profile?.full_name?.split(' ')[0] || 'Explorer'}.`}><button className="secondary-btn" onClick={() => go('profile')}><UserRound size={16} /> Edit profile</button></PageHeader><div className="welcome-strip"><div className="welcome-icon"><Sparkles size={21} /></div><div><strong>{nextHeadline}</strong><p>{nextSubCopy}</p></div><button onClick={() => go(nextModule)}>{nextLabel} <ArrowRight size={16} /></button></div><div className="metric-grid"><MetricCard label="Resume score" value={resume ? `${resume.ats_score}` : '—'} suffix={resume ? '/100' : ''} icon={FileSearch} color="blue" onClick={() => go('resume')} /><MetricCard label="Skills gained" value={String(skillsGained)} suffix="" icon={TrendingUp} color="green" onClick={() => go('roadmap')} /></div><SalaryCard profile={profile} resume={resume} roadmap={roadmap} roadmapDone={roadmapDone} aptitudePassed={aptitudePassed} /><ApplicationsCard applications={applications} onStatusChange={handleStatusChange} /><LiveJobsCard role={profile?.target_role} location={profile?.city || profile?.state} go={go} /><div className="dashboard-grid"><div className="content-card growth-card"><SectionTitle icon={BarChart3} title="Skill growth over time" action={<span className="muted-label">Skills detected per resume analysis</span>} /><SkillGrowthChart points={growthPoints} /><div className="chart-legend"><span><i className="legend-blue" /> Skills covered</span><strong>{skillsGained} skills this journey</strong></div>{gainedSkillNames.length > 0 && <div className="tag-cloud growth-skills-list">{gainedSkillNames.map((name) => <SkillTag green key={name}>{name}</SkillTag>)}</div>}</div><div className="content-card milestone-card"><SectionTitle icon={Target} title="Milestones" /><div className="milestone-list">{displayMilestones.map((m) => { const done = isMilestoneDone(m); const statusText = done ? 'Completed' : m.key === 'apply_10' ? `In progress (${Math.min(appliedCount, 10)}/10)` : 'In progress'; return <div className={done ? 'milestone-row completed' : 'milestone-row'} key={m.id}><div className="milestone-dot" /><div><strong>{m.label}</strong><p>{statusText}</p></div></div>; })}</div><div className="milestone-footer"><strong>{completedCount}/{displayMilestones.length} complete</strong><span>Keep building with focus.</span></div></div></div></>;
+  return <><PageHeader eyebrow="YOUR MOMENTUM" title={`Good to see you, ${profile?.full_name?.split(' ')[0] || 'Explorer'}.`}><button className="secondary-btn" onClick={() => go('profile')}><UserRound size={16} /> Edit profile</button></PageHeader><div className="welcome-strip"><div className="welcome-icon"><Sparkles size={21} /></div><div><strong>{nextHeadline}</strong><p>{nextSubCopy}</p></div><button onClick={() => go(nextModule)}>{nextLabel} <ArrowRight size={16} /></button></div><div className="metric-grid"><MetricCard label="Resume score" value={resume ? `${resume.ats_score}` : '—'} suffix={resume ? '/100' : ''} icon={FileSearch} color="blue" onClick={() => go('resume')} /><MetricCard label="Skills gained" value={String(skillsGained)} suffix="" icon={TrendingUp} color="green" onClick={() => go('roadmap')} /></div><SalaryCard profile={profile} resume={resume} roadmap={roadmap} roadmapDone={roadmapDone} aptitudePassed={aptitudePassed} /><ApplicationsCard applications={applications} onStatusChange={handleStatusChange} /><LiveJobsCard role={profile?.target_role} location={profile?.city || profile?.state} go={go} /><div className="dashboard-grid"><div className="content-card growth-card"><SectionTitle icon={BarChart3} title="Skill growth over time" action={<span className="muted-label">Skills detected per resume analysis</span>} /><SkillGrowthChart points={growthPoints} onActiveChange={setActiveGrowthIndex} /><div className="chart-legend"><span><i className="legend-blue" /> Skills covered</span><strong>{displayedSkillsLabel}</strong></div>{displayedSkillNames.length > 0 && <div className="tag-cloud growth-skills-list">{displayedSkillNames.map((name) => <SkillTag green key={name}>{name}</SkillTag>)}</div>}</div><div className="content-card milestone-card"><SectionTitle icon={Target} title="Milestones" /><div className="milestone-list">{displayMilestones.map((m) => { const done = isMilestoneDone(m); const statusText = done ? 'Completed' : m.key === 'apply_10' ? `In progress (${Math.min(appliedCount, 10)}/10)` : 'In progress'; return <div className={done ? 'milestone-row completed' : 'milestone-row'} key={m.id}><div className="milestone-dot" /><div><strong>{m.label}</strong><p>{statusText}</p></div></div>; })}</div><div className="milestone-footer"><strong>{completedCount}/{displayMilestones.length} complete</strong><span>Keep building with focus.</span></div></div></div></>;
 }
 
 function SalaryCard({ profile, resume, roadmap, roadmapDone, aptitudePassed }: { profile: Profile | null; resume: ResumeAnalysis | null; roadmap: RoadmapSkill[]; roadmapDone: boolean; aptitudePassed: boolean }) {
@@ -1484,8 +1494,18 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
     doc.setFontSize(10);
     const subtitle = [role, profile?.college, profile?.course].filter(Boolean).join(' | ');
     if (subtitle) { doc.text(subtitle, marginX, y); y += 5.5; }
-    if (user.email) { doc.text(user.email, marginX, y); y += 5.5; }
+    const contactLine = [user.email, profile?.phone].filter(Boolean).join(' | ');
+    if (contactLine) { doc.text(contactLine, marginX, y); y += 5.5; }
     y += 4;
+
+    // A short, honest summary line -- states real facts (target role, top
+    // skills already on file) rather than fabricated claims or metrics,
+    // which would be dishonest to put on someone's actual resume.
+    if (allSkills.length) {
+      writeHeading('SUMMARY');
+      writeParagraph(`Aspiring ${role} with hands-on experience in ${allSkills.slice(0, 6).join(', ')}, built through PathPilot's guided skill roadmap.`);
+      y += 4;
+    }
 
     writeHeading('SKILLS');
     writeParagraph(allSkills.length ? allSkills.join(', ') : 'No skills detected yet.');
@@ -1503,6 +1523,21 @@ function RoadmapPage({ go, onProgress }: { go: (module: Module) => void; onProgr
         y += 3;
       }
       y += 1;
+    }
+
+    // Real, already-collected profile data (college/course/year) -- a
+    // resume generator that never wrote an Education section was throwing
+    // away 2.5 of the ATS scorer's 15 "standard sections" points for free.
+    if (profile?.college) {
+      writeHeading('EDUCATION');
+      ensureSpace();
+      doc.setFont('helvetica', 'bold');
+      doc.text(profile.college, marginX, y);
+      y += 5.5;
+      doc.setFont('helvetica', 'normal');
+      const eduLine = [profile.course, profile.year ? `Year ${profile.year}` : null].filter(Boolean).join(' — ');
+      if (eduLine) { doc.text(eduLine, marginX, y); y += 5.5; }
+      y += 3;
     }
 
     if (latestResume?.raw_text) {
