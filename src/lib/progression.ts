@@ -19,7 +19,13 @@ export function computeProgression(
 ): ProgressionState {
   const profileDone = Boolean(profile?.full_name && profile?.college && profile?.target_role);
   const resumeDone = Boolean(resume);
-  const roadmapDone = roadmap.length > 0 && roadmap.every((s) => s.done);
+  // A roadmap skill also counts as done if accumulated resume history already
+  // proves it (same rule the Roadmap page itself uses to show completion) —
+  // without this, the page could show "18 of 18 covered!" while this check
+  // still saw an unmarked DB row for an auto-satisfied skill and kept
+  // Aptitude/Compare locked despite the roadmap looking finished.
+  const knownLower = new Set((profile?.saved_skills || []).map((s) => s.toLowerCase()));
+  const roadmapDone = roadmap.length > 0 && roadmap.every((s) => s.done || knownLower.has(s.skill_name.toLowerCase()));
   const aptitudeDone = results.some((r) => r.score / Math.max(r.total, 1) >= 0.7);
   const compareDone = comparisons.length > 0;
   return { profile: profileDone, resume: resumeDone, roadmap: roadmapDone, aptitude: aptitudeDone, compare: compareDone };

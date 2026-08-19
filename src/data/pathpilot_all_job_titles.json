@@ -1,8 +1,8 @@
 {
   "meta": {
     "description": "Broader role list grouped by category for the PathPilot dropdown.",
-    "totalTitles": 135,
-    "totalCategories": 19
+    "totalTitles": 427,
+    "totalCategories": 21
   },
   "categories": [
     "Software Development",
@@ -23,7 +23,9 @@
     "Product & Program Management",
     "General & Business Management",
     "Administrative Support",
-    "Sales & Business Development"
+    "Sales & Business Development",
+    "Skilled Trades & Manufacturing",
+    "Sports, Fitness & Recreation"
   ],
   "roles": [
     {
@@ -565,6 +567,1174 @@
     {
       "title": "Channel Sales Manager",
       "category": "Sales & Business Development"
+    },
+    {
+      "title": "Python Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Java Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "PHP Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Ruby Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Golang Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Rust Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": ".NET Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "iOS Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Android Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "React Native Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Flutter Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "WordPress Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Shopify Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Salesforce Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "SAP ABAP Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "API Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Low-Code / No-Code Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Firmware Engineer",
+      "category": "Software Development"
+    },
+    {
+      "title": "AR/VR Developer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Platform Engineer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Release Engineer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Performance Engineer",
+      "category": "Software Development"
+    },
+    {
+      "title": "Technical Program Lead",
+      "category": "Software Development"
+    },
+    {
+      "title": "NLP Engineer",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Computer Vision Engineer",
+      "category": "Data & AI"
+    },
+    {
+      "title": "AI Research Scientist",
+      "category": "Data & AI"
+    },
+    {
+      "title": "MLOps Engineer",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Data Architect",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Big Data Engineer",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Quantitative Analyst",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Analytics Engineer",
+      "category": "Data & AI"
+    },
+    {
+      "title": "AI Product Manager",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Prompt Engineer",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Data Governance Analyst",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Decision Scientist",
+      "category": "Data & AI"
+    },
+    {
+      "title": "Cloud Architect",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Cloud Security Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Infrastructure Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Kubernetes Administrator",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Cloud Support Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Automation Engineer (DevOps)",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Build & Release Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Telecom Network Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Automation Test Engineer",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Manual Tester",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Performance Test Engineer",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Mobile QA Engineer",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Test Lead",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "QA Architect",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Game QA Tester",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Help Desk Technician",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "Desktop Support Engineer",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "IT Asset Manager",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "ERP Support Specialist",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "IT Auditor",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "IT Project Coordinator",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "Field Service Technician",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "Cybersecurity Engineer",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Security Architect",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Threat Intelligence Analyst",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Malware Analyst",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Incident Response Analyst",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "GRC Analyst (Governance, Risk & Compliance)",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Cloud Security Analyst",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Application Security Engineer",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Cryptographer",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Digital Forensics Analyst",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Mining Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Petroleum Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Marine Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Nuclear Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Agricultural Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Materials Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Manufacturing Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Quality Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Reliability Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Robotics Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "VLSI / Chip Design Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Piping Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "HVAC Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Site / Construction Engineer",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Landscape Architect",
+      "category": "Architecture & Engineering"
+    },
+    {
+      "title": "Motion Graphics Designer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "3D Artist",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Game Artist",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Fashion Designer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Set Designer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Costume Designer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Makeup Artist",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Sound Designer / Audio Engineer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Art Director",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Brand Designer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Package Designer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Concept Artist",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Storyboard Artist",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Video Game Designer",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "Video Colorist",
+      "category": "Design & Creative"
+    },
+    {
+      "title": "SEO Specialist",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Content Strategist",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Brand Manager",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Growth Marketing Manager",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Email Marketing Specialist",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Public Relations Specialist",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Influencer Marketing Manager",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Media Planner",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Broadcast Producer",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Podcast Producer",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Video Producer",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Screenwriter",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "UX Writer",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Community Manager",
+      "category": "Marketing, Content & Media"
+    },
+    {
+      "title": "Portfolio Manager",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Wealth Manager / Financial Advisor",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Private Equity Associate",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Hedge Fund Analyst",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "FP&A Analyst",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Internal Controls Manager",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Trade Finance Specialist",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Treasury Analyst",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Insurance Underwriter",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Real Estate Analyst",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Procurement Manager",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Financial Controller",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Sustainability / ESG Manager",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Internal Auditor",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Venture Capital Analyst",
+      "category": "Business & Finance"
+    },
+    {
+      "title": "Talent Acquisition Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Learning & Development Specialist",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Compensation & Benefits Analyst",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Diversity, Equity & Inclusion Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "HRIS Analyst",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Employee Relations Specialist",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Workforce Planning Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Onboarding Specialist",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "HR Compliance Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Supply Chain Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Logistics Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Procurement Specialist",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Inventory Planner",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Warehouse Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Facilities Manager",
+      "category": "HR & Operations"
+    },
+    {
+      "title": "Instructional Designer",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Special Education Teacher",
+      "category": "Education & Training"
+    },
+    {
+      "title": "School Counselor",
+      "category": "Education & Training"
+    },
+    {
+      "title": "E-Learning Developer",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Academic Advisor",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Admissions Officer",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Education Policy Analyst",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Vocational / Trade Instructor",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Education Technology Specialist",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Dean of Students",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Early Childhood Educator",
+      "category": "Education & Training"
+    },
+    {
+      "title": "ESL / Language Instructor",
+      "category": "Education & Training"
+    },
+    {
+      "title": "Surgeon",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Cardiologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Neurologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Oncologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Pediatrician",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Psychiatrist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Psychologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Anesthesiologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Dermatologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Public Health Specialist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Epidemiologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Paramedic / EMT",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Medical Coder / Health Information Technician",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Healthcare Administrator",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Veterinarian",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Speech-Language Pathologist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Occupational Therapist",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Genetic Counselor",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Clinical Research Coordinator",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Nurse Practitioner",
+      "category": "Healthcare"
+    },
+    {
+      "title": "Litigation Lawyer / Trial Attorney",
+      "category": "Legal"
+    },
+    {
+      "title": "Criminal Defense Lawyer",
+      "category": "Legal"
+    },
+    {
+      "title": "Family Lawyer",
+      "category": "Legal"
+    },
+    {
+      "title": "Intellectual Property Lawyer",
+      "category": "Legal"
+    },
+    {
+      "title": "Tax Lawyer",
+      "category": "Legal"
+    },
+    {
+      "title": "Immigration Lawyer",
+      "category": "Legal"
+    },
+    {
+      "title": "Real Estate Lawyer",
+      "category": "Legal"
+    },
+    {
+      "title": "Labor & Employment Lawyer",
+      "category": "Legal"
+    },
+    {
+      "title": "Judge / Judicial Officer",
+      "category": "Legal"
+    },
+    {
+      "title": "Mediator / Arbitrator",
+      "category": "Legal"
+    },
+    {
+      "title": "Notary Public",
+      "category": "Legal"
+    },
+    {
+      "title": "Legal Researcher",
+      "category": "Legal"
+    },
+    {
+      "title": "Contract Manager",
+      "category": "Legal"
+    },
+    {
+      "title": "Court Reporter",
+      "category": "Legal"
+    },
+    {
+      "title": "Law Clerk",
+      "category": "Legal"
+    },
+    {
+      "title": "Physicist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Biologist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Microbiologist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Astronomer",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Geologist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Marine Biologist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Agricultural Scientist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Food Scientist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Materials Scientist",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Research Assistant",
+      "category": "Science & Research"
+    },
+    {
+      "title": "Technical Program Manager",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Product Owner",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Release Manager",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Agile Coach",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Portfolio Manager (Program)",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Chief of Staff",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Franchise Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Retail Operations Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Branch Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Regional Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Managing Director",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Change Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Receptionist",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Personal Assistant",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Office Manager",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Records Clerk",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Scheduling Coordinator",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Sales Development Representative (SDR)",
+      "category": "Sales & Business Development"
+    },
+    {
+      "title": "Business Development Representative (BDR)",
+      "category": "Sales & Business Development"
+    },
+    {
+      "title": "Customer Success Manager",
+      "category": "Sales & Business Development"
+    },
+    {
+      "title": "Franchise Sales Manager",
+      "category": "Sales & Business Development"
+    },
+    {
+      "title": "Real Estate Agent",
+      "category": "Sales & Business Development"
+    },
+    {
+      "title": "Pre-Sales Consultant",
+      "category": "Sales & Business Development"
+    },
+    {
+      "title": "E-commerce Manager",
+      "category": "Sales & Business Development"
+    },
+    {
+      "title": "API Test Engineer",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Accessibility Test Engineer",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Security Test Engineer (QA)",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "UAT Coordinator",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Test Data Engineer",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "QA Analyst",
+      "category": "QA & Testing"
+    },
+    {
+      "title": "Vice President of Operations",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Business Unit Head",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Operations Director",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Startup Founder / Entrepreneur",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Turnaround / Restructuring Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Business Operations Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Country Manager",
+      "category": "General & Business Management"
+    },
+    {
+      "title": "Virtual Assistant",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Document Controller",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Mailroom / Logistics Clerk",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Data Coordinator",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Executive Office Coordinator",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Transcriptionist",
+      "category": "Administrative Support"
+    },
+    {
+      "title": "Growth Product Manager",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Platform Product Manager",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Program Coordinator",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "PMO Analyst",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Innovation Manager",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "Technical Product Manager",
+      "category": "Product & Program Management"
+    },
+    {
+      "title": "DevSecOps Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Cloud FinOps Analyst",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Virtualization Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Network Operations Center (NOC) Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "Storage Engineer",
+      "category": "Cloud, DevOps & Infrastructure"
+    },
+    {
+      "title": "IT Trainer",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "IT Security Support Analyst",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "POS Support Technician",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "IT Vendor Coordinator",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "Data Center Technician",
+      "category": "IT & Technical Support"
+    },
+    {
+      "title": "Security Awareness Trainer",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Vulnerability Management Analyst",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Identity & Access Management (IAM) Engineer",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Red Team Operator",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Blue Team Analyst",
+      "category": "Cybersecurity"
+    },
+    {
+      "title": "Electrician",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Plumber",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Welder",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Carpenter",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "HVAC Technician",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Auto Mechanic",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Machinist",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Industrial Electrician",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Pipefitter / Steamfitter",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Millwright",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Sheet Metal Worker",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "CNC Operator",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Production Line Worker / Assembler",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Maintenance Technician",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Forklift Operator / Warehouse Associate",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Solar Panel Installer",
+      "category": "Skilled Trades & Manufacturing"
+    },
+    {
+      "title": "Personal Trainer",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Athletic Trainer",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Yoga Instructor",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Fitness Studio Manager",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Sports Analyst",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Recreation Program Coordinator",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Strength & Conditioning Coach",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Sports Nutritionist",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Referee / Umpire",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Golf Instructor",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Swim Instructor / Lifeguard",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Esports Coach",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Physical Education Teacher",
+      "category": "Sports, Fitness & Recreation"
+    },
+    {
+      "title": "Sports Facility Manager",
+      "category": "Sports, Fitness & Recreation"
     }
   ]
 }

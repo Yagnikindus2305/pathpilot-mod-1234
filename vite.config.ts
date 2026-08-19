@@ -29,6 +29,10 @@ export default defineConfig({
       // jobs) must always hit the network — never let the service worker
       // cache or intercept them.
       workbox: {
+        // Default 2 MiB cap is smaller than the main JS chunk now that it
+        // bundles the full role/skill catalogs -- without this the SW build
+        // step fails outright rather than just skipping precache of the file.
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallbackDenylist: [/^\/api\//],
         runtimeCaching: [
           {
