@@ -1,8 +1,8 @@
 ﻿import { createContext, Fragment, useCallback, useContext, useEffect, useId, useMemo, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import {
   ArrowRight, BarChart3, BookOpen, BriefcaseBusiness, Check, CheckCircle2, ChevronDown, ChevronRight, Circle,
-  Compass, Download, Eye, EyeOff, FileSearch, FileText, GraduationCap, KeyRound, LayoutDashboard, Linkedin, Lock, LogOut,
-  Mail, Menu, MessageCircle, Moon, Pencil, Play, Plus, Shield, ShieldCheck, Sparkles, Sun, Target,
+  Compass, Download, ExternalLink, Eye, EyeOff, FileSearch, FileText, GraduationCap, KeyRound, LayoutDashboard, Linkedin, Lock, LogOut,
+  Mail, Menu, MessageCircle, Moon, Pencil, Play, Plus, RefreshCw, Shield, ShieldCheck, Sparkles, Sun, Target,
   TrendingUp, Trash2, Trophy, Upload, UserRound, X, Zap,
 } from 'lucide-react';
 import { AuthProvider, useAuth, logActivity } from '@/context/AuthContext';
@@ -19,6 +19,7 @@ import { canAccess, computeProgression, type ModuleId, type ProgressionState } f
 import { getCategoryForRole, getRoleByTitle, getRoleGrowthSkills, getRoleRequiredSkills, getRoleRoadmap, getRolesInCategory, getToolCheck } from '@/lib/pathpilot';
 import { fetchRoadmap, fetchToolCheck, fetchCompanyMatch, fetchCombinedCompanyMatch, fetchLiveJobs, type CompanyMatch, type LiveJob, type ToolCheckItem, type GroupedOptions } from '@/lib/api';
 import { useAIRole, isKnownRole, fetchAIRole } from '@/lib/aiRoleResolver';
+import { fetchCompanySalary, getCachedSalary, type ExperienceLevel, type SalaryLookupResult } from '@/lib/salaryLookup';
 import { fetchExperienceText } from '@/lib/experience';
 import { isValidEmail, isValidPhone, EMAIL_HELP_TEXT, PHONE_HELP_TEXT, parsePhoneValue, formatPhoneValue, sanitizePhoneDigits, checkPasswordStrength, isStrongPassword, PASSWORD_HELP_TEXT } from '@/lib/validation';
 import { COUNTRY_DIAL_CODES } from '@/lib/countries';
@@ -648,6 +649,71 @@ function tierClass(tier: string): string {
 }
 function TierBadge({ tier }: { tier: string }) { return <span className={`tier-badge ${tierClass(tier)}`}>{tier}</span>; }
 
+const SALARY_LEVELS: ExperienceLevel[] = ['Entry', 'Mid', 'Senior'];
+
+// Live company+role salary, with a level toggle (Entry/Mid/Senior) so a
+// company card isn't stuck showing one blended range -- falls back to the
+// existing static estimate (silently, no "Live" badge) whenever the live
+// lookup has nothing for that exact combination, so a number is always shown.
+function CompanySalaryBadge({ company, role, location, fallback }: { company: string; role: string; location: string; fallback: string }) {
+  const [level, setLevel] = useState<ExperienceLevel>('Entry');
+  const [result, setResult] = useState<SalaryLookupResult | null>(() => getCachedSalary(company, role, location, 'Entry') || null);
+  const [loading, setLoading] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
+  const [refreshMsg, setRefreshMsg] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setRefreshMsg(null);
+    const cached = getCachedSalary(company, role, location, level);
+    if (cached) { setResult(cached); return; }
+    setLoading(true);
+    fetchCompanySalary(company, role, location, level).then((res) => {
+      if (cancelled) return;
+      setResult(res);
+      setLoading(false);
+    });
+    return () => { cancelled = true; };
+  }, [company, role, location, level]);
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    setRefreshMsg(null);
+    const res = await fetchCompanySalary(company, role, location, level, true);
+    setRefreshing(false);
+    if (res?.rateLimited) {
+      setRefreshMsg('Already refreshed today — try again tomorrow.');
+    } else if (res) {
+      setResult(res);
+    }
+  };
+
+  const isLive = Boolean(result?.live && result.minLpa !== null);
+  const rangeText = loading
+    ? 'Checking live salary…'
+    : isLive
+      ? `₹${result!.minLpa}${result!.maxLpa && result!.maxLpa !== result!.minLpa ? `–${result!.maxLpa}` : ''} LPA`
+      : fallback;
+
+  return <div className="salary-badge-wrap">
+    <div className="salary-level-tabs">
+      {SALARY_LEVELS.map((lvl) => (
+        <button key={lvl} type="button" className={lvl === level ? 'salary-level-tab active' : 'salary-level-tab'} onClick={() => setLevel(lvl)}>{lvl}</button>
+      ))}
+    </div>
+    <div className="salary-badge-row">
+      <span className="salary-range">{rangeText}</span>
+      {isLive && <span className="live-badge"><Zap size={11} /> Live</span>}
+    </div>
+    {isLive && <div className="salary-source-row">
+      <span className="salary-as-of">as of {new Date(result!.fetchedAt).toLocaleDateString()}</span>
+      {result!.sourceUrl && result!.sourceDomain && <a href={result!.sourceUrl} target="_blank" rel="noopener noreferrer" className="salary-source-link">via {result!.sourceDomain} <ExternalLink size={10} /></a>}
+      <button type="button" className="salary-refresh-btn" onClick={handleRefresh} disabled={refreshing}><RefreshCw size={11} className={refreshing ? 'spinning' : ''} /> Refresh</button>
+    </div>}
+    {refreshMsg && <span className="salary-refresh-msg">{refreshMsg}</span>}
+  </div>;
+}
+
 // Job-role seniority isn't tagged in the data — derived from the role's own
 // average salary instead of a separate lookup, so it stays consistent as
 // role data changes.
@@ -1055,7 +1121,7 @@ function ResumeResult({ analysis, round, onReset, go }: { analysis: ResumeAnalys
     const expanded = expandedCompany === rowKey;
     return <div className="hiring-row" key={rowKey}>
       <div className="hiring-row-top"><strong>{c.company}</strong><TierBadge tier={c.tier} /><span className="matched-role-pct-mini">{c.bestMatch.matchPct}%</span></div>
-      <div className="hiring-row-meta"><span>{c.salaryBand}</span></div>
+      <div className="hiring-row-meta"><CompanySalaryBadge company={c.company} role={c.bestMatch.role} location={profile?.city || profile?.state || 'India'} fallback={c.salaryBand} /></div>
       <div className="hiring-row-foot">
         {canApply ? <button className={applied ? 'apply-btn applied' : 'apply-btn'} onClick={() => apply(c.company, c.bestMatch.role)}>{applied ? <><Check size={13} /> Applied</> : <>Apply <ArrowRight size={13} /></>}</button> :
           <button type="button" className={expanded ? 'role-skill-missing-btn open' : 'role-skill-missing-btn'} onClick={() => setExpandedCompany(expanded ? null : rowKey)}>
@@ -1594,7 +1660,7 @@ function CompareResult({ result, roadmap, reset, profile, go }: { result: { old:
     const expanded = expandedCompany === rowKey;
     return <div className="hiring-row" key={rowKey}>
       <div className="hiring-row-top"><strong>{c.company}</strong><TierBadge tier={c.tier} /><span className="matched-role-pct-mini">{c.bestMatch.matchPct}%</span></div>
-      <div className="hiring-row-meta"><span>{c.salaryBand}</span></div>
+      <div className="hiring-row-meta"><CompanySalaryBadge company={c.company} role={c.bestMatch.role} location={profile?.city || profile?.state || 'India'} fallback={c.salaryBand} /></div>
       <div className="hiring-row-foot">
         {canApply ? <button className={applied ? 'apply-btn applied' : 'apply-btn'} onClick={() => apply(c.company, c.bestMatch.role)}>{applied ? <><Check size={13} /> Applied</> : <>Apply <ArrowRight size={13} /></>}</button> :
           <button type="button" className={expanded ? 'role-skill-missing-btn open' : 'role-skill-missing-btn'} onClick={() => setExpandedCompany(expanded ? null : rowKey)}>

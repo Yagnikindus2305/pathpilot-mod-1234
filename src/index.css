@@ -130,6 +130,22 @@ nav { display: grid; gap: 5px; }
 .hiring-row-meta { color: var(--text-muted); font-size: 10px; font-weight: 600; }
 .hiring-row-foot { display: flex; }
 .hiring-row-foot .apply-btn, .hiring-row-foot .role-skill-missing-btn { width: 100%; justify-content: center; }
+.salary-badge-wrap { display: grid; gap: 4px; }
+.salary-level-tabs { display: flex; gap: 3px; }
+.salary-level-tab { border: 1px solid var(--border); background: transparent; color: var(--text-muted); font-size: 8px; font-weight: 700; padding: 1px 6px; border-radius: 20px; cursor: pointer; }
+.salary-level-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.salary-badge-row { display: flex; align-items: center; gap: 6px; }
+.salary-range { color: var(--text-muted); font-size: 10px; font-weight: 600; }
+.live-badge { display: inline-flex; align-items: center; gap: 3px; background: #e7f7ee; color: #1a7f4e; font-size: 8px; font-weight: 800; padding: 1px 6px; border-radius: 20px; text-transform: uppercase; letter-spacing: .3px; }
+.salary-source-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 9px; color: var(--text-muted); }
+.salary-source-link { display: inline-flex; align-items: center; gap: 2px; color: #3b5bdb; text-decoration: none; font-weight: 600; }
+.salary-source-link:hover { text-decoration: underline; }
+.salary-refresh-btn { border: 0; background: none; color: var(--text-muted); display: inline-flex; align-items: center; gap: 3px; font-size: 9px; font-weight: 600; cursor: pointer; padding: 0; }
+.salary-refresh-btn:hover { color: #3b5bdb; }
+.salary-refresh-btn:disabled { opacity: .5; cursor: default; }
+.salary-refresh-btn svg.spinning { animation: salary-spin .8s linear infinite; }
+@keyframes salary-spin { to { transform: rotate(360deg); } }
+.salary-refresh-msg { color: #c0392b; font-size: 9px; font-weight: 600; }
 .company-match-card .hiring-grid { grid-template-columns: repeat(3, 1fr); }
 .role-group-list { display: grid; gap: 20px; }
 .role-group { border-top: 1px solid var(--border); padding-top: 16px; }

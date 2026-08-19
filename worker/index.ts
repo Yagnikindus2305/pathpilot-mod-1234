@@ -17,6 +17,7 @@ export interface Env {
   SUPABASE_SERVICE_ROLE_KEY?: string;
   ADZUNA_APP_ID?: string;
   ADZUNA_APP_KEY?: string;
+  BRAVE_SEARCH_API_KEY?: string;
   AI?: WorkersAIBinding;
 }
 
@@ -422,6 +423,274 @@ async function inferRole(request: Request, env: Env): Promise<Response> {
   }
 }
 
+type ExperienceLevel = 'Entry' | 'Mid' | 'Senior';
+
+interface SalaryResult {
+  company: string;
+  role: string;
+  location: string;
+  level: ExperienceLevel;
+  minLpa: number | null;
+  maxLpa: number | null;
+  medianLpa: number | null;
+  currency: string;
+  sourceDomain: string | null;
+  sourceUrl: string | null;
+  confidence: 'high' | 'medium' | 'low' | 'none';
+  live: boolean;
+  fetchedAt: string;
+}
+
+interface SalaryCacheRow {
+  cache_key: string;
+  company: string;
+  role: string;
+  location: string;
+  level: string;
+  min_lpa: number | null;
+  max_lpa: number | null;
+  median_lpa: number | null;
+  currency: string;
+  source_domain: string | null;
+  source_url: string | null;
+  confidence: string | null;
+  fetched_at: string;
+}
+
+function rowToSalaryResult(row: SalaryCacheRow, live: boolean): SalaryResult {
+  return {
+    company: row.company,
+    role: row.role,
+    location: row.location,
+    level: (row.level as ExperienceLevel) || 'Entry',
+    minLpa: row.min_lpa,
+    maxLpa: row.max_lpa,
+    medianLpa: row.median_lpa,
+    currency: row.currency,
+    sourceDomain: row.source_domain,
+    sourceUrl: row.source_url,
+    confidence: (row.confidence as SalaryResult['confidence']) || 'none',
+    live,
+    fetchedAt: row.fetched_at,
+  };
+}
+
+const SALARY_CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+const SALARY_REFRESH_COOLDOWN_MS = 24 * 60 * 60 * 1000;
+// Company names and locations legitimately contain "&", ".", "()", "/" (e.g.
+// "Tata Consultancy Services (TCS)") so this is deliberately more permissive
+// than ROLE_TITLE_PATTERN above.
+const FREEFORM_INPUT_PATTERN = /^[\w\s&.,'()/+-]{1,100}$/;
+
+function normalizeSalaryKey(company: string, role: string, location: string, level: ExperienceLevel): string {
+  return [company, role, location, level].map((s) => s.trim().toLowerCase().replace(/\s+/g, ' ')).join('|');
+}
+
+// Distinct search phrasing per level so the query actually biases the
+// engine toward that band of results, rather than one query returning
+// whatever level happens to rank highest (usually entry-level postings).
+const LEVEL_QUERY_TERM: Record<ExperienceLevel, string> = {
+  Entry: 'entry level fresher',
+  Mid: 'mid level 3-5 years experience',
+  Senior: 'senior 5+ years experience',
+};
+const LEVEL_LABEL: Record<ExperienceLevel, string> = {
+  Entry: 'entry-level / fresher',
+  Mid: 'mid-level (roughly 3-5 years experience)',
+  Senior: 'senior (roughly 5+ years experience)',
+};
+
+interface SalaryExtraction {
+  min_lpa: number | null;
+  max_lpa: number | null;
+  median_lpa: number | null;
+  currency: string;
+  source_domain: string | null;
+  source_url: string | null;
+  confidence: 'high' | 'medium' | 'low';
+}
+
+// Deliberately lenient: a model returning "nothing usable" (all three
+// numbers null) is a valid, expected outcome — not a validation failure —
+// since most companies won't have public data for an exact role match.
+function validateSalaryExtraction(data: unknown): SalaryExtraction | null {
+  if (!data || typeof data !== 'object') return null;
+  const d = data as Record<string, unknown>;
+  const numOrNull = (v: unknown): number | null => (typeof v === 'number' && Number.isFinite(v) && v > 0 && v < 500 ? Math.round(v * 10) / 10 : null);
+  const min_lpa = numOrNull(d.min_lpa);
+  const max_lpa = numOrNull(d.max_lpa);
+  const median_lpa = numOrNull(d.median_lpa);
+  if (min_lpa !== null && max_lpa !== null && max_lpa < min_lpa) return null;
+  const currency = typeof d.currency === 'string' && d.currency.trim() ? d.currency.trim().toUpperCase().slice(0, 6) : 'INR';
+  const source_domain = typeof d.source_domain === 'string' && d.source_domain.trim() ? d.source_domain.trim().slice(0, 100) : null;
+  const source_url = typeof d.source_url === 'string' && /^https?:\/\//.test(d.source_url) ? d.source_url.slice(0, 500) : null;
+  const confidence = d.confidence === 'high' || d.confidence === 'medium' ? d.confidence : 'low';
+  return { min_lpa, max_lpa, median_lpa, currency, source_domain, source_url, confidence };
+}
+
+interface BraveSearchResult {
+  title?: string;
+  url?: string;
+  description?: string;
+}
+
+const SALARY_EXTRACTION_SYSTEM_PROMPT = `You extract salary data from web search result snippets for a career-prep platform used by Indian college students. Given a role, a company, a location, an experience level, and a numbered list of search result snippets, extract a salary range if the snippets contain one for that exact company, role, and level. Respond with ONLY a single valid JSON object, no markdown fences, no commentary:
+
+{"min_lpa": number|null, "max_lpa": number|null, "median_lpa": number|null, "currency": "INR"|"USD"|string, "source_domain": string|null, "source_url": string|null, "confidence": "high"|"medium"|"low"}
+
+Rules:
+- Only extract a number if a snippet clearly ties it to this exact company AND this exact role (or a close synonym of the role). Do not use a number from a snippet about a different company or an unrelated role at the same company.
+- Match the requested experience level as closely as you can: if a snippet gives a range spanning multiple levels (e.g. a total range from entry through staff), narrow it toward the requested level rather than returning the full unfiltered span -- e.g. for "senior", prefer the upper part of a wide range; for "entry-level / fresher", prefer the lower part. If snippets don't distinguish levels at all, use the number as-is but set confidence to "medium" or "low" rather than "high".
+- If no snippet has a usable number for this exact company+role, return {"min_lpa": null, "max_lpa": null, "median_lpa": null, "currency": "INR", "source_domain": null, "source_url": null, "confidence": "low"}. This is a valid, expected answer — do not guess or estimate a number that isn't actually in the snippets.
+- "currency" defaults to "INR" (values are assumed Lakhs Per Annum) unless a snippet clearly states another currency.
+- "source_domain" and "source_url" must be the single snippet you drew the number from (e.g. "levels.fyi", the exact URL of that result).
+- "confidence": "high" if the number is explicitly for this company+role+location; "medium" if company+role match but location is approximate or unstated; "low" if you are extrapolating from a nearby role/level.
+- Do not include any text outside the JSON object.`;
+
+// Live company+role salary lookup: web search (Brave) scoped to salary
+// aggregator sites, then AI extraction of a range from the result snippets --
+// never scrapes/republishes a site's structured data wholesale, and every
+// result is cached in Supabase so the same company+role+location combo is
+// only ever searched once per SALARY_CACHE_TTL_MS window, no matter how many
+// users view that card.
+async function lookupSalary(request: Request, env: Env): Promise<Response> {
+  const auth = await requireUser(request, env);
+  if ('error' in auth) return auth.error;
+  const { supabaseAdmin, userId } = auth;
+
+  let body: { company?: unknown; role?: unknown; location?: unknown; level?: unknown; forceRefresh?: unknown };
+  try {
+    body = await request.json();
+  } catch {
+    return json({ message: 'Invalid request body' }, 400);
+  }
+  const company = typeof body.company === 'string' ? body.company.trim() : '';
+  const role = typeof body.role === 'string' ? body.role.trim() : '';
+  const location = typeof body.location === 'string' && body.location.trim() ? body.location.trim() : 'India';
+  const level: ExperienceLevel = body.level === 'Mid' || body.level === 'Senior' ? body.level : 'Entry';
+  const forceRefresh = body.forceRefresh === true;
+  if (!FREEFORM_INPUT_PATTERN.test(company) || !FREEFORM_INPUT_PATTERN.test(role) || !FREEFORM_INPUT_PATTERN.test(location)) {
+    return json({ message: 'company, role, and location must be 1-100 characters of ordinary text.' }, 400);
+  }
+
+  const cacheKey = normalizeSalaryKey(company, role, location, level);
+
+  try {
+    const { data: cached } = await supabaseAdmin
+      .from('company_salary_cache')
+      .select('*')
+      .eq('cache_key', cacheKey)
+      .maybeSingle<SalaryCacheRow>();
+
+    const cacheFresh = cached && Date.now() - new Date(cached.fetched_at).getTime() < SALARY_CACHE_TTL_MS;
+
+    if (forceRefresh) {
+      const { data: refreshLog } = await supabaseAdmin
+        .from('company_salary_refresh_log')
+        .select('refreshed_at')
+        .eq('user_id', userId)
+        .eq('cache_key', cacheKey)
+        .maybeSingle<{ refreshed_at: string }>();
+      const onCooldown = refreshLog && Date.now() - new Date(refreshLog.refreshed_at).getTime() < SALARY_REFRESH_COOLDOWN_MS;
+      if (onCooldown) {
+        if (cached) return json({ ...rowToSalaryResult(cached, cached.confidence !== 'none'), rateLimited: true });
+        return json({ message: 'You can only refresh a company\'s salary data once per day.' }, 429);
+      }
+    } else if (cacheFresh) {
+      return json(rowToSalaryResult(cached, cached.confidence !== 'none'));
+    }
+
+    if (!env.BRAVE_SEARCH_API_KEY) {
+      return json({ message: 'Live salary lookup is not configured (missing BRAVE_SEARCH_API_KEY secret).' }, 503);
+    }
+    if (!env.AI) {
+      return json({ message: 'Live salary lookup is not configured (missing Workers AI binding).' }, 503);
+    }
+
+    const searchQuery = `"${role}" "${company}" salary ${LEVEL_QUERY_TERM[level]} ${location} site:levels.fyi OR site:glassdoor.com OR site:ambitionbox.com OR site:payscale.com OR site:indeed.com`;
+    const braveUrl = `https://api.search.brave.com/res/v1/web/search?${new URLSearchParams({ q: searchQuery, count: '8' }).toString()}`;
+    const braveRes = await fetch(braveUrl, {
+      headers: { Accept: 'application/json', 'X-Subscription-Token': env.BRAVE_SEARCH_API_KEY },
+    });
+    if (!braveRes.ok) {
+      return json({ message: `Salary search provider returned ${braveRes.status}.` }, 502);
+    }
+    const braveData = (await braveRes.json()) as { web?: { results?: BraveSearchResult[] } };
+    const results = (braveData.web?.results || []).slice(0, 8);
+
+    if (!results.length) {
+      // No search hits at all -- cache the "nothing found" outcome too, so
+      // this exact combo isn't re-searched on every view within the TTL.
+      const none: SalaryCacheRow = {
+        cache_key: cacheKey, company, role, location, level,
+        min_lpa: null, max_lpa: null, median_lpa: null, currency: 'INR',
+        source_domain: null, source_url: null, confidence: 'none',
+        fetched_at: new Date().toISOString(),
+      };
+      await supabaseAdmin.from('company_salary_cache').upsert(none, { onConflict: 'cache_key' });
+      return json(rowToSalaryResult(none, false));
+    }
+
+    const snippetBlock = results
+      .map((r, i) => `${i + 1}. ${r.title || ''}\n${r.url || ''}\n${r.description || ''}`)
+      .join('\n\n');
+
+    const ai = env.AI;
+    const aiResult = await ai.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
+      messages: [
+        { role: 'system', content: SALARY_EXTRACTION_SYSTEM_PROMPT },
+        { role: 'user', content: `Role: "${role}"\nCompany: "${company}"\nLocation: "${location}"\nExperience level: ${LEVEL_LABEL[level]}\n\nSearch result snippets:\n${snippetBlock}` },
+      ],
+      max_tokens: 500,
+    });
+
+    const rawResponse = aiResult.response;
+    let parsed: unknown;
+    if (typeof rawResponse === 'string') {
+      const jsonMatch = rawResponse.match(/\{[\s\S]*\}/);
+      try {
+        parsed = JSON.parse(jsonMatch ? jsonMatch[0] : rawResponse);
+      } catch {
+        return json({ message: 'AI response could not be parsed.' }, 502);
+      }
+    } else if (rawResponse && typeof rawResponse === 'object') {
+      parsed = rawResponse;
+    } else {
+      return json({ message: 'AI returned an empty response.' }, 502);
+    }
+
+    const validated = validateSalaryExtraction(parsed);
+    if (!validated) {
+      return json({ message: 'AI response was invalid.' }, 502);
+    }
+
+    const row: SalaryCacheRow = {
+      cache_key: cacheKey, company, role, location, level,
+      min_lpa: validated.min_lpa, max_lpa: validated.max_lpa, median_lpa: validated.median_lpa,
+      currency: validated.currency,
+      source_domain: validated.source_domain, source_url: validated.source_url,
+      confidence: validated.min_lpa === null ? 'none' : validated.confidence,
+      fetched_at: new Date().toISOString(),
+    };
+    const { error: upsertError } = await supabaseAdmin.from('company_salary_cache').upsert(row, { onConflict: 'cache_key' });
+    if (upsertError) console.error('[salary/lookup] Failed to cache salary data:', upsertError.message);
+
+    if (forceRefresh) {
+      const { error: logError } = await supabaseAdmin
+        .from('company_salary_refresh_log')
+        .upsert({ user_id: userId, cache_key: cacheKey, refreshed_at: row.fetched_at }, { onConflict: 'user_id,cache_key' });
+      if (logError) console.error('[salary/lookup] Failed to log refresh:', logError.message);
+    }
+
+    return json(rowToSalaryResult(row, row.confidence !== 'none'));
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error('[salary/lookup] Unhandled error:', message);
+    return json({ message: `Salary lookup failed: ${message}` }, 502);
+  }
+}
+
+
 interface LiveJob {
   id: string;
   title: string;
@@ -532,6 +801,10 @@ export default {
 
     if (url.pathname === '/api/roles/infer' && request.method === 'POST') {
       return inferRole(request, env);
+    }
+
+    if (url.pathname === '/api/salary/lookup' && request.method === 'POST') {
+      return lookupSalary(request, env);
     }
 
     // Everything else (the SPA, its assets, and the /api/data/* routes that
