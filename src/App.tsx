@@ -1268,6 +1268,10 @@ function ResumeResult({ analysis, round, onReset, go }: { analysis: ResumeAnalys
       <div className="content-card skills-card">
         <SectionTitle icon={Zap} title="Detected skills" />
         <div className="tag-cloud">{analysis.skills.map((skill) => <SkillTag key={skill} green>{skill}</SkillTag>)}</div>
+        {missing.length > 0 && <>
+          <span className="matched-role-skills-label missing">Missing ({missing.length})</span>
+          <div className="tag-cloud">{missing.map((m) => <SkillTag key={m.skill} red>{m.skill}</SkillTag>)}</div>
+        </>}
         <button className="text-btn" onClick={() => go('roadmap')}>See your skill gaps <ArrowRight size={15} /></button>
       </div>
     </div>
