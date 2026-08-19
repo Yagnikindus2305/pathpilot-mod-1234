@@ -1057,6 +1057,22 @@ async function syncRoadmap(skills: string[], role: string, userId: string) {
   }
 }
 
+// Every company card below <50% match says "Complete these on your Skill
+// Roadmap, then come back here to apply" -- but syncRoadmap's blanket sync
+// only fires for companies >=50% matched (COMPANY_SYNC_MIN_MATCH_PCT), to
+// avoid ballooning the roadmap total with every tangentially-matched
+// company's requirements. That made the promise false for anything below
+// the threshold: clicking through to Skill Roadmap, the skills just weren't
+// there. Expanding a specific company's missing-skill panel is a genuine,
+// user-driven signal of interest, so it syncs just that company's skills on
+// the spot -- purely additive (no pruning), so it can never remove anything.
+async function syncCompanySkillsOnDemand(userId: string, missingSkills: string[]) {
+  if (!missingSkills.length) return;
+  const rows = missingSkills.map((skill) => ({ user_id: userId, skill_name: skill, priority: 'Must Have' as const }));
+  const { error } = await supabase.from('roadmap_skills').upsert(rows, { onConflict: 'user_id,skill_name' });
+  if (error) console.error('Failed to sync on-demand company skills:', error.message);
+}
+
 function ResumeAnalysisPage({ go, onProgress }: { go: (module: Module) => void; onProgress?: () => void }) {
   const { user, profile, updateProfile, session } = useAuth();
   const [file, setFile] = useState<File | null>(null);
@@ -1202,7 +1218,7 @@ function ResumeResult({ analysis, round, onReset, go }: { analysis: ResumeAnalys
       <div className="hiring-row-meta"><CompanySalaryBadge company={c.company} role={c.bestMatch.role} location={profile?.city || profile?.state || 'India'} fallback={c.salaryBand} defaultLevel={experienceLevel} experienceYears={experienceYears} /></div>
       <div className="hiring-row-foot">
         {canApply ? <button className={applied ? 'apply-btn applied' : 'apply-btn'} onClick={() => apply(c.company, c.bestMatch.role)}>{applied ? <><Check size={13} /> Applied</> : <>Apply <ArrowRight size={13} /></>}</button> :
-          <button type="button" className={expanded ? 'role-skill-missing-btn open' : 'role-skill-missing-btn'} onClick={() => setExpandedCompany(expanded ? null : rowKey)}>
+          <button type="button" className={expanded ? 'role-skill-missing-btn open' : 'role-skill-missing-btn'} onClick={() => { const next = expanded ? null : rowKey; setExpandedCompany(next); if (next && user) syncCompanySkillsOnDemand(user.id, c.bestMatch.missing); }}>
             Finish {c.bestMatch.missing.length} skill{c.bestMatch.missing.length === 1 ? '' : 's'} <ChevronDown size={11} />
           </button>}
       </div>
@@ -1232,7 +1248,7 @@ function ResumeResult({ analysis, round, onReset, go }: { analysis: ResumeAnalys
       </div>
       {expanded && <div className="role-skill-detail nested">
         <div className="tag-cloud">{missingForRole.length ? missingForRole.map((skill) => <SkillTag red key={skill}>{skill}</SkillTag>) : <span className="muted-label">You already have every skill for this role.</span>}</div>
-        <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); go('roadmap'); }}><Target size={15} /> Set as Target &amp; View Roadmap</button>
+        <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); if (missingForRole.length === 0) { document.querySelector('.company-match-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); } else { go('roadmap'); } }}><Target size={15} /> {missingForRole.length === 0 ? 'Set as Target & See Companies' : 'Set as Target & View Roadmap'}</button>
       </div>}
     </div>;
   }
@@ -1295,7 +1311,7 @@ function ResumeResult({ analysis, round, onReset, go }: { analysis: ResumeAnalys
             <div className={`match-track ${level}`}><div style={{ width: `${role.match}%` }} /></div>
             {owned.length > 0 && <div><span className="matched-role-skills-label">You have ({owned.length})</span><div className="tag-cloud">{owned.slice(0, 5).map((skill) => <SkillTag green key={skill}>{skill}</SkillTag>)}{owned.length > 5 && <span className="muted-label">+{owned.length - 5} more</span>}</div></div>}
             {missingForRole.length > 0 && <div><span className="matched-role-skills-label missing">Missing ({missingForRole.length})</span><div className="tag-cloud">{missingForRole.slice(0, 5).map((skill) => <SkillTag red key={skill}>{skill}</SkillTag>)}{missingForRole.length > 5 && <span className="muted-label">+{missingForRole.length - 5} more</span>}</div></div>}
-            <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); go('roadmap'); }}><Target size={15} /> Set as Target &amp; View Roadmap</button>
+            <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); if (missingForRole.length === 0) { document.querySelector('.company-match-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); } else { go('roadmap'); } }}><Target size={15} /> {missingForRole.length === 0 ? 'Set as Target & See Companies' : 'Set as Target & View Roadmap'}</button>
           </div>;
         })}
       </div>
@@ -1808,7 +1824,7 @@ function CompareResult({ result, roadmap, reset, profile, go }: { result: { old:
       <div className="hiring-row-meta"><CompanySalaryBadge company={c.company} role={c.bestMatch.role} location={profile?.city || profile?.state || 'India'} fallback={c.salaryBand} defaultLevel={experienceLevel} experienceYears={experienceYears} /></div>
       <div className="hiring-row-foot">
         {canApply ? <button className={applied ? 'apply-btn applied' : 'apply-btn'} onClick={() => apply(c.company, c.bestMatch.role)}>{applied ? <><Check size={13} /> Applied</> : <>Apply <ArrowRight size={13} /></>}</button> :
-          <button type="button" className={expanded ? 'role-skill-missing-btn open' : 'role-skill-missing-btn'} onClick={() => setExpandedCompany(expanded ? null : rowKey)}>
+          <button type="button" className={expanded ? 'role-skill-missing-btn open' : 'role-skill-missing-btn'} onClick={() => { const next = expanded ? null : rowKey; setExpandedCompany(next); if (next && user) syncCompanySkillsOnDemand(user.id, c.bestMatch.missing); }}>
             Finish {c.bestMatch.missing.length} skill{c.bestMatch.missing.length === 1 ? '' : 's'} <ChevronDown size={11} />
           </button>}
       </div>
@@ -1838,7 +1854,7 @@ function CompareResult({ result, roadmap, reset, profile, go }: { result: { old:
       </div>
       {expanded && <div className="role-skill-detail nested">
         <div className="tag-cloud">{missingForRole.length ? missingForRole.map((skill) => <SkillTag red key={skill}>{skill}</SkillTag>) : <span className="muted-label">You already have every skill for this role.</span>}</div>
-        <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); go('roadmap'); }}><Target size={15} /> Set as Target &amp; View Roadmap</button>
+        <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); if (missingForRole.length === 0) { document.querySelector('.company-match-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); } else { go('roadmap'); } }}><Target size={15} /> {missingForRole.length === 0 ? 'Set as Target & See Companies' : 'Set as Target & View Roadmap'}</button>
       </div>}
     </div>;
   }
@@ -1872,7 +1888,7 @@ function CompareResult({ result, roadmap, reset, profile, go }: { result: { old:
             <div className={`match-track ${level}`}><div style={{ width: `${role.match}%` }} /></div>
             {owned.length > 0 && <div><span className="matched-role-skills-label">You have ({owned.length})</span><div className="tag-cloud">{owned.slice(0, 5).map((skill) => <SkillTag green key={skill}>{skill}</SkillTag>)}{owned.length > 5 && <span className="muted-label">+{owned.length - 5} more</span>}</div></div>}
             {missingForRole.length > 0 && <div><span className="matched-role-skills-label missing">Missing ({missingForRole.length})</span><div className="tag-cloud">{missingForRole.slice(0, 5).map((skill) => <SkillTag red key={skill}>{skill}</SkillTag>)}{missingForRole.length > 5 && <span className="muted-label">+{missingForRole.length - 5} more</span>}</div></div>}
-            <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); go('roadmap'); }}><Target size={15} /> Set as Target &amp; View Roadmap</button>
+            <button type="button" className="primary-btn full" onClick={async () => { await updateProfile({ target_role: role.role }); if (missingForRole.length === 0) { document.querySelector('.company-match-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); } else { go('roadmap'); } }}><Target size={15} /> {missingForRole.length === 0 ? 'Set as Target & See Companies' : 'Set as Target & View Roadmap'}</button>
           </div>;
         })}
       </div>
