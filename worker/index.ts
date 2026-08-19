@@ -17,7 +17,7 @@ export interface Env {
   SUPABASE_SERVICE_ROLE_KEY?: string;
   ADZUNA_APP_ID?: string;
   ADZUNA_APP_KEY?: string;
-  BRAVE_SEARCH_API_KEY?: string;
+  GEMINI_API_KEY?: string;
   AI?: WorkersAIBinding;
 }
 
@@ -26,6 +26,116 @@ function json(body: unknown, status = 200): Response {
     status,
     headers: { 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff' },
   });
+}
+
+// Model name is a plain constant (not env-configurable) so a bad override
+// can't silently break every AI-backed feature at once -- change it here if
+// the account's available Gemini models change.
+const GEMINI_MODEL = 'gemini-2.5-pro';
+const WORKERS_AI_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
+
+interface GeminiResponse {
+  candidates?: { content?: { parts?: { text?: string }[] } }[];
+}
+
+// Every AI-backed endpoint in this file goes through here: Gemini first when
+// GEMINI_API_KEY is configured (the account this runs under has Gemini Pro
+// access), Cloudflare Workers AI as the fallback on any Gemini failure --
+// missing key, network error, non-2xx, empty response -- so a Gemini outage
+// or exhausted quota degrades gracefully instead of taking the feature down.
+// Always returns a plain string (or null): Workers AI's object-shaped
+// responses are JSON.stringify'd here so every caller has one parsing path.
+async function generateText(env: Env, systemPrompt: string, userPrompt: string, maxTokens: number): Promise<string | null> {
+  if (env.GEMINI_API_KEY) {
+    try {
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${env.GEMINI_API_KEY}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: systemPrompt }] },
+          contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
+          generationConfig: { maxOutputTokens: maxTokens, responseMimeType: 'application/json', temperature: 0.3 },
+        }),
+      });
+      if (res.ok) {
+        const data = (await res.json()) as GeminiResponse;
+        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (text) return text;
+        console.error('[ai] Gemini returned no usable text, falling back to Workers AI.');
+      } else {
+        console.error('[ai] Gemini returned', res.status, '- falling back to Workers AI.');
+      }
+    } catch (err) {
+      console.error('[ai] Gemini request failed, falling back to Workers AI:', err instanceof Error ? err.message : String(err));
+    }
+  }
+
+  if (!env.AI) return null;
+  try {
+    const result = await env.AI.run(WORKERS_AI_MODEL, {
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt },
+      ],
+      max_tokens: maxTokens,
+    });
+    const response = result.response;
+    if (typeof response === 'string') return response;
+    if (response && typeof response === 'object') return JSON.stringify(response);
+    return null;
+  } catch (err) {
+    console.error('[ai] Workers AI request failed:', err instanceof Error ? err.message : String(err));
+    return null;
+  }
+}
+
+interface GeminiGroundingChunk {
+  web?: { uri?: string; title?: string };
+}
+interface GeminiSearchCandidate {
+  content?: { parts?: { text?: string }[] };
+  groundingMetadata?: { groundingChunks?: GeminiGroundingChunk[] };
+}
+interface GeminiSearchResponse {
+  candidates?: GeminiSearchCandidate[];
+}
+
+// Gemini's built-in Google Search grounding tool lets the model search the
+// web and cite sources as part of one generateContent call -- no separate
+// search API needed. Workers AI has no live-search capability at all, so
+// there is no fallback provider for this specific path: without
+// GEMINI_API_KEY, live salary lookup is simply unavailable (the client
+// falls back to the static per-company estimate, same as any other failure).
+async function generateWithSearch(env: Env, systemPrompt: string, userPrompt: string, maxTokens: number): Promise<{ text: string; sources: { uri: string; title: string }[] } | null> {
+  if (!env.GEMINI_API_KEY) return null;
+  try {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${env.GEMINI_API_KEY}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        systemInstruction: { parts: [{ text: systemPrompt }] },
+        contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
+        tools: [{ google_search: {} }],
+        generationConfig: { maxOutputTokens: maxTokens, temperature: 0.2 },
+      }),
+    });
+    if (!res.ok) {
+      console.error('[ai] Gemini search request returned', res.status);
+      return null;
+    }
+    const data = (await res.json()) as GeminiSearchResponse;
+    const candidate = data.candidates?.[0];
+    const text = (candidate?.content?.parts || []).map((p) => p.text || '').join('');
+    if (!text) return null;
+    const chunks = candidate?.groundingMetadata?.groundingChunks || [];
+    const sources = chunks
+      .map((c) => ({ uri: c.web?.uri || '', title: c.web?.title || '' }))
+      .filter((s) => s.uri);
+    return { text, sources };
+  } catch (err) {
+    console.error('[ai] Gemini search request failed:', err instanceof Error ? err.message : String(err));
+    return null;
+  }
 }
 
 // Verifies the caller's Supabase access token and confirms profiles.is_admin
@@ -316,10 +426,9 @@ async function inferRole(request: Request, env: Env): Promise<Response> {
   if ('error' in auth) return auth.error;
   const { supabaseAdmin } = auth;
 
-  if (!env.AI) {
-    return json({ message: 'AI role lookup is not configured (missing Workers AI binding).' }, 503);
+  if (!env.AI && !env.GEMINI_API_KEY) {
+    return json({ message: 'AI role lookup is not configured (missing GEMINI_API_KEY or a Workers AI binding).' }, 503);
   }
-  const ai = env.AI;
 
   let body: { roleTitle?: unknown };
   try {
@@ -357,33 +466,16 @@ async function inferRole(request: Request, env: Env): Promise<Response> {
       return json(result);
     }
 
-    // Cloudflare Workers AI — free tier (10,000 requests/day on the account's
-    // free allocation), no separate API key/billing needed since it runs on
-    // the same Cloudflare account as this Worker.
-    const WORKERS_AI_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
-    const aiResult = await ai.run(WORKERS_AI_MODEL, {
-      messages: [
-        { role: 'system', content: AI_ROLE_SYSTEM_PROMPT },
-        { role: 'user', content: `Job/role title: "${roleTitle}"` },
-      ],
-      max_tokens: 2500,
-    });
-
-    const rawResponse = aiResult.response;
-    let parsed: unknown;
-    if (typeof rawResponse === 'string') {
-      const jsonMatch = rawResponse.match(/\{[\s\S]*\}/);
-      try {
-        parsed = JSON.parse(jsonMatch ? jsonMatch[0] : rawResponse);
-      } catch {
-        return json({ message: 'AI response could not be parsed.' }, 502);
-      }
-    } else if (rawResponse && typeof rawResponse === 'object') {
-      // Some models return the structured object directly rather than a
-      // JSON-encoded string when the prompt clearly asks for JSON.
-      parsed = rawResponse;
-    } else {
+    const rawResponse = await generateText(env, AI_ROLE_SYSTEM_PROMPT, `Job/role title: "${roleTitle}"`, 2500);
+    if (!rawResponse) {
       return json({ message: 'AI returned an empty response.' }, 502);
+    }
+    const jsonMatch = rawResponse.match(/\{[\s\S]*\}/);
+    let parsed: unknown;
+    try {
+      parsed = JSON.parse(jsonMatch ? jsonMatch[0] : rawResponse);
+    } catch {
+      return json({ message: 'AI response could not be parsed.' }, 502);
     }
 
     const validated = validateAIPayload(parsed);
@@ -486,14 +578,6 @@ function normalizeSalaryKey(company: string, role: string, location: string, lev
   return [company, role, location, level].map((s) => s.trim().toLowerCase().replace(/\s+/g, ' ')).join('|');
 }
 
-// Distinct search phrasing per level so the query actually biases the
-// engine toward that band of results, rather than one query returning
-// whatever level happens to rank highest (usually entry-level postings).
-const LEVEL_QUERY_TERM: Record<ExperienceLevel, string> = {
-  Entry: 'entry level fresher',
-  Mid: 'mid level 3-5 years experience',
-  Senior: 'senior 5+ years experience',
-};
 const LEVEL_LABEL: Record<ExperienceLevel, string> = {
   Entry: 'entry-level / fresher',
   Mid: 'mid-level (roughly 3-5 years experience)',
@@ -528,23 +612,17 @@ function validateSalaryExtraction(data: unknown): SalaryExtraction | null {
   return { min_lpa, max_lpa, median_lpa, currency, source_domain, source_url, confidence };
 }
 
-interface BraveSearchResult {
-  title?: string;
-  url?: string;
-  description?: string;
-}
-
-const SALARY_EXTRACTION_SYSTEM_PROMPT = `You extract salary data from web search result snippets for a career-prep platform used by Indian college students. Given a role, a company, a location, an experience level, and a numbered list of search result snippets, extract a salary range if the snippets contain one for that exact company, role, and level. Respond with ONLY a single valid JSON object, no markdown fences, no commentary:
+const SALARY_SEARCH_SYSTEM_PROMPT = `You are a salary research assistant for a career-prep platform used by Indian college students, with access to Google Search. Given a role, a company, a location, and an experience level, search the web (prioritize levels.fyi, glassdoor.com, ambitionbox.com, payscale.com, indeed.com) for a real, current salary figure for that exact company and role, then respond with ONLY a single valid JSON object, no markdown fences, no commentary:
 
 {"min_lpa": number|null, "max_lpa": number|null, "median_lpa": number|null, "currency": "INR"|"USD"|string, "source_domain": string|null, "source_url": string|null, "confidence": "high"|"medium"|"low"}
 
 Rules:
-- Only extract a number if a snippet clearly ties it to this exact company AND this exact role (or a close synonym of the role). Do not use a number from a snippet about a different company or an unrelated role at the same company.
-- Match the requested experience level as closely as you can: if a snippet gives a range spanning multiple levels (e.g. a total range from entry through staff), narrow it toward the requested level rather than returning the full unfiltered span -- e.g. for "senior", prefer the upper part of a wide range; for "entry-level / fresher", prefer the lower part. If snippets don't distinguish levels at all, use the number as-is but set confidence to "medium" or "low" rather than "high".
-- If no snippet has a usable number for this exact company+role, return {"min_lpa": null, "max_lpa": null, "median_lpa": null, "currency": "INR", "source_domain": null, "source_url": null, "confidence": "low"}. This is a valid, expected answer — do not guess or estimate a number that isn't actually in the snippets.
-- "currency" defaults to "INR" (values are assumed Lakhs Per Annum) unless a snippet clearly states another currency.
-- "source_domain" and "source_url" must be the single snippet you drew the number from (e.g. "levels.fyi", the exact URL of that result).
-- "confidence": "high" if the number is explicitly for this company+role+location; "medium" if company+role match but location is approximate or unstated; "low" if you are extrapolating from a nearby role/level.
+- Only extract a number if a source clearly ties it to this exact company AND this exact role (or a close synonym of the role). Do not use a number for a different company or an unrelated role at the same company.
+- Match the requested experience level as closely as you can: if a source gives a range spanning multiple levels (e.g. a total range from entry through staff), narrow it toward the requested level rather than returning the full unfiltered span -- e.g. for "senior", prefer the upper part of a wide range; for "entry-level / fresher", prefer the lower part. If a source doesn't distinguish levels at all, use the number as-is but set confidence to "medium" or "low" rather than "high".
+- If you cannot find a usable number for this exact company+role, return {"min_lpa": null, "max_lpa": null, "median_lpa": null, "currency": "INR", "source_domain": null, "source_url": null, "confidence": "low"}. This is a valid, expected answer — do not guess or estimate a number you didn't actually find.
+- "currency" defaults to "INR" (values are assumed Lakhs Per Annum) unless the source clearly states another currency.
+- "source_domain" and "source_url" must be the actual page you drew the number from (e.g. "levels.fyi", its exact URL).
+- "confidence": "high" if the number is explicitly for this company+role+location+level; "medium" if company+role match but location/level is approximate or unstated; "low" if you are extrapolating from a nearby role/level.
 - Do not include any text outside the JSON object.`;
 
 // Live company+role salary lookup: web search (Brave) scoped to salary
@@ -600,68 +678,42 @@ async function lookupSalary(request: Request, env: Env): Promise<Response> {
       return json(rowToSalaryResult(cached, cached.confidence !== 'none'));
     }
 
-    if (!env.BRAVE_SEARCH_API_KEY) {
-      return json({ message: 'Live salary lookup is not configured (missing BRAVE_SEARCH_API_KEY secret).' }, 503);
-    }
-    if (!env.AI) {
-      return json({ message: 'Live salary lookup is not configured (missing Workers AI binding).' }, 503);
+    if (!env.GEMINI_API_KEY) {
+      return json({ message: 'Live salary lookup is not configured (missing GEMINI_API_KEY secret).' }, 503);
     }
 
-    const searchQuery = `"${role}" "${company}" salary ${LEVEL_QUERY_TERM[level]} ${location} site:levels.fyi OR site:glassdoor.com OR site:ambitionbox.com OR site:payscale.com OR site:indeed.com`;
-    const braveUrl = `https://api.search.brave.com/res/v1/web/search?${new URLSearchParams({ q: searchQuery, count: '8' }).toString()}`;
-    const braveRes = await fetch(braveUrl, {
-      headers: { Accept: 'application/json', 'X-Subscription-Token': env.BRAVE_SEARCH_API_KEY },
-    });
-    if (!braveRes.ok) {
-      return json({ message: `Salary search provider returned ${braveRes.status}.` }, 502);
+    const searchResult = await generateWithSearch(
+      env,
+      SALARY_SEARCH_SYSTEM_PROMPT,
+      `Role: "${role}"\nCompany: "${company}"\nLocation: "${location}"\nExperience level: ${LEVEL_LABEL[level]}`,
+      800
+    );
+    if (!searchResult) {
+      return json({ message: 'Salary search provider returned an error.' }, 502);
     }
-    const braveData = (await braveRes.json()) as { web?: { results?: BraveSearchResult[] } };
-    const results = (braveData.web?.results || []).slice(0, 8);
-
-    if (!results.length) {
-      // No search hits at all -- cache the "nothing found" outcome too, so
-      // this exact combo isn't re-searched on every view within the TTL.
-      const none: SalaryCacheRow = {
-        cache_key: cacheKey, company, role, location, level,
-        min_lpa: null, max_lpa: null, median_lpa: null, currency: 'INR',
-        source_domain: null, source_url: null, confidence: 'none',
-        fetched_at: new Date().toISOString(),
-      };
-      await supabaseAdmin.from('company_salary_cache').upsert(none, { onConflict: 'cache_key' });
-      return json(rowToSalaryResult(none, false));
-    }
-
-    const snippetBlock = results
-      .map((r, i) => `${i + 1}. ${r.title || ''}\n${r.url || ''}\n${r.description || ''}`)
-      .join('\n\n');
-
-    const ai = env.AI;
-    const aiResult = await ai.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
-      messages: [
-        { role: 'system', content: SALARY_EXTRACTION_SYSTEM_PROMPT },
-        { role: 'user', content: `Role: "${role}"\nCompany: "${company}"\nLocation: "${location}"\nExperience level: ${LEVEL_LABEL[level]}\n\nSearch result snippets:\n${snippetBlock}` },
-      ],
-      max_tokens: 500,
-    });
-
-    const rawResponse = aiResult.response;
+    const jsonMatch = searchResult.text.match(/\{[\s\S]*\}/);
     let parsed: unknown;
-    if (typeof rawResponse === 'string') {
-      const jsonMatch = rawResponse.match(/\{[\s\S]*\}/);
-      try {
-        parsed = JSON.parse(jsonMatch ? jsonMatch[0] : rawResponse);
-      } catch {
-        return json({ message: 'AI response could not be parsed.' }, 502);
-      }
-    } else if (rawResponse && typeof rawResponse === 'object') {
-      parsed = rawResponse;
-    } else {
-      return json({ message: 'AI returned an empty response.' }, 502);
+    try {
+      parsed = JSON.parse(jsonMatch ? jsonMatch[0] : searchResult.text);
+    } catch {
+      return json({ message: 'AI response could not be parsed.' }, 502);
     }
 
     const validated = validateSalaryExtraction(parsed);
     if (!validated) {
       return json({ message: 'AI response was invalid.' }, 502);
+    }
+    // The model doesn't always echo the source URL into its own JSON output
+    // even when it did ground its answer in a real search result -- the
+    // grounding metadata is the actual source of truth for that, so it
+    // backfills whenever the JSON came back without one.
+    if (validated.min_lpa !== null && !validated.source_url && searchResult.sources[0]) {
+      validated.source_url = searchResult.sources[0].uri;
+      try {
+        validated.source_domain = new URL(searchResult.sources[0].uri).hostname.replace(/^www\./, '');
+      } catch {
+        validated.source_domain = searchResult.sources[0].title || null;
+      }
     }
 
     const row: SalaryCacheRow = {
