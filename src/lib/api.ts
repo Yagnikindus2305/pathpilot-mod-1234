@@ -134,10 +134,21 @@ function salaryFloor(salaryBand: string): number {
   return match ? parseFloat(match[1]) : Infinity;
 }
 
+// pathpilot_companies.json has a confirmed data-generation defect: this exact
+// 5-skill block appears as a literal, identically-ordered trailing suffix on
+// 24 unrelated role entries -- Deloitte Audit Associate, Google APM, PayPal
+// Risk Analyst, TCS Business Process Associate, and 20 more roles that have
+// no real business needing "Penetration Testing" or "Cryptography". It reads
+// as a templating bug in however this file was generated, not real company
+// requirements, so it's stripped before matching/scoring rather than left to
+// inflate "missing skills" counts and pollute roadmap syncing with noise.
+const TEMPLATED_JUNK_SKILLS = new Set(['Network Security', 'Cryptography', 'Penetration Testing', 'Wireshark', 'Nmap']);
+
 function matchRole(skills: string[], roleSkills: string[], userSkills: string[]) {
-  const have = roleSkills.filter((s) => userSkills.includes(s.toLowerCase()));
-  const missing = roleSkills.filter((s) => !userSkills.includes(s.toLowerCase()));
-  return { have, missing, matchPct: Math.round((have.length / roleSkills.length) * 100) };
+  const cleanRoleSkills = roleSkills.filter((s) => !TEMPLATED_JUNK_SKILLS.has(s));
+  const have = cleanRoleSkills.filter((s) => userSkills.includes(s.toLowerCase()));
+  const missing = cleanRoleSkills.filter((s) => !userSkills.includes(s.toLowerCase()));
+  return { have, missing, matchPct: cleanRoleSkills.length ? Math.round((have.length / cleanRoleSkills.length) * 100) : 0 };
 }
 
 function getCompanyMatches(skills: string[], role?: string): CompanyMatch[] {

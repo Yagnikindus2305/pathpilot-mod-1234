@@ -121,15 +121,24 @@ export function getRoleRoadmap(roleTitle?: string): Array<PathpilotRoadmapItem &
 // previously selected, which would otherwise block "roadmap complete" forever).
 // Includes growthSkills so a growth-tier item the user has already marked done
 // doesn't get pruned as "stale" the next time the roadmap loads.
+// Must include role.roadmap's own skills too, not just requiredSkills/tools/
+// advancedSkills -- the rich dataset's roadmap array can (and for several
+// roles does) contain more items than those three fields combined (e.g.
+// Cybersecurity Analyst's roadmap has 18 skills, requiredSkills+tools+
+// advancedSkills totals only 11), and this list is what decides what's safe
+// to prune. Missing a roadmap-only skill here meant pruneStaleRoadmapSkills
+// silently deleted a user's real, already-completed roadmap rows the next
+// time they synced -- a genuine data-loss bug, not just a display glitch.
 export function getRoleRequiredSkills(roleTitle?: string): string[] {
   const role = getRoleByTitle(roleTitle);
   if (role) {
-    return [
+    return Array.from(new Set([
       ...(role.requiredSkills || []),
       ...(role.tools || []),
       ...(role.advancedSkills || []),
+      ...(role.roadmap || []).map((r) => r.skill),
       ...(role.growthSkills || []).map((g) => g.skill),
-    ];
+    ]));
   }
   const fallback = roleTitle ? ROLE_SKILLS[roleTitle] : undefined;
   return fallback ? [...fallback.must, ...fallback.nice, ...fallback.advanced] : [];

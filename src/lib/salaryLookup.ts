@@ -41,7 +41,8 @@ export function fetchCompanySalary(
   role: string,
   location: string,
   level: ExperienceLevel = 'Entry',
-  forceRefresh = false
+  forceRefresh = false,
+  experienceYears = 0
 ): Promise<SalaryLookupResult | null> {
   const key = cacheKeyFor(company, role, location, level);
   if (!forceRefresh) {
@@ -58,7 +59,7 @@ export function fetchCompanySalary(
       const res = await fetch('/api/salary/lookup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${session.access_token}` },
-        body: JSON.stringify({ company, role, location, level, forceRefresh }),
+        body: JSON.stringify({ company, role, location, level, forceRefresh, experienceYears }),
       });
       if (!res.ok) return null;
       const data = (await res.json()) as SalaryLookupResult;

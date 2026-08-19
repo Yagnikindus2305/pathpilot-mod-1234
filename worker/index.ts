@@ -636,7 +636,7 @@ async function lookupSalary(request: Request, env: Env): Promise<Response> {
   if ('error' in auth) return auth.error;
   const { supabaseAdmin, userId } = auth;
 
-  let body: { company?: unknown; role?: unknown; location?: unknown; level?: unknown; forceRefresh?: unknown };
+  let body: { company?: unknown; role?: unknown; location?: unknown; level?: unknown; forceRefresh?: unknown; experienceYears?: unknown };
   try {
     body = await request.json();
   } catch {
@@ -647,6 +647,13 @@ async function lookupSalary(request: Request, env: Env): Promise<Response> {
   const location = typeof body.location === 'string' && body.location.trim() ? body.location.trim() : 'India';
   const level: ExperienceLevel = body.level === 'Mid' || body.level === 'Senior' ? body.level : 'Entry';
   const forceRefresh = body.forceRefresh === true;
+  // Extra prompt-only context for a more precise grounded search on an
+  // actual cache miss -- deliberately NOT part of the cache key (see
+  // normalizeSalaryKey), so caching still amortizes across every user at
+  // the same level bucket instead of being busted by everyone's exact years.
+  const experienceYears = typeof body.experienceYears === 'number' && Number.isFinite(body.experienceYears) && body.experienceYears > 0 && body.experienceYears < 60
+    ? Math.round(body.experienceYears * 10) / 10
+    : null;
   if (!FREEFORM_INPUT_PATTERN.test(company) || !FREEFORM_INPUT_PATTERN.test(role) || !FREEFORM_INPUT_PATTERN.test(location)) {
     return json({ message: 'company, role, and location must be 1-100 characters of ordinary text.' }, 400);
   }
@@ -685,7 +692,7 @@ async function lookupSalary(request: Request, env: Env): Promise<Response> {
     const searchResult = await generateWithSearch(
       env,
       SALARY_SEARCH_SYSTEM_PROMPT,
-      `Role: "${role}"\nCompany: "${company}"\nLocation: "${location}"\nExperience level: ${LEVEL_LABEL[level]}`,
+      `Role: "${role}"\nCompany: "${company}"\nLocation: "${location}"\nExperience level: ${LEVEL_LABEL[level]}${experienceYears !== null ? ` -- specifically ${experienceYears} years of professional experience` : ''}`,
       800
     );
     if (!searchResult) {
